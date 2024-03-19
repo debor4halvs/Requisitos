@@ -1,0 +1,116 @@
+h1. US002 Listar Perspectiva 
+
+*Como* usuário SIG que possui permissão no módulo "Planejamento Estratégico" 
+*Quero* listar as perspectivas
+*Para* visualizar todas as perspectivas cadastradas.
+
+----
+ 
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Menu>Nome da funcionalidade_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+
+ *Cenário 2:"Selecionar Plano Estratégico"*   
+
+*Dado* que sistema apresenta campo plano estratégico, vide [[US006_Definir_Campos_Perspectiva]] 
+*Quando* usuário seleciona um plano estratégico
+*Então* sistema lista perspectiva, somente para o plano estratégico informado.
+
+----
+
+ *Cenário 3:"Filtrar por Sigla"*   
+
+*Dado* que sistema apresenta filtros para listar
+*Quando* usuário escolhe uma sigla na lista recuperada, vide [[US006_Definir_Campos_Perspectiva]] 
+*E* clica em filtrar
+*Então* sistema recupera e exibe somente os registros para a sigla informada.
+
+----
+
+ *Cenário 4:"Filtrar por Nome da Perspectiva"*   
+
+*Dado* que sistema apresenta filtros para listar
+*Quando* usuário escolhe um tipo na lista recuperada, vide [[US006_Definir_Campos_Perspectiva]] 
+*E* clica em filtrar
+*Então* sistema recupera e exibe somente os registros para o tipo informado.
+
+----
+
+ *Cenário 5:"Limpar Filtros"*   
+
+*Dado* que usuário preencheu ao menos um filtro exibido
+*Quando* usuário clica em "Limpar"
+*Então* sistema desfaz todas as seleções existentes.
+
+----
+
+ *Cenário 6:"Apresentar Opção Adicionar Perspectiva"*   
+
+*Dado* que sistema apresenta botão "Adicionar"
+*Quando* usuário clica na opção Adicionar
+*Então* sistema direciona usuário para interface [[US001_Incluir_Perspectiva_]] 
+
+----
+
+ *Cenário 7:"Apresentar Opção Detalhar Perspectiva"*   
+
+*Dado* que usuário cadastrou ao menos uma perspectiva
+*Quando* usuário clica na opção visualizar representada pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/472/T028-icone-visualizar-list.png!
+*Então* sistema direciona usuário para interface [[US005_Visualizar_Perspectiva]].
+
+----
+
+ *Cenário 8:"Apresentar Opção Editar Perspectiva"*   
+
+*Dado* que usuário cadastrou ao menos uma perspectiva
+*Quando* usuário clica na opção editar representada pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/471/T029-icone-editar-list.png!
+*Então* sistema direciona usuário para interface [[US003_Editar_Perspectiva_]] 
+
+----
+
+ *Cenário 9:"Apresentar Opção Excluir Perspectiva"*   
+
+*Dado* que usuário cadastrou ao menos uma perspectiva
+*Quando* usuário clica na opção excluir representada pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/473/T030-icone-lixeira-list.png!
+*Então* sistema direciona usuário para interface [[US004_Excluir_Perspectiva]] 
+
+----
+
+
+ *Cenário 10:"Listar 10 Primeiros Registros por Padrão"*   
+
+*Dado* que sistema apresenta lista de perspectivas
+*Quando* usuário entra na interface
+*Então* sistema apresenta por padrão os 10 primeiros registros cadastrados e pagina os demais.
+
+
+----
+
+ *Cenário 11:"Ordenar Alfabeticamente Resultado da Lista"*   
+
+*Dado* que o usuário cadastrou dois ou mais planos estratégicos
+*Quando* a lista for apresentada
+*Então* o sistema ordena a lista alfabeticamente pelo Nome da perspectiva.
+
+----
+
+
+ *Cenário 12:"Apresentar Cabeçalho da Tabela por Padrão"*   
+
+*Dado* que usuário ainda não cadastrou uma perspectiva
+*Quando* o usuário entra no Listar
+*Então* o sistema exibe as informações de cabeçalho por padrão, [[US006_Definir_Campos_Perspectiva]] 
+
+----
+ 
+h2. Protótipos
+
+
+
+!https://hom-redmine.cade.gov.br/attachments/download/1066/T007%20-%20Manter%20Perspectiva%20-%20Listar.png!
+
