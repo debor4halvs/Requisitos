@@ -71,4 +71,4 @@
 h2. Protótipos
 
 !https://hom-redmine.cade.gov.br/attachments/download/1065/T008%20-%20Manter%20Perspectiva%20-%20Incluir.png!
- <p align="center"><img alt="VS Code in action" src="C:\Requisitos\Features\Menu Planejar\Manter Perspectiva\Protótipos\T007 - Manter Perspectiva - Listar.png"></p>
+ <p align="center"><img alt="" src="Features/Menu Planejar/Manter Perspectiva/Protótipos/T007 - Manter Perspectiva - Listar.png"></p>
