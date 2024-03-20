@@ -68,6 +68,14 @@
 
 ----
 
+*Cenário 8:"Teste Kamila"*   
+
+*Dado* que o usuário cadastrou perspectiva
+*Quando* usuário conclui ação
+*Então* sistema registra as informações em um banco de dados, vide regra [[RN001_-_Registrar_Histórico_(log)]] 
+
+----
+
 ## Protótipos
 
 
