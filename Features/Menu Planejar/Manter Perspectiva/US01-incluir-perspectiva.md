@@ -71,4 +71,4 @@
 ## Protótipos
 
 
- <img src="https://github.com/debor4halvs/Requisitos/blob/main/T008-manter-perspectiva-%20incluir.png?raw=true">
+ <img src="https://github.com/debor4halvs/Requisitos/blob/main/T008-manter-perspectiva-incluir.png?raw=true">
