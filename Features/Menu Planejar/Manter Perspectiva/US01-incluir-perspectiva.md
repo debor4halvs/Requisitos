@@ -17,7 +17,7 @@
  *Cenário 2:"Selecionar Plano Estratégico"*
 
 **Dado** que sistema apresenta campo plano estratégico, vide [Definir campos perspectiva](https://github.com/debor4halvs/Requisitos/blob/main/Features/Menu%20Planejar/Manter%20Perspectiva/US06-definir-campos-perspectiva.md)
-<a href="https://github.com/debor4halvs/Requisitos/blob/main/Features/Menu%20Planejar/Manter%20Perspectiva/US06-definir-campos-perspectiva.md" target="_new">Definir campos 2</a>
+<a href="https://gitlab.cade.gov.br/cgti/sesis/sig_documentacao/-/tree/main/01_M%C3%B3dulos/02_Planejamento_Estrat%C3%A9gico/01_Features/Menu%20Planejar" target="_blank">Definir campos 2</a>
 **Quando** usuário seleciona um plano estratégico
 **Então** sistema inclui perspectiva, somente para o plano estratégico informado. TESTE
 
