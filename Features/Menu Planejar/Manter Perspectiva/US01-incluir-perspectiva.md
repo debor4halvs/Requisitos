@@ -18,13 +18,13 @@
 
 **Dado** que sistema apresenta campo plano estratégico, vide [US06_Definir_Campos_Perspectiva](C:\Requisitos\Features\Menu Planejar\Manter Perspectiva\US06-definir-campos-perspectiva.md)
 **Quando** usuário seleciona um plano estratégico
-**Então** sistema inclui perspectiva, somente para o plano estratégico informado.
+**Então** sistema inclui perspectiva, somente para o plano estratégico informado. TESTE
 
 ---
 
  *Cenário 3:"Cadastrar Perspectiva"*
 
-*Dado* que usuário preenche todos o campos obrigatórios, vide [[US006_Definir_Campos_Perspectiva]]
+*Dado* que usuário preenche todos o campos obrigatórios, vide [Definir campos perspectiva](C:\Requisitos\Features\Menu Planejar\Manter Perspectiva\US01-incluir-perspectiva.md)
 *Quando* usuário clica em "Salvar"
 *Então* sistema guarda o registro em um banco de dados
 *E* apresenta ao usuário MSG001, vide [[15_-_Mensagens]]
