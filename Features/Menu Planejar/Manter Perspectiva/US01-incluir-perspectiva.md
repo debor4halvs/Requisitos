@@ -16,7 +16,7 @@
 
  *Cenário 2:"Selecionar Plano Estratégico"*
 
-**Dado** que sistema apresenta campo plano estratégico, vide [US06_Definir_Campos_Perspectiva](C:\Requisitos\Features\Menu Planejar\Manter Perspectiva\US06-definir-campos-perspectiva.md)
+**Dado** que sistema apresenta campo plano estratégico, vide [Definir campos](C:\Requisitos\Features\Menu Planejar\Manter Perspectiva\US06-definir-campos-perspectiva.md)
 **Quando** usuário seleciona um plano estratégico
 **Então** sistema inclui perspectiva, somente para o plano estratégico informado. TESTE
 
