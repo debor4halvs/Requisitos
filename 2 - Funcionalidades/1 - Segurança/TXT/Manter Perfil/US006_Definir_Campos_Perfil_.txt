@@ -1,0 +1,43 @@
+h1. US006 Definir Campos Perfil 
+
+
+h2. +Campos do cadastrar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD                        |_.Coluna BD                 |_.Comentário                                                                              |
+|Nome              |Alfanumérico    |Sim          |Somente letras e números|-                                  |-                           |Refere-se ao nome do perfil                                                               
+                                                                                                                                             Neste contexto é o conjunto de configurações, permissões e preferências associadas a um 
+                                                                                                                                             usuário específico. Essas configurações podem determinar como o usuário interage com o 
+                                                                                                                                             sistema, quais recursos estão disponíveis e quais ações são permitidas.                   |
+|Módulos           |Lista           |Sim          |Múltipla seleção        |-                                  |-                           |Lista que exibe todos os módulos do sistema.                                              | 
+|Funcionalidades   |Lista           |Sim          |Múltipla seleção        |-                                  |-                           |Lista que exibe todas as funcionalidades do sistema conforme módulo escolhida.            |
+|Operações         |Lista           |Sim          |Múltipla seleção        |-                                  |-                           |Lista que exibe todas as operações conforme funcionalidade escolhida.                     |
+|Limpar            |Botão           | -           | -                      | -                                 | -                          |Permite ao usuário apagar as informações inseridas.                                       |                                                                                                                                                                   
+|Cancelar          |Botão           | -           | -                      | -                                 | -                          |Permite ao usuário do sistema retornar a uma tela anterior.                               |                                                              
+|Salvar            |Botão           | -           | -                      | -                                 | -                          |Permite ao usuário do sistema gravar o registro do perfil.                                |                                                                      
+
+
+-----
+
+h2. +Campos do filtrar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD                        |_.Coluna BD                 |_.Comentário                                                                              |
+|Órgão             |Lista           |Não          |Seleção única           |-                                  |-                           |Lista que exibe nome do órgão.                                                            |                                                                                                                                                               
+|Módulo            |Lista           |Não          |Seleção única           |-                                  |-                           |Lista que exibe todos os módulos do sistema.                                              | 
+|Nome do Perfil    |Lista           |Não          |Seleção única           |-                                  |-                           |Lista que exibe todos os nomes de perfil.                                                 |
+|Limpar            |Botão           | -           | -                      | -                                 | -                          |Permite ao usuário apagar as informações inseridas.                                       |                                                                                                                                                                   
+|Filtrar           |Botão           | -           | -                      | -                                 | -                          |Permite ao usuário realizar consulta.                                                     |                                                              
+
+h2. +Campos do resultado do Listar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD                        |_.Coluna BD                 |_.Comentário                                                                              |
+|Nome do perfil    |Alfanumérico    |Sim          |Somente letras e números|-                                  |-                           |Refere-se ao nome do perfil                                                               
+                                                                                                                                             Neste contexto é o conjunto de configurações, permissões e preferências associadas a um 
+                                                                                                                                             usuário específico. Essas configurações podem determinar como o usuário interage com o 
+                                                                                                                                             sistema, quais recursos estão disponíveis e quais ações são permitidas.                   |
+|Módulo            |Alfanumérico    |Sim          |Somente letras e número |-                                  |-                           |Lista que exibe todos os módulos do sistema.                                              | 
+|Visualizar        |Alfanumérico    |-            |-                       |-                                  |-                           |Permite ao usuário explorar detalhes de um item sem comprometer a experiência geral
+                                                                                                                                             do usuário.                                                                               |    
+|Editar            |Alfanumérico    |-            |-                       |-                                  |-                           |Permite ao usuário modificar ou ajustar informações existentes.                           |    
+|Excluir           |Alfanumérico    |-            |-                       |-                                  |-                           |Permite ao usuário remover permanentemente um item, dado ou conteúdo da interface.        | 
+
+

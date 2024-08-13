@@ -1,0 +1,107 @@
+h1. US001 Incluir Perfil 
+
+**Como** usuário com permissão no módulo Segurança
+**Quero** incluir perfil
+**Para** definir as permissões para cada tipo de acesso ao sistema
+
+----
+
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo> Menu > Nome da funcionalidade
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ **Cenário 2:"Incluir Perfil"**  
+
+**Dado** que o usuário entrou no módulo Segurança
+**E** clicou na sessão "Perfil" 
+**E** clicou na funcionalidade "Adicionar"
+**E** preencheu todos os campos obrigatórios, vide [[US010_Definir_Campos_Perfil]] 
+**Quando** o usuário aciona a opção "Salvar" 
+**Então** o sistema salva o registro do perfil em um banco de dados
+**E** apresenta a mensagem MSG001, vide [[15_-_Mensagens]] 
+
+----
+
+ **Cenário 3:"Listar Funcionalidades"**   
+
+**Dado** que usuário entra na interface para incluir perfil
+**Quando** usuário seleciona um módulo na lista 
+**Então** sistema recupera e exibe opções conforme módulo escolhido.
+
+----
+
+  **Cenário 4:"Listar Operações das Funcionalidades"**   
+
+**Dado** que usuário entra na interface para incluir perfil
+**Quando** usuário seleciona um módulo na lista 
+**Então** sistema recupera e exibe opções conforme módulo escolhido.
+
+----
+
+  **Cenário 5:"Nenhuma Permissão Adicionada"**   
+
+**Dado** que usuário preencheu um nome para o perfil
+**Quando** usuário clica na opção "Salvar", sem que tenha definido ao menos uma permissão, vide [[US009_Montar_Perfil]] 
+**Então** sistema apresenta mensagem MSG007, vide [[15_-_Mensagens]] 
+**E** permanece na interface de onde foi chamado.
+
+----
+
+ **Cenário 5:"Campo(s) Obrigatório(s) Não Informado(s)"** 
+  
+**Dado** que o usuário não preencheu um ou mais campo(s) obrigatório(s)
+**Quando** usuário clica em um campo obrigatório
+**Então** sistema apresenta no campo a mensagem MSG003, vide [[15_-_Mensagens]].
+
+----
+
+  **Cenário 6:"Limpar Campos"**   
+
+**Dado** que usuário preencheu ao menos um campo
+**Quando** usuário clica em Limpar 
+**Então** sistema desafaz preenchimento no formulário
+**E** mantém usuário na mesma interface.
+
+----
+
+ **Cenário 7:"Cancelar Campos Preenchidos"**   
+
+**Dado** que usuário preencheu ao menos um campo
+**Quando** usuário clica em "Cancelar"
+**Então** sistema limpa os campos 
+**E** direciona usuário ao passo anterior de onde foi chamado.
+
+----
+
+ **Cenário 8:"Cancelar Campos Em Branco"**   
+
+**Dado** que usuário não preencheu campo(s)
+**Quando** usuário clica em "Cancelar"
+**Então** sistema direciona usuário ao passo anterior de onde foi chamado.
+
+----
+
+ **Cenário 9:"Campo(s) Obrigatório(s) Não Informado(s)"** 
+  
+**Dado** que o usuário não preencheu um ou mais campo(s) obrigatório(s)
+**Quando** usuário clica em um campo obrigatório
+**Então** sistema apresenta no campo a mensagem MSG003, vide [[15_-_Mensagens]].
+
+----
+
+ **Cenário 10:"Guardar Ação do Usuário em Histórico"**   
+
+**Dado** que o usuário cadastrou perfil
+**Quando** usuário conclui ação
+**Então** sistema registra as informações em um banco de dados, vide regra [[RN006_-_Registrar_Histórico_(log)]] 
+
+----
+
+
+Protótipos
+
+!https://redmine.cade.gov.br/attachments/download/3322/T045%20-%20Manter%20Perfil%20-%20Incluir.png!

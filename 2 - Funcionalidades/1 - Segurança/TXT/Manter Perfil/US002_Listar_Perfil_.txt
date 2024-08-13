@@ -1,0 +1,200 @@
+h1. US002 Listar Perfil 
+
+*Como* usuário SIG que possui permissão no módulo Segurança
+*Quero* listar os perfis
+*Para* visualizar todos os perfis cadastrados 
+
+----
+ 
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo> Menu > Nome da funcionalidade
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ *Cenário 2:"Filtrar Por Nome da Permissão"*   
+
+*Dado* que sistema apresenta filtros para listar
+*Quando* usuário escolhe um módulo na lista recuperada, vide [[US010_Definir_Campos_Perfil]] 
+*E* clica em filtrar
+*Então* sistema recupera e exibe somente os registros para o módulo informado.
+
+----
+
+ *Cenário 2:"Filtrar Por Nome do Módulo"*   
+
+*Dado* que sistema apresenta filtros para listar
+*Quando* usuário escolhe um módulo na lista recuperada, vide [[US010_Definir_Campos_Perfil]] 
+*E* clica em filtrar
+*Então* sistema recupera e exibe somente os registros para o módulo informado.
+
+----
+
+ *Cenário 3:"Filtrar Por Nome do Usuário"*   
+
+*Dado* que sistema apresenta filtros para listar
+*Quando* usuário escolhe um usuário na lista recuperada, vide [[US010_Definir_Campos_Perfil]] 
+*E* clica em filtrar
+*Então* sistema recupera e exibe somente os registros para o usuário informado.
+
+----
+
+ *Cenário 4:"Filtrar Por Unidade do Usuário"*   
+
+*Dado* que sistema apresenta filtros para listar
+*Quando* usuário escolhe uma unidade na lista recuperada, vide [[US010_Definir_Campos_Perfil]] 
+*E* clica em filtrar
+*Então* sistema recupera e exibe somente os registros para a unidade informada.
+
+----
+
+ *Cenário 5:"Filtrar por Nome do Perfil"*   
+
+*Dado* que sistema apresenta filtros para listar
+*Quando* usuário escolhe um nome de perfil na lista recuperada, vide [[US010_Definir_Campos_Perfil]] 
+*E* clica em filtrar
+*Então* sistema recupera e exibe somente os registros para a sigla informada.
+
+----
+
+ *Cenário 6:"Filtrar por Status"*   
+
+*Dado* que sistema apresenta filtros para listar
+*Quando* usuário escolhe um status na lista recuperada, vide [[US010_Definir_Campos_Perfil]] 
+*E* clica em filtrar
+*Então* sistema recupera e exibe somente os registros para o status informado.
+
+----
+
+ *Cenário 7:"Limpar Filtros"*   
+
+*Dado* que usuário preencheu ao menos um filtro exibido
+*Quando* usuário clica em "Limpar"
+*Então* sistema desfaz todas as seleções existentes.
+
+----
+
+ *Cenário 8:"Apresentar Opção Montar Perfil"* 
+
+**Dado** que usuário entra na opção Cadastrar Perfil
+**Quando** usuário aciona a opção montar perfil
+**Então** sistema direciona usuário para interface de permissão, vide [[US009_Montar_Perfil]] 
+
+----
+
+ *Cenário 9:"Apresentar Opção Visualizar Perfil"*   
+
+*Dado* que usuário entrou no listar perfil
+*E* escolheu um perfil
+*Quando* usuário clica na opção visualizar representada pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/472/T028-icone-visualizar-list.png!
+*Então* sistema direciona usuário para interface [[US004_Visualizar_Perfil]] 
+
+----
+
+ *Cenário 10:"Apresentar Opção Desativar Perfil"*   
+
+*Dado* que usuário entrou no listar perfil
+*E* escolheu uma unidade
+*Quando* usuário clica na opção desativar, representada pelo ícone !!
+*Então* sistema direciona usuário para interface [[US007_Desativar_Perfil]] 
+
+----
+
+ *Cenário 11:"Apresentar Opção Ativar Perfil"*   
+
+*Dado* que usuário entrou no listar perfil
+*E* escolheu uma unidade
+*Quando* usuário clica na opção ativar, representada pelo ícone !!
+*Então* sistema direciona usuário para interface [[US006_Ativar_Perfil]] 
+
+----
+
+ *Cenário 12:"Apresentar Opção Editar Perfil"*   
+
+*Dado* que usuário cadastrou ao menos um perfil 
+*Quando* usuário clica na opção editar representada pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/471/T029-icone-editar-list.png!
+*Então* sistema direciona usuário para interface [[US003_Editar_Perfil]] 
+
+----
+
+ *Cenário 13:"Apresentar Opção Excluir Perfil"*   
+
+*Dado* que usuário cadastrou ao menos um perfil
+*Quando* usuário clica na opção excluir representada pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/473/T030-icone-lixeira-list.png!
+*Então* sistema direciona usuário para interface [[US005_Excluir_Perfil]] 
+
+----
+
+
+ *Cenário 14:"Listar 10 Primeiros Registros por Padrão"*   
+
+*Dado* que sistema apresenta lista 
+*Quando* usuário entra na interface
+*Então* sistema apresenta por padrão os 10 primeiros registros cadastrados e pagina os demais.
+
+
+----
+
+ *Cenário 15:"Ordenar Alfabeticamente Resultado da Lista"*   
+
+*Dado* que o sistema recuperou e listou perfis
+*Quando* a lista for apresentada
+*Então* o sistema ordena a lista alfabeticamente pelo nome do perfil
+
+----
+
+ *Cenário 16:"Apresentar Cabeçalho da Tabela por Padrão"*   
+
+*Dado* que usuário ainda não cadastrou um perfil
+*Quando* o usuário entra no Listar
+*Então* o sistema exibe as informações de cabeçalho por padrão, [[US010_Definir_Campos_Perfil]]  
+
+----
+
+ *Cenário 17:"Apresentar Mensagem (Tooltip) ao Passar Mouse no Visualizar"*   
+
+*Dado* que sistema apresenta ações representadas por ícones
+*Quando* usuário passa o mouse sobre a opção visualizar
+*Então* sistema exibe ao usuário MSG010, vide [[15_-_Mensagens]] 
+
+----
+
+ *Cenário 18:"Apresentar Mensagem (Tooltip) ao Passar Mouse no Editar"*   
+
+*Dado* que sistema apresenta ações representadas por ícones
+*Quando* usuário passa o mouse sobre a opção editar
+*Então* sistema exibe ao usuário MSG011, vide [[15_-_Mensagens]] 
+
+----
+
+ *Cenário 19:"Apresentar Mensagem (Tooltip) ao Passar Mouse no Excluir"*   
+
+*Dado* que sistema apresenta ações representadas por ícones
+*Quando* usuário passa o mouse sobre a opção excluir
+*Então* sistema exibe ao usuário MSG012, vide [[15_-_Mensagens]] 
+
+----
+
+ *Cenário 20:"Apresentar Mensagem (Tooltip) ao Passar Mouse no Ativar"*   
+
+*Dado* que sistema apresenta ações representadas por ícones
+*Quando* usuário passa o mouse sobre a opção excluir
+*Então* sistema exibe ao usuário MSG014, vide [[15_-_Mensagens]] 
+
+----
+
+ *Cenário 21:"Apresentar Mensagem (Tooltip) ao Passar Mouse no Desativar"*   
+
+*Dado* que sistema apresenta ações representadas por ícones
+*Quando* usuário passa o mouse sobre a opção excluir
+*Então* sistema exibe ao usuário MSG015, vide [[15_-_Mensagens]] 
+
+----
+ 
+h2. Protótipos
+
+!https://redmine.cade.gov.br/attachments/download/3327/T046%20-%20Manter%20Perfil%20-%20Listar.png!
+
+---
