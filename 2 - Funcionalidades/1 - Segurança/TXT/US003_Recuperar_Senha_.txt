@@ -1,0 +1,19 @@
+h1. US003 Recuperar Senha 
+
+**Como** usuário 
+**Quero** recuperar senha de acesso da plataforma SIG
+**Para** obter acesso ao(s) sistema(s) e utilizar as operações existentes.
+
+----
+
+ **Cenário 1: Recuperar Senha Usuário CADE**   
+
+**Dado** que usuário esqueceu sua senha de acesso
+**Quando** usuário clica em "Esqueceu sua Senha?"
+**Então** sistema direciona o usuário para https://passwordreset.microsoftonline.com/
+
+---
+
+h2. Protótipos
+
+!clipboard-202408061623-u9bui.png!

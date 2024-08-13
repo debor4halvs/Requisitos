@@ -1,0 +1,41 @@
+h1. US006 Definir Campos - Feriado 
+
+h2. +Campos do Cadastro+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD               |_.Coluna BD                  |_.Comentário                                                                              |
+|ID                |Auto increment  |Sim          |-                       |sig_tb_seguranca_feriado  |id_feriado  BIGINT           |Refere-se ao identificador único do feriado.                                              |   
+|Nome              |Alfanumérico    |Sim          |Somente letras e números|sig_tb_seguranca_feriado  |ds_nome VARCHAR (255)        |Refere-se ao nome do feriado.                                                             
+                                                                                                                                     Neste contexto, é o dia designado reconhecido oficialmente para observar ou celebrar 
+                                                                                                                                     algo importante.                                                                          |    
+|Descrição         |Alfanumérico    |Não          |Somente letras e números|sig_tb_seguranca_feriado  |ds_feriado VARCHAR (3000)    |Refere-se a descrição do feriado, um relato que busca transmitir informações 
+                                                                                                                                     detalhadas sobre o feriado.                                                               |
+|Data              |Alfanumérico    |Sim          |DD/MM/AAAA              |sig_tb_seguranca_feriado  |dt_feriado DATETIME          |Refere-se a data do feriado.                                                              |    
+|Hora Inicial      |Alfanumérico    |Sim          |HH:mm:ss                |sig_tb_seguranca_feriado  |hr_inicial TIME              |Refere-se a hora inicial em que inicia o feriado.                                         |    
+|Hora Final        |Alfanumérico    |Sim          |HH:mm:ss                |sig_tb_seguranca_feriado  |hr_final   TIME              |Refere-se a hora final em que se encerra o feriado.                                       |
+|Cancelar          |Botão           |-            |                        |                          |                             |Permite ao usuário do sistema retornar a uma tela anterior.                               |                                                                                              
+|Salvar            |Botão           |-            |                        |                          |                             |Permite ao usuário do sistema gravar o registro do feriado.                               |
+
+h2. +Campos do Filtrar+   
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD               |_.Coluna BD                  |_.Comentário                                                                              |
+|Nome              |Alfanumérico    |Sim          |Somente letras e números|sig_tb_seguranca_feriado  |ds_nome VARCHAR (255)        |Refere-se ao nome do feriado.                                                             
+                                                                                                                                     Neste contexto, é o dia designado reconhecido oficialmente para observar ou celebrar 
+                                                                                                                                     algo importante.                                                                          |    
+|Data              |Alfanumérico    |Sim          |DD/MM/AAAA              |sig_tb_seguranca_feriado  |dt_feriado DATETIME          |Refere-se a data do feriado.                                                              |
+|Limpar            |Botão           | -           | -                      | -                        | -                           |Permite ao usuário apagar as informações inseridas.                                       |                                                              
+|Filtrar           |Botão           | -           | -                      | -                        | -                           |Permite ao usuário selecionar critérios específicos para restringir ou limitar os dados
+                                                                                                                                     apresentados.                                                                             |
+
+h2. +Campos do Resultado do Listar+   
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD               |_.Coluna BD                  |_.Comentário                                                                              |
+|Nome              |Alfanumérico    |Sim          |Somente letras e números|sig_tb_seguranca_feriado  |ds_nome VARCHAR (255)        |Refere-se ao nome do feriado.                                                             
+                                                                                                                                     Neste contexto, é o dia designado reconhecido oficialmente para observar ou celebrar 
+                                                                                                                                     algo importante.                                                                          |    
+|Data              |Alfanumérico    |Sim          |DD/MM/AAAA              |sig_tb_seguranca_feriado  |dt_feriado DATETIME          |Refere-se a data do feriado.                                                              |    
+|Hora Inicial      |Alfanumérico    |Sim          |HH:mm:ss                |sig_tb_seguranca_feriado  |hr_inicial TIME              |Refere-se a hora inicial em que inicia o feriado.                                         |    
+|Hora Final        |Alfanumérico    |Sim          |HH:mm:ss                |sig_tb_seguranca_feriado  |hr_final   TIME              |Refere-se a hora final em que se encerra o feriado.                                       |
+|Visualizar        |Botão           | -           | -                      | -                        | -                           |Permite ao usuário explorar detalhes de um item sem comprometer a experiência geral do 
+                                                                                                                                     usuário.                                                                                  |
+|Editar            |Botão           | -           | -                      | -                        | -                           |Permite ao usuário modificar ou ajustar informações existentes.                           |                                                             
+|Excluir           |Botão           | -           | -                      | -                        | -                           |Permite ao usuário remover permanentemente um item, dado ou conteúdo da interface.        |

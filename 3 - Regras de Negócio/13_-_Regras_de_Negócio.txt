@@ -1,0 +1,71 @@
+h1. 13 - Regras de Negócio
+
+
+|_.ID   |_.Título                                |_.Descrição                                                                                                |_. Tipo de Regra                     |_.Observação          |
+|RN001  |Login                                   | Para obter um login, se faz necessário que o servidor e/ou colaborador já esteja munido de seu usuário e 
+                                                   senha de rede, fornecido pelo CADE.                                                                       |Permissão                            |    -                 |
+|RN002  |Permissão de Acesso                     | Faz-se obrigatório que a aplicação SIG só conceda permissão aos usuários que também estiverem cadastrados 
+                                                   no LDAP;
+                                                   Faz-se obrigatório que o usuário SIG esteja vinculado ao menos à um perfil com permissão aos módulos do 
+                                                   sistema;                                                                                                  |Permissão                            |     -                |
+|RN003  |Perfis padrão Keycloack                 | Para inicializar a utilização do sistema foi definida uma configuração padrão, onde:
+                                                   *Admin* - Acessa todas as funcionalidades, incluso as do módulo de segurança
+                                                   *Manager* - Acessa todas as funcionalidades, exceto as do módulo de segurança.
+                                                   *User* - Acessa o listar e visualizar de todas as funcionalidades, exceto módulo de segurança.                                
+                                                   A atribuição destes perfis aos usuários devem ser exclusivamente através do KeyCloack.                    |Permissão                            |      -               |
+|RN004  |Perfis personalizados                   | O usuário **Admin** possui permissão para criar perfil(is) e atribuir permissão à todos os módulos do 
+                                                   sistema, através das interfaces do módulo de Segurança do Sistema Integrado de Gestão - SIG.              |Permissão                            |      -               |
+|RN005  |Órgão                                   | Entende-se por Órgão a unidade organizacional oriunda do SIORG, definida como órgão no sistema SIG.
+                                                   Essa definição se faz necessária para recuperar e exibir em Unidades, somente a hierarquia da 
+                                                   Unidade SIORG definida como Órgão.                                                                        |Permissão                            |      -               |
+|RN006  |Registar Histórico  (log)               | O sistema deve manter armazenado em um banco de dados o registro das operações 
+                                                   (inclusão, edição, exclusão, clonagem) realizadas pelo usuário no sistema, na seguinte estrutura:
+                                                   Nome do usuário; Ação; Data; Hora;                                                                        |Definir                              |      -               |                                                                                
+|RN007  |Integração SIORG                        | O Sistema de Informações Organizacionais do Governo Federal (SIORG) é responsável por centralizar as 
+                                                   informações da Estrutura Organizacional, Órgãos, Entidades, Unidades, Históricos, Cargos e Funções do governo.
+                                                   Para atender a Plataforma SIG, faz-se necessário consultar a estrutura Organizacional com suas respectivas 
+                                                   unidades subordinadas e já hierarquizadas.                                                                |Definir                              |      -               |
+|RN008  |Integração SIAPE                        | O Sistema Integrado de Administração de Pessoal (SIAPE) é uma ferramenta de gestão utilizada pelo governo 
+                                                   federal brasileiro para administrar a vida funcional dos servidores públicos federais. Suas principais 
+                                                   funções e objetivos incluem: Gestão Pessoal; Folha de Pagamento; Controle de Frequência;  
+                                                   Planejamento de Recursos Humanos; Conformidade Legal; Transparência e Prestação de Contas; 
+                                                   Relatórios e Estatísticas;                                                                                
+                                                   +Para o SIG (Sistema Integrado de Gestão) do CADE, utilizamos o SIAPE para:+
+                                                   Obter a unidade de locação vinculada ao usuário que seja servidor; Visualizada na Entidade Usuário.
+                                                   Obter as informações referentes a frequência do usuário que seja servidor; 
+                                                   Visualizada na Entidade Afastamentos.                                                                     |Definir                              |      -               |          
+|RN009 |Anexos                                  | Permite a escolha de arquivo entre 1MB até no máximo 10MB;
+                                                   Permite a escolha de um arquivo nos formatos: "pdf", "jpg", "jpeg", "png" e "xlsx",
+                                                   podendo haver restrição dentro desses tipos a nível de front-end ;                                        |Definir                              |      -               |
+|RN010  |Selecionar Plano Estratégico            | Apresentar em lista de seleção sigla e nome de todos o(s) plano(s) estratégico(s) em que o 
+                                                   usuário possua permissão;
+                                                   Obrigar a seleção de ao menos um plano estratégico para que o usuário realize as operações;
+                                                   Possibilidade de selecionar somente uma opção por vez;                                                    |Definir                              |      -               |
+|RN011  |Unidade                                 | Entende-se por unidade: a unidade organizacional dentro de uma estrutura hierárquica tendo como origem as 
+                                                   unidades oficiais oriundas do SIORG, bem como unidades não oficiais subordinadas, tendo como origem o 
+                                                   próprio SIG.                                                                                              |Definir                              |      -               |
+|RN012  |Unidade Oficial                         |No contexto do SIG refere-se as unidades que vem do SIORG, que não podem ser alteradas pelo usuário
+                                                  pois são somente consultadas via API.
+                                                  +Ações Possíveis Para Unidades Oficiais+
+                                                  Dado que as unidades oficiais são consultadas no SIORG
+                                                  Fica permitido ao usuário somente visualizar informações e vincular unidade oficial à uma unidade não oficial.
+                                                  Fica vetada a modificação de qualquer dado da unidade oficial.                                             |Definir                              |      -               |
+|RN013  |Unidade Não Oficial                     |No contexto do SIG refere-se as unidades filhas criadas através do SIG, que podem ser alteradas. 
+                                                  Estas obrigatoriamente devem possuir em sua árvore de hierarquia ao menos uma unidade pai oficial.         
+                                                  +Ações Possíveis Para Unidades Não Oficiais+
+                                                  Dado que as unidades não oficiais são as incluídas diretamente pela aplicação SIG
+                                                  E que a referida unidade possui em sua árvore de hierarquia ao menos uma unidade pai do tipo oficial
+                                                  Fica permitido ao usuário visualizar, editar, ativar, inativar, bem como incluir uma unidade não oficial subordinada
+                                                  Fica vetada a modificação de qualquer dado da unidade oficial.                                             |Definir                              |      -               |
+|RN014  |Unidade Principal                       |Entende-se por Unidade Principal a unidade definida como origem do usuário onde:
+                                                  Para os servidores a informação é obtida através de integração com o sistema SIAPE;
+                                                  Para demais colaboradores a informação é inserida manualmente através do SIG;                              |Permissão                            |      -               |
+|RN015  |Unidade de Permissão                    |Entende-se por unidade de permissão como uma ou mais unidade(s) em que o usuário possui permissão.         |Permissão                            |      -               |    
+
+
+
+
+
+
+
+

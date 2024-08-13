@@ -1,0 +1,94 @@
+h1. US001 Incluir Unidade 
+
+**Como** usuário com permissão
+**Quero** incluir unidade
+**Para** manter lista de unidades atualizada.
+
+----
+
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Nome da funcionalidade_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ **Cenário 2:"Incluir Unidade Não Oficial, Subordinada à Uma Unidade Oficial"**  
+
+*Dado* que usuário entrou em uma unidade do tipo "oficial", vide [[RN005_-_Unidade]] 
+*E* clicou na opção para incluir unidade
+*E* sistema apresentou formulário
+*E* usuário preencheu campos obrigatórios, vide [[US009_Definir_Campos_Unidade]] 
+*Quando* usuário clica na opção "Salvar"
+*Então* o sistema guarda o registro da unidade subordinada, em um banco de dados
+*E* mantém a árvore hirárquica de criação entre unidade pai e unidade(s) filha(s).
+
+----
+
+ **Cenário 3:"Incluir Unidade Não Oficial, Subordinada à Uma Unidade Não Oficial"**  
+
+*Dado* que usuário entrou em uma unidade do tipo "não oficial", vide [[RN005_-_Unidade]] 
+*E* clicou na opção para incluir unidade
+*E* sistema apresentou formulário 
+*E* usuário preencheu campos obrigatórios, vide [[US009_Definir_Campos_Unidade]] 
+*Quando* usuário clica na opção "Salvar"
+*Então* o sistema guarda o registro da unidade subordinada, em um banco de dados
+*E* mantém a árvore hirárquica de criação entre unidade pai e unidade(s) filha(s).
+
+----
+
+ **Cenário 4:"Limpar Campos"**   
+
+**Dado** que usuário preencheu ao menos um campo
+**Quando** usuário clica em Limpar 
+**Então** sistema desafaz preenchimento no formulário
+**E** mantém usuário na mesma interface.
+
+----
+
+ **Cenário 5:"Cancelar Campos Preenchidos"**   
+
+**Dado** que usuário preencheu ao menos um campo
+**Quando** usuário clica em "Cancelar"
+**Então** sistema limpa os campos 
+**E** direciona usuário ao passo anterior de onde foi chamado.
+
+
+----
+
+ **Cenário 6:"Cancelar Campos Em Branco"**   
+
+**Dado** que usuário não preencheu campo(s)
+**Quando** usuário clica em "Cancelar"
+**Então** sistema direciona usuário ao passo anterior de onde foi chamado.
+
+
+----
+
+ **Cenário 7:"Campo(s) Obrigatório(s) Não Informado(s)"** 
+  
+**Dado** que o usuário não preencheu um ou mais campo(s) obrigatório(s)
+**Quando** usuário clica em um campo obrigatório
+**Então** sistema apresenta no campo a mensagem MSG003, vide [[15_-_Mensagens]].
+
+----
+
+ **Cenário 8:"Guardar Ação do Usuário em Histórico"**   
+
+**Dado** que o usuário cadastrou unidade
+**Quando** usuário conclui ação
+**Então** sistema registra as informações em um banco de dados conforme RN006, vide [[13_-_Regras_de_Negócio]].
+
+----
+
+h2. Protótipos
+
+!clipboard-202408071118-4pjat.png!
+
+---
+
+!clipboard-202408071117-mbckn.png!
+
+
+

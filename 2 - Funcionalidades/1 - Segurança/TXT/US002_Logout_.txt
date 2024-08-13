@@ -1,0 +1,37 @@
+h1. US002 Logout 
+
+**Como** usuário autenticado
+**Quero** opção para sair da plataforma
+**Para** encerrar sessão na plataforma.
+
+----
+
+ **Cenário 1:"Encerrar Sessão Botão Cancelar"**   
+
+**Dado** que usuário entrou na plataforma 
+**E** clicou na opção "Sair"
+**E** sistema apresentou mensagem MSG005, vide [[15_-_Mensagens]] 
+**Quando** usuário clica em "Cancelar"
+**Então** aplicação fecha caixa de mensagem 
+**E** mantém usuário na interface de onde foi chamada.
+
+----
+
+ **Cenário 2:"Encerrar Sessão Botão Confirmar"**   
+
+**Dado** que usuário entrou na plataforma 
+**E** clicou na opção "Sair"
+**E** sistema apresentou mensagem MSG005, vide [[15_-_Mensagens]] 
+**Quando** usuário clica em "Confirmar"
+**Então** aplicação encerra sessão do usuário
+**E** direciona usuário para interface de login, vide [[US001_Login]] 
+
+----
+
+**Protótipos**
+
+!clipboard-202408061620-rnpms.png!
+
+----
+
+

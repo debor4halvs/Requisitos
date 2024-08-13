@@ -1,0 +1,20 @@
+h1. US006 Cabeçalho 
+
+**Como** usuário com permissão na plataforma SIG
+**Quero** acessar aos módulos que possuo permissão
+**Para** obter acesso as operações possíveis dentro de cada módulo.
+
+----
+
+ *Cenário 1:"Apresentar Logo no Cabeçalho"*   
+
+*Dado* que sistema apresenta o cabeçalho do sistema
+*Quando* usuário entra no sistema
+*Então* sistema apresenta logo do sistema, conforme abaixo
+
+---
+
+h2. Protótipos
+
+!clipboard-202408061626-lkrue.png!
+

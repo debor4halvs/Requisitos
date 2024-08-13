@@ -1,0 +1,96 @@
+h1. US004 Menu 
+
+
+**Como** usuário com permissão na plataforma SIG
+**Quero** visualizar menu 
+**Para** mostrar as funções da plataforma
+
+----
+ 
+ **Cenário 1:"Exibir Menu Lateral Aberto Por padrão"**   
+
+*Quando* usuário entra na Plataforma SIG
+*Então* sistema apresenta menu lateral aberto por padrão, com a seguinte estrutura:
+Configurações Gerais;
+Consultas;
+**E** apresenta sistema(s) para qual o usuário logado possui permissão.
+
+----
+
+ **Cenário 2:"Retrair Menu Lateral"**   
+
+*Dado* que o usuário entra na plataforma SIG
+*Quando* usuário clica na opção retrair menu, representada pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/469/T027-icone-retrair-menu.png!
+*Então* sistema esconde menu lateral.
+
+
+----
+
+ **Cenário 3:"Reexibir Menu Lateral"**   
+
+*Dado* que o usuário entra entra na plataforma SIG
+*Quando* usuário clica na opção exibir menu, representada pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/468/T026-icone-exibir-menu.png!
+*Então* sistema exibe menu lateral.
+
+
+----
+
+ *Cenário 4:"Menu Configurações Gerais"*   
+
+*Dado* que o usuário entra na plataforma SIG
+*Quando* usuário clica na opção Configurações Gerais
+*Então* sistema apresenta submenu com as seguintes opções:
+Unidades, vide [[US001_Listar_Unidade]];
+Perfis, vide [[US002_Listar_Perfil]];
+Permissões, vide [[US002_Listar_Permissão]]; 
+Usuários, vide [[US001_Listar_Usuário]];
+Órgãos, vide [[US002_Listar_Órgão]]; 
+Feriados, vide [[US002_Listar_Feriado]]; 
+
+----
+
+ *Cenário 5:"Menu Consultas"*   
+
+*Dado* que o usuário entra no módulo Planejamento Estratégico
+*Quando* usuário clica na opção Planejar
+*Então* sistema apresenta submenu com as seguintes opções:
+Férias/Afastamentos, vide [[US001_Listar_Férias_e_Afastamentos_]]; 
+
+----
+
+
+ *Cenário 6:"Active Quando Clicado"*   
+
+*Dado* que o usuário entra no módulo Planejamento Estratégico
+*Quando* usuário clica na opção que deseja no submenu
+*Então* sistema apresenta a opção clicada em destaque.
+
+----
+
+ *Cenário 7:"Alternar Descrição do Cabeçalho Conforme Módulo"*   
+
+*Dado* que o usuário entra no Sistema Integrado de Gestão
+*Quando* usuário clica em algum sistema apresentado
+*Então* aplicação troca a descrição onde se lê: SIG - Versão: 1.0.1 deve se ler: NomeMódulo - Versão 1.0.1
+
+----
+
+ *Cenário 8:"Expandir lista"*   
+
+*Dado* que o usuário abriu o menu
+*Quando* usuário clica em expandir, representado pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/745/T044-icone-expandir-lista.png!
+*Então* o sistema exibe os itens filhos vinculados ao item pai.
+
+----
+
+ *Cenário 9:"Recolher lista"*   
+
+*Dado* que o usuário abriu o menu
+*Quando* usuário clica em recolher, representado pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/746/T045-icone-recolher-lista.png!
+*Então* o sistema esconde os itens filhos vinculados ao item pai.
+
+----
+
+h2. Protótipos
+
+!clipboard-202408061624-sytok.png!

@@ -1,0 +1,17 @@
+h1. US008 Consulta Unidade - SIORG 
+
+*Como* usuário SIG que possui permissão 
+*Quero* atualizar as unidades conforme o Sistema de Organização e Inovação Institucional do Governo Federal – SIORG (https://siorg.gov.br/siorg-cidadao-webapp/resources/app/consulta-estrutura.html)
+*Para* visualizar no SIG a estrutura organizacional de unidades mais recente, mantida pelo governo federal.
+
+----
+ 
+ *Cenário 1:"Consulta de Unidade no SIORG"*   
+
+*Quando* usuário aciona opção "Atualizar"
+*Então* sistema consulta base do SIORG para retornar a estrutura organizacional de unidades
+*E* as apresenta na interface ordenando hierarquicamente por sigla e nome.
+
+----
+
+h2. Protótipos

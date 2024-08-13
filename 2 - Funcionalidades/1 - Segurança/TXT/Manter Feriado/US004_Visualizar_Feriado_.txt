@@ -1,0 +1,35 @@
+h1. US004 Visualizar Feriado 
+
+*Como* usuário SIG que possui permissão no módulo "SIG - Sistema Integrado de Gestão" 
+*Quero* visualizar unidade
+*Para* ver todas as informações da unidade.
+
+----
+ 
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Nome da funcionalidade_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ *Cenário 2:"Visualizar Feriado"*   
+
+*Quando* usuário clica na opção visualizar 
+*Então* sistema apresenta formulário de cadastro preenchido 
+*E* não permite edição de nenhum dos campos apresentados. 
+
+----
+
+ **Cenário 3:"Cancelar Campos Em Branco"**   
+
+**Dado** que usuário solicita visualizar
+**Quando** usuário clica em "Cancelar"
+**Então** sistema direciona usuário ao passo anterior de onde foi chamado.
+
+----
+
+h2. Protótipos
+
+!clipboard-202408071047-mkl36.png!

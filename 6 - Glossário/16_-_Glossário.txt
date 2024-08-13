@@ -1,0 +1,37 @@
+h1. 16 - Glossário
+
+|_.ID   |_.Nome                        |_.Descrição                                                                                                                         |
+|G001   |Active Directory (AD)         | É um serviço de diretório desenvolvido pela Microsoft e é um componente central nas redes baseadas no sistema operacional Windows. 
+                                         Ele fornece serviços de gerenciamento de identidade, autenticação e autorização em ambientes empresariais. O Active Directory é 
+                                         utilizado para armazenar informações sobre objetos na rede, como usuários, grupos, computadores e outros recursos. Ele permite aos 
+                                         administradores de sistema controlar o acesso dos usuários a recursos da rede, gerenciar políticas de segurança, atribuir permissões 
+                                         e facilitar a administração centralizada. Além disso, o Active Directory suporta a integração com outros serviços e aplicativos, 
+                                         facilitando a implementação de Single Sign-On (SSO) e permitindo que os usuários acessem diferentes recursos com um único conjunto 
+                                         de credenciais. Em resumo, o Active Directory desempenha um papel crucial na administração de redes Windows, fornecendo um mecanismo 
+                                         centralizado para gerenciar e organizar informações de identidade e acesso em ambientes empresariais.                               |
+|G002 |LDAP                          | LDAP significa "Protocolo de Diretório Leve" em português. Em inglês, LDAP representa "Lightweight Directory Access Protocol". 
+                                       Trata-se de um protocolo de comunicação utilizado para acessar e manter serviços de diretório. Um serviço de diretório é uma base de 
+                                       dados especializada que armazena informações sobre recursos de rede, como usuários, grupos, computadores e outros objetos. O LDAP é 
+                                       projetado para ser eficiente e leve, o que o torna adequado para o gerenciamento de informações em ambientes de rede. Ele fornece um 
+                                       meio de acessar, atualizar e procurar informações em diretórios distribuídos na rede. O LDAP é comumente usado para autenticação e 
+                                       autorização em sistemas, bem como para a localização de recursos na rede.                                                             |
+|G003 |Key Cloack                    | O Keycloak é uma plataforma de código aberto para gerenciamento de identidade e acesso (IAM, na sigla em inglês) que fornece recursos 
+                                       como autenticação, autorização e gerenciamento de identidades em aplicações e serviços. Em português, você pode chamá-lo de "Keycloak: 
+                                       Plataforma de Gerenciamento de Identidade e Acesso". O Keycloak é frequentemente utilizado para centralizar o controle de acesso e a 
+                                       autenticação em sistemas distribuídos. Ele oferece funcionalidades como Single Sign-On (SSO), onde um único login pode ser usado para 
+                                       acessar várias aplicações, e também fornece suporte a padrões abertos como OAuth 2.0 e OpenID Connect. Empresas e desenvolvedores usam 
+                                       o Keycloak para integrar políticas de segurança, autenticação e autorização em suas aplicações, proporcionando uma camada de segurança 
+                                       consistente e gerenciável em toda a infraestrutura de software.                                                                       |
+|G004 | Eventos                      | Cada um desses tipos de eventos — processo, projeto/plano e política/programa — desempenha um papel crucial na gestão e operação de diferentes tipos 
+                                       de iniciativas. 
+                                       **Evento Processo:** Refere-se a ações dentro de um processo contínuo e estabelecido, como etapas na produção de um produto. Esses eventos são 
+                                       rotineiros, mas essenciais para garantir a eficiência e a qualidade do processo.
+                                       **Evento Projeto/Plano:** Relaciona-se a iniciativas temporárias com início, meio e fim definidos, como a entrega de um protótipo ou a conclusão de 
+                                       uma fase de um projeto. Esses eventos são cruciais para monitorar o progresso e garantir o cumprimento dos objetivos e prazos.
+                                       **Evento Política/Programa:** Conecta-se à implementação de políticas públicas ou programas organizacionais, como a promulgação de leis ou o 
+                                       lançamento de campanhas. Esses eventos são importantes para aplicar diretrizes e avaliar o impacto e a eficácia das ações.
+                                       Os eventos de processo, projeto/plano e política/programa estão diretamente relacionados à gestão de riscos, pois cada tipo de evento pode 
+                                       apresentar diferentes riscos que precisam ser identificados, avaliados e mitigados para garantir o sucesso e a continuidade das operações.
+                                       Cada tipo de evento traz consigo riscos específicos que podem impactar a organização de diferentes maneiras. A gestão eficaz desses riscos exige uma 
+                                       identificação proativa, um planejamento cuidadoso e a implementação de medidas mitigadoras para minimizar os impactos negativos e garantir a 
+                                       continuidade e o sucesso das operações organizacionais.                                                                                |

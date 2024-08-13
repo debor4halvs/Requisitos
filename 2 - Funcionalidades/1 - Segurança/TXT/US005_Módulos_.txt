@@ -1,0 +1,39 @@
+h1. US005 Módulos 
+
+**Como** usuário com permissão na plataforma SIG
+**Quero** acessar aos módulos que possuo permissão
+**Para** obter acesso as operações possíveis dentro de cada módulo.
+
+----
+
+ *Cenário 1:"Apresentar Módulo Planejamento Estratégico"*   
+
+*Dado* que sistema apresenta o módulo somente para usuário com permissão
+*Quando* usuário clica no card que representa o módulo
+*Então* sistema direciona usuário para acessar as operações do módulo, conforme escolha do usuário.
+!https://hom-redmine.cade.gov.br/attachments/download/1296/T036%20-%20Manter%20M%C3%B3dulos%20-%20icon%20planejamento%20estrat%C3%A9gico.png!
+
+----
+
+ *Cenário 2:"Apresentar Módulo Gestão de Projetos"*   
+
+*Dado* que sistema apresenta o módulo somente para usuário com permissão
+*Quando* usuário clica no card que representa o módulo
+*Então* sistema direciona usuário para acessar as operações do módulo, conforme escolha do usuário.
+!https://hom-redmine.cade.gov.br/attachments/download/1297/T037%20-%20Manter%20M%C3%B3dulos%20-%20icon%20gest%C3%A3o%20de%20projetos.png!
+
+----
+
+ *Cenário 3:"Apresentar Módulo Cadeia de Valor"*   
+
+*Dado* que sistema apresenta o módulo somente para usuário com permissão
+*Quando* usuário clica no card que representa o módulo, vide !img!
+*Então* sistema direciona usuário para acessar as operações do módulo, conforme escolha do usuário.
+!https://hom-redmine.cade.gov.br/attachments/download/1298/T038%20-%20Manter%20M%C3%B3dulos%20-%20icon%20cadeia%20de%20valor.png!
+
+----
+
+h2. Protótipos
+
+!clipboard-202408061625-wkdcg.png!
+

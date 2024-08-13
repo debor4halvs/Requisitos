@@ -1,0 +1,12 @@
+h1. US007 Definir Campos 
+
+
+h2. +Campos Formulário de Login+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD               |_.Coluna BD                  |_.Comentário                                                                                  |
+|Usuário           |Alfanumérico    |Sim          |-                       |Keycloack                 |A definir                    |Refere-se ao usuário de login para realizar entrada no sistema.                               |                                 
+|Senha             |Alfanumérico    |Sim          |-                       |Keycloack                 |A definir                    |Refere-se a senha de acesso para realizar entrada no sistema.                                 |                                                                                                                                                                                                                      
+|Órgão             |Lista           |Sim          |-                       |sig_tb_orgao (def)        |A definir                    |Refere-se a lista de órgão(s) parametrizados para o sistema.                                  |                                                                                                                                                      
+|Mostrar Senha     |Botão           |-            |-                       |-                         |-                            |Permite ao usuário exibir a senha digitada.                                                   |                                                                                                                                 
+|Ocultar Senha     |Botão           |-            |-                       |-                         |-                            |Permite ao usuário ocultar a exibição da senha digitada.                                      |
+|Esqueceu Senha?   |Botão           |-            |-                       |-                         |-                            |Permite ao usuário ser direccionado para o fluxo de recuperação de senha.                     |

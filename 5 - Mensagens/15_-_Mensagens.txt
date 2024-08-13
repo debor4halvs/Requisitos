@@ -1,0 +1,45 @@
+h1. 15 - Mensagens
+
+
+|_.ID   |_.Descrição                                                                         |_.Tipo de Mensagem     |_. Ação                  |_.Observação                           |
+|MSG001 |Sucesso! Ação realizada com êxito                                                   | Informativa           |Fechar                   |      -                                |
+|MSG002 |Tem certeza que deseja excluir?                                                     | Alerta                |Cancelar, Excluir        |Tela sobreposta                        |
+|MSG003 |O campo é obrigatório                                                               | Informativa           |-                        |Exibido campo a campo                  |
+|MSG004 |Ocorreu um erro, tente novamente                                                    | Informativa           |Fechar                   |      -                                |
+|MSG005 |Tem certeza que deseja encerrar sua sessão neste navegador?                         | Alerta                |Cancelar, Confirmar      |Tela sobreposta                        |
+|MSG006 |Atenção! Contate central de suporte do CADE, para obter nova senha de acesso.       | Informativa           |Fechar                   |      -                                |
+|MSG007 |Atenção! Informe ao menos uma permissão                                             | Informativa           |Fechar                   |      -                                | 
+|MSG008 |Login realizado com sucesso                                                         | Informativa           |Fechar                   |      -                                |    
+|MSG009 |Para continuar é necessário entrar com seu usuário e senha.                         | Informativa           |Fechar                   |      -                                |
+|MSG010 |Visualizar                                                                          | Tooltip               |-                        |Exibida ao passar o mouse sobre o item |  
+|MSG011 |Editar                                                                              | Tooltip               |-                        |Exibida ao passar o mouse sobre o item | 
+|MSG012 |Excluir                                                                             | Tooltip               |-                        |Exibida ao passar o mouse sobre o item | 
+|MSG013 |Criar                                                                               | Tooltip               |-                        |Exibida ao passar o mouse sobre o item | 
+|MSG014 |Ativar                                                                              | Tooltip               |-                        |Exibida ao passar o mouse sobre o item | 
+|MSG015 |Desativar                                                                           | Tooltip               |-                        |Exibida ao passar o mouse sobre o item |  
+|MSG016 |Nenhum registro encontrado                                                          | Informativa           |-                        |      -                                |  
+|MSG017 |CPF inválido                                                                        | Informativa           |-                        |      -                                |  
+|MSG018 |Permissões                                                                          | Tooltip               |-                        |Exibida ao passar o mouse sobre o item |  
+|MSG019 |Erro! Desculpe, nenhum resultado encontrado. Veja se houve algum erro de digitação. | Informativa           |Fechar                   |      -                                |
+|MSG020 |Criar Projeto                                                                       | Tooltip               |-                        |Exibida ao passar o mouse sobre o item |
+|MSG021 |Detalhar Indicador                                                                  | Tooltip               |-                        |Exibida ao passar o mouse sobre o item |
+|MSG022 |Atenção: Indicador aguardando cancelamento.                                         | Informativa           |-                        |Exibida campo a campo                  |
+|MSG023 |Atenção: Indicador aguardando repactuação.                                          | Informativa           |-                        |Exibida campo a campo                  |
+|MSG024 |Não foi feito cadastro de metas para este indicador.                                | Informativa           |-                        |Exibida campo a campo                  |
+|MSG025 |{nome-do-arquivo.formato}, ultrapassa o limite de tamanho para envio.               | Informativa           |Fechar                   |-                                      |
+|MSG026 |{nome-do-arquivo.formato}, não é um formato permitido para envio.                   | Informativa           |Fechar                   |-                                      |
+|MSG027 |Escolha um arquivo com no máximo 10 MB, no formato: "pdf", "jpg", "jpeg", 
+         "png", xlsx                                                                         | Informativa           |Fechar                   |Exibida ao clicar no ícone informativo |
+|MSG028 |Sucesso. Solicitação de cancelamento de indicador aprovada.                         | Informativa           |Fechar                   |-                                      |
+|MSG029 |Sucesso. Solicitação de cancelamento de indicador reprovada.                        | Informativa           |Fechar                   |-                                      |
+|MSG030 |Aprovar                                                                             | Tooltip	             |-                        |Exibida ao passar o mouse sobre o item |
+|MSG031 |Reprovar                                                                            | Tooltip	             |-                        |Exibida ao passar o mouse sobre o item |
+|MSG032 |É o motivo pelo qual o risco existe.                                                | Informativa	     |-                        |Exibida ao clicar no ícone informativo |
+|MSG033 |É o resultado do risco se concretizar.                                              | Informativa	     |-                        |Exibida ao clicar no ícone informativo |
+
+                                                                                                                                                
+
+
+
+
+                                                                    
