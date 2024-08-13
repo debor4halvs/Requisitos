@@ -1,0 +1,10 @@
+h1. US002 Consultar Férias e Afastamentos 
+
+
+*Como* usuário que possui permissão 
+*Quero* consultar as informações de férias e afastamentos 
+*Mas* utilizar a api: https://conecta.cade.gov.br/#tag/Consultar-Dados-Afastamento
+*Para* visualizar no SIG a situação da disponibilidade de servidores.
+
+----
+ 

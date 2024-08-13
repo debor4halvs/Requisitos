@@ -1,0 +1,16 @@
+h1. US004 Consulta Usuário - SIAPE 
+
+*Como* usuário SIG que possui permissão 
+*Quero* que o sistema recupere a unidade vinculada ao(s) usuário(s), oriunda do registro no SIAPE 
+*Para* que a unidade seja atualizada conforme SIAPE (https://www.gov.br/conecta/catalogo/apis/consulta-siape).
+
+----
+ 
+ *Cenário 1:"Consulta de Unidade no SIAPE"*   
+
+*Quando* usuário com permissão lista os usuários 
+*Então* sistema consulta base do SIAPE para retornar a unidade principal vinculada ao Usuário informado.
+
+----
+
+h2. Protótipos

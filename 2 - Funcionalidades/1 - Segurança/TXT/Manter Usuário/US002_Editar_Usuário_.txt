@@ -1,0 +1,56 @@
+h1. US002 Editar Usuário 
+
+*Como* usuário com permissão 
+*Quero* editar dados do usuário
+*Para* manter lista de usuários atualizada.
+
+----
+
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Nome da funcionalidade_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ *Cenário 2:"Editar Dados do Usuário"*   
+
+*Dado* que usuário clicou na opção editar 
+*E* modificou a única informação editável do formulário: "Unidade Principal"
+*Quando* usuário clica em "Salvar"
+*Então* sistema verifica se todos os campos obrigatórios foram preenchidos, vide [[US007_Definir_Campos_Usuário]] 
+*E* atualiza o registro do usuário em um banco de dados
+*E* apresenta ao usuário MSG001, vide [[15_-_Mensagens]] 
+
+----
+
+ *Cenário 3:"Limpar Campos"*   
+
+*Dado* que sistema apresenta interface para edição dos dados
+*Quando* usuário clica em "Limpar"
+*Então* sistema limpa todos os dados editáveis do formulário.
+
+----
+
+ *Cenário 4:"Cancelar"*   
+
+*Dado* que sistema apresenta interface para edição dos dados
+*Quando* usuário clica em "Cancelar"
+*Então* sistema limpa as modificações realizadas
+*E* direciona usuário ao passo anterior de onde foi chamado.
+
+----
+
+ *Cenário 5:"Guardar Ação do Usuário em Histórico"*   
+
+*Dado* que o usuário realizou edição
+*Quando* usuário conclui ação
+*Então* sistema registra as informações em um banco de dados conforme RN006, vide [[13_-_Regras_de_Negócio]].
+
+----
+
+
+h2. Protótipos
+
+!https://redmine.cade.gov.br/attachments/download/3315/T016%20-%20Manter%20Usu%C3%A1rio%20-%20Editar.png!

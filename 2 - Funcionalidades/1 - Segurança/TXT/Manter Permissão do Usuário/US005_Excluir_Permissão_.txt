@@ -1,0 +1,41 @@
+h1. US005 Excluir Permissão 
+
+
+*Como* usuário SIG que possui permissão no módulo "Segurança" 
+*Quero* excluir perfil
+*Para* manter lista de perfis atualizada.
+
+----
+
+ *Cenário 1:"Excluir Perfil, Botão Excluir"*   
+
+*Dado* que usuário entra no Listar Unidade
+*E* clica na opção excluir
+*E* que o sistema apresenta mensagem MSG002, vide [[15_-_Mensagens]] 
+*Quando* usuário clica no botão excluir 
+*Então* sistema apaga o registro na base de dados
+*E* sistema apresenta ao usuário mensagem MSG001, vide [[15_-_Mensagens]] 
+
+
+----
+
+ *Cenário 2:"Excluir Perfil, Botão Cancelar"*   
+
+*Dado* que usuário entra no Listar Unidade
+*E* clica na opção excluir
+*E* que o sistema apresenta mensagem MSG002, vide [[15_-_Mensagens]] 
+*Quando* usuário clica no botão cancelar
+*Então* sistema fecha caixa de mensagem 
+*E* retorna ao passo anterior.
+
+----
+
+ *Cenário 3:"Guardar Ação do Usuário em Histórico"*   
+
+*Dado* que o usuário excluiu unidade
+*Quando* usuário conclui ação
+*Então* sistema registra as informações em um banco de dados conforme RN006, vide [[13_-_Regras_de_Negócio]].
+
+----
+
+h2. Protótipos

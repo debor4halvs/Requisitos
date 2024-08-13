@@ -1,0 +1,61 @@
+h1. US001 Listar Férias e Afastamentos
+
+*Como* usuário com permissão 
+*Quero* pesquisar as férias e afastamentos dos usuários cadastrados 
+*Mas* que o CPF exista na base do SIAPE (Sistema Integrado de Administração Pessoal) 
+
+---
+
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Menu>Nome da funcionalidade_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+---
+
+ *Cenário 2: Filtrar por CPF*
+
+*Dado* que o usuário acione a opção "Afastamentos" localizado no Menu Lateral
+*E* o sistema apresente o campo "CPF"
+*E* o usuário insere um CPF válido
+*Quando* o usuário aciona Filtrar
+*Então* o sistema apresenta as férias e os afastamentos de acordo com os dados inseridos.
+
+--- 
+
+ *Cenário 3: Limpar Filtros*
+
+*Dado* que o usuário acione a opção "Afastamentos" localizado no Menu Lateral 
+*E* que usuário preencheu ao menos um campo
+*Quando* usuário clica em Limpar 
+*Então* sistema desfaz preenchimento 
+*E* mantém usuário na mesma interface.
+
+-----
+
+ *Cenário 4: CPF Inválido*
+
+*Dado* que o usuário acione a opção "Afastamentos" localizado no Menu Lateral
+*E* o sistema apresente o campo "CPF"
+*E* o usuário insere um CPF inválido
+*Quando* o usuário aciona Filtrar
+*Então* o sistema não retorna nenhum dado
+*E* exibe a "MSG017", vide [[15_-_Mensagens]]
+
+---
+
+ *Cenário 5: Nenhum Resultado Encontrado*
+
+*Dado* que o usuário acione a opção "Afastamentos" localizado no Menu Lateral
+*E* o sistema apresente o campo "CPF"
+*E* o usuário *não* preenche o campo "CPF"
+*Quando* o usuário aciona Filtrar
+*Então* o sistema apresenta a "MSG016", vide vide [[15_-_Mensagens]] 
+
+
+h2. *Protótipos*
+
+---
+
+!https://redmine.cade.gov.br/attachments/download/2505/T044%20-%20Manter%20Afastamentos-Consultar.png!

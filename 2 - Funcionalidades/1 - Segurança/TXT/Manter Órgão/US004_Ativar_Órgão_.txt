@@ -1,0 +1,27 @@
+h1. US004 Ativar Órgão 
+
+*Como* usuário SIG que possui permissão no módulo "SIG - Sistema Integrado de Gestão" 
+*Quero* ativar órgão
+*Para* exibir o órgão para uso no sistema.
+
+----
+ 
+ *Cenário 1:"Ativar Órgão"*   
+
+*Dado* que usuário escolheu um órgão desativado
+*Quando* usuário clica aciona ativar
+*Então* sistema habilita o órgão para uso nas listas que consultam o listar de órgão
+
+----
+
+ *Cenário 2:"Guardar Ação do Usuário em Histórico"*   
+
+*Dado* que o usuário ativou órgão
+*Quando* usuário conclui ação
+*Então* sistema registra as informações em um banco de dados, vide [[RN006_-_Registrar_Histórico_(log)]] 
+
+----
+
+h2. Protótipos
+
+!clipboard-202408071702-pnuau.png!

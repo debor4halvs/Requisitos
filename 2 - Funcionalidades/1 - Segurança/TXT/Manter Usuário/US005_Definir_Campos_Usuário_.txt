@@ -1,0 +1,36 @@
+h1. US005 Definir Campos Usuário 
+
+h2. +Campos do Filtro do Listar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação             |_.Tabela BD               |_.Coluna BD              |_.Comentário                                                                                 |
+|Nome              |Lista           |Não          |-                        |-                         |-                        |Refere-se ao nome completo do usuário do sistema, conforme consulta na base de usuários do 
+                                                                                                                                  CADE via protocolo LDAP, configurado na aplicação Key Cloack.                                |
+|Usuário           |Lista           |Não          |-                        |-                         |-                        |Refere-se ao usuário de login do sistema, conforme consulta na base de usuários do 
+                                                                                                                                  CADE via protocolo LDAP, configurado na aplicação Key Cloack.                                |                            
+|E-mail            |Lista           |Não          |-                        |-                         |-                        |Refere-se ao endereço eletrônico do usuário do sistema, conforme consulta na base de usuários 
+                                                                                                                                  do CADE via protocolo LDAP, configurado na aplicação Key Cloack.                             |                                                   
+|Unidade Principal |Lista           |Não          |RN014                    |-                         |-                        |Refere-se a unidade de origem que o usuário pertence.                                        |
+|Filtrar           |Botão           | -           |-                        | -                        | -                       |Permite ao usuário selecionar critérios específicos para restringir ou limitar os dados 
+                                                                                                                                 apresentados.                                                                                 |     
+|Limpar            |Botão           | -           |                         | -                        | -                       |Permite ao usuário apagar as informações inseridas.                                          |            
+   
+
+----
+
+h2. +Campos do Resultado do Listar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação             |_.Tabela BD               |_.Coluna BD              |_.Comentário                                                                                 |
+|Nome              |Alfanumérico    |Sim          |-                        |-                         |-                        |Refere-se ao nome completo do usuário do sistema, conforme consulta na base de usuários do 
+                                                                                                                                  CADE via protocolo LDAP, configurado na aplicação Key Cloack.                                |
+|Usuário           |Alfanumérico    |Sim          |-                        |-                         |-                        |Refere-se ao usuário de login do sistema, conforme consulta na base de usuários do 
+                                                                                                                                  CADE via protocolo LDAP, configurado na aplicação Key Cloack.                                |                            
+|E-mail            |Alfanumérico    |Sim          |-                        |-                         |-                        |Refere-se ao endereço eletrônico do usuário do sistema, conforme consulta na base de usuários 
+                                                                                                                                  do CADE via protocolo LDAP, configurado na aplicação Key Cloack.                             |                                                   
+|Unidade Principal |Alfanumérico    |Não          |RN014                    |-                         |-                        |Refere-se a unidade de origem que o usuário pertence.                                        |
+|Visualizar        |Botão           | -           |-                        | -                        | -                       |Permite ao usuário visualizar os dados cadastrados sobre o usuário do sistema.               |                                              
+|Editar            |Botão           | -           |                         | -                        | -                       |Permite ao usuário visualizar os dados cadastrados sobre o usuário do sistema.               |                           
+|Permissões        |Botão           | -           |                         | -                        | -                       |Permite ao usuário atribuir permissões ao usuário do sistema.                                | 
+
+         
+          
+   

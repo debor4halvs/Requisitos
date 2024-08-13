@@ -1,0 +1,36 @@
+h1. US003 Visualizar Usuário 
+
+*Como* usuário SIG que possui permissão no módulo "SIG - Sistema Integrado de Gestão" 
+*Quero* visualizar usuário
+*Para* ver todas as informações do usuário.
+
+----
+ 
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Nome da funcionalidade_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ *Cenário 2:"Visualizar Usuário"*   
+
+*Quando* usuário clica na opção visualizar representada pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/472/T028-icone-visualizar-list.png!
+*Então* sistema apresenta as informações do usuário
+*E* não permite edição de nenhum dos campos apresentados. 
+
+----
+
+ *Cenário 3:"Cancelar"*   
+
+*Dado* que sistema apresenta interface para visualizar dados
+*Quando* usuário clica em "Cancelar"
+*Então* sistema limpa as modificações realizadas
+*E* direciona usuário ao passo anterior de onde foi chamado.
+
+----
+
+h2. Protótipos
+
+!https://redmine.cade.gov.br/attachments/download/3314/T017%20-%20Manter%20Usu%C3%A1rio%20-%20Visualizar.png!

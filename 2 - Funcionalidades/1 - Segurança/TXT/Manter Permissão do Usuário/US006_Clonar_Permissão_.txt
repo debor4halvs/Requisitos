@@ -1,0 +1,84 @@
+h1. US006 Clonar Permissão 
+
+
+**Como** usuário com permissões no módulo de Segurança
+**Quero** clonar um perfil
+**Para** que seja possível reutilizá-lo como base para criação de um novo perfil
+
+----
+
+ *Cenário: 1 - Clonar Perfil*
+
+**Dado** que o usuário acesse uma das seguintes funcionalidades:
+ 
+ Funcionalidades 
+ Gerenciar Perfil  
+ Visualizar Perfil
+ Cadastrar Perfil  
+ Editar Perfil        
+
+
+**E** visualize as informações do perfil selecionado
+**Quando** o usuário seleciona a opção "Clonar" 
+**Então** o sistema exibe a tela de Editar Perfil com os campos preenchidos conforme o perfil a ser clonado e habilitados para edição
+
+----
+
+ *Cenário: 2 - Clonar Perfil - Perfil clonado com sucesso*
+    
+**Dado** que o usuário acesse uma das seguintes funcionalidades:
+		
+ Funcionalidades 
+ Gerenciar Perfil  
+ Visualizar Perfil
+ Cadastrar Perfil  
+ Editar Perfil        
+	
+**E** selecione a opção "Clonar" 
+**E** altere uma das informações do perfil
+**E** o usuário selecione a opção "Salvar" 
+**Quando** o sistema identifica que não existe outro perfil com as mesmas informações RN045
+**Então** o sistema cadastra o novo perfil conforme as informações inseridas pelo usuário
+**E** exibe a MSG015
+
+----
+
+ *Cenário: 3 - Clonar Perfil - Perfil não alterado*
+
+Dado que o usuário acesse uma das seguintes funcionalidades:
+		
+ Funcionalidades  
+ Gerenciar Perfil  
+ Visualizar Perfil
+ Cadastrar Perfil  
+ Editar Perfil        
+	
+**E** visualize as informações de um dos perfis selecionados
+**E** selecione a opção Clonar
+**Quando** o usuário seleciona a opção "Salvar" 
+**E** o sistema identifica que não houve alteração no perfil clonado
+**Então** o sistema exibe a MSG016
+
+----
+
+ *Cenário: 4 - Clonar Perfil - Perfil já cadastrado*
+    
+
+**Dado** que o usuário acesse uma das seguintes funcionalidades:
+		
+ Funcionalidades 
+ Gerenciar Perfil  
+ Visualizar Perfil
+ Cadastrar Perfil  
+ Editar Perfil        
+	
+**E** visualize as informações de um dos perfis selecionados
+**E** altere as informações do perfil
+**E** selecione a opção "Clonar" 
+**Quando** o usuário seleciona a opção "Salvar" 
+**E** o sistema identifica que já existe outro perfil com as mesmas informações RN045
+**Então** o sistema exibe a MSG016
+
+----
+
+h2. Protótipos

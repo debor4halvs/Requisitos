@@ -1,0 +1,34 @@
+h1. US006 Definir Campos Órgão 
+
+h2. +Campos do Cadastro+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD               |_.Coluna BD                  |_.Comentário                                                                              |
+|Nome              |Alfanumérico    |Sim          |Somente letras e números|sig_tb_seguranca_orgao    |ds_nome VARCHAR (255)        |Refere-se ao nome do órgão.                                                               
+                                                                                                                                     Neste contexto, é o nome do órgão organização principal ao qual as unidades estão subordinadas|                                                        
+|Sigla             |Alfanumérico    |Não          |Somente letras e números|sig_tb_seguranca_orgao    |sg_orgao VARCHAR (9)         |Refere-se a forma abreviada e conveniente de se referir a algo mais
+                                                                                                                                     longo. Neste contexto é a sigla do órgão.                                                 |
+|Código            |Alfanumérico    |Sim          |Somente letras e números|sig_tb_seguranca_orgao    |cd_orgao INT (9)             |Refere-se ao código de identificação do órgão.                                            |                    
+|Cancelar          |Botão           |-            |                        |                          |                             |Permite ao usuário do sistema retornar a uma tela anterior.                               |                                                                                              
+|Salvar            |Botão           |-            |                        |                          |                             |Permite ao usuário do sistema gravar o registro do órgão.                                 |
+
+h2. +Campos do Filtrar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD               |_.Coluna BD                  |_.Comentário                                                                              |
+|Nome              |Alfanumérico    |Sim          |Somente letras e números|sig_tb_seguranca_orgao    |ds_nome VARCHAR (255)        |Refere-se ao nome do órgão.                                                               
+                                                                                                                                     Neste contexto, é o nome do órgão organização principal ao qual as unidades estão subordinadas|                                                        
+|Sigla             |Alfanumérico    |Não          |Somente letras e números|sig_tb_seguranca_orgao    |sg_orgao VARCHAR (9)         |Refere-se a forma abreviada e conveniente de se referir a algo mais
+                                                                                                                                     longo. Neste contexto é a sigla do órgão.                                                 |
+|Código            |Alfanumérico    |Sim          |Somente letras e números|sig_tb_seguranca_orgao    |cd_orgao INT (9)             |Refere-se ao código de identificação do órgão.                                            |                        
+|Cancelar          |Botão           |-            |                        |                          |                             |Permite ao usuário do sistema retornar a uma tela anterior.                               |                                                                                              
+|Salvar            |Botão           |-            |                        |                          |                             |Permite ao usuário do sistema gravar o registro do feriado.                               |
+
+h2. +Campos do Listar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD               |_.Coluna BD                  |_.Comentário                                                                              |
+|Nome              |Alfanumérico    |Sim          |Somente letras e números|sig_tb_seguranca_orgao    |ds_nome VARCHAR (255)        |Refere-se ao nome do órgão.                                                               
+                                                                                                                                     Neste contexto, é o nome do órgão organização principal ao qual as unidades estão subordinadas|                                                        
+|Sigla             |Alfanumérico    |Não          |Somente letras e números|sig_tb_seguranca_orgao    |sg_orgao VARCHAR (9)         |Refere-se a forma abreviada e conveniente de se referir a algo mais
+                                                                                                                                     longo. Neste contexto é a sigla do órgão.                                                 |
+|Código            |Alfanumérico    |Sim          |DD/MM/AAAA              |sig_tb_seguranca_orgao    |cd_orgao INT (9)             |Refere-se a data do feriado.                                                              |       
+|Cancelar          |Botão           |-            |                        |                          |                             |Permite ao usuário do sistema retornar a uma tela anterior.                               |                                                                                              
+|Salvar            |Botão           |-            |                        |                          |                             |Permite ao usuário do sistema gravar o registro do feriado.                               |

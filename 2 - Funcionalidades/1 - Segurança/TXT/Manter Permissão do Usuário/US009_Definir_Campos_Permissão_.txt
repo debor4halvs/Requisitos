@@ -1,0 +1,33 @@
+h1. US009 Definir Campos Permissão 
+
+
+h2. +Campos do Cadastro+
+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação             |_.Tabela BD               |_.Coluna BD              |_.Comentário                                                                                 |
+|Órgão             |Lista           |Não          |Sigla + Nome do órgão    |-                         |-                        |Refere-se a lista com sigla concatenada com o nome do órgão, parametrizados no sistema na 
+                                                                                                                                  Entidade Órgão.                                                                              |
+|Módulo            |Lista           |Não          |-                        |-                         |-                        |Refere-se a lista com nome do(s) módulo(s) do sistema, parametrizados no KeyCloack.          |                                                
+|Perfil            |Lista           |Não          |-                        |-                         |-                        |Refere-se a lista com nome do perfil, parametrizados no sistema na  Entidade Perfil.         |
+|Permissão por:    |Grupo de Opções |Não          |Valores:
+                                                   Unidade
+                                                   Plano Estratégico        
+                                                   Nenhum                   |-                         |-                        |Refere-se aos tipos de permissão que podem ser criadas onde por:
+                                                                                                                                  Unidade - O sistema lista todas as unidades subordinadas ao Órgão. 
+                                                                                                                                  Planejamento Estratégico - O sistema lista todos os planos estratégicos cadastrados no módulo 
+                                                                                                                                  Planejamento Estratégico.                                                                    
+                                                                                                                                  Nenhum - Nenhuma lista é apresentada.                                                        | 
+|Data Inicial      |Data            |Não          |Preenchida automaticamente
+                                                   pelo sistema. Não pode ser alterada. |-                         |             |Refere-se a data de criação da permissão.                                                    |
+|Data Final        |Data            |Não          |-                        |-                         |-                        |Refere-se a Data final de validade da permissão                                              |
+|Filtrar           |Botão           | -           |-                        | -                        | -                       |Permite ao usuário selecionar critérios específicos para restringir ou limitar os dados 
+                                                                                                                                 apresentados.                                                                                 |     
+|Limpar            |Botão           | -           |                         | -                        | -                       |Permite ao usuário apagar as informações inseridas.                                          |  
+
+
+h2. +Campos do Filtrar+  
+
+
+h2. +Campos do Resultado do Listar+        
+   
+
