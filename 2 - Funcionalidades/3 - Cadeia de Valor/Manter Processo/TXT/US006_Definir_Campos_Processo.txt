@@ -1,0 +1,59 @@
+h1. US006 Definir Campos Processo
+
+h2. +Campos do Cadastro+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD               |_.Coluna BD                  |_.Comentário                                                                              |
+|Nome do Processo  |Alfanumérico    |Sim          |-                       |-                         |-                            |Refere-se ao nome do feriado.                                                             
+                                                                                                                                     No contexto da cadeia de valor Definir o processo de um macroprocesso para a cadeia de 
+                                                                                                                                     valor envolve detalhar as principais etapas e subprocessos que compõem cada macroprocesso. 
+                                                                                                                                     Este detalhamento é crucial para entender como cada parte do macroprocesso contribui para 
+                                                                                                                                     o valor final entregue ao cliente.                                                        |
+|Descrição         |Alfanumérico    |Não          |-                       |-                         |-                            |Refere-se a descrição do tipo, um relato que busca transmitir informações 
+                                                                                                                                     detalhadas sobre o processo.                                                              |  
+|Macroprocesso     |Alfanumérico    |Sim          |-                       |-                         |-                            |Refere-se a lista de macroprocesso.                                                          
+                                                                                                                                     No contexto da cadeia de valor, é uma visão de alto nível das principais atividades e 
+                                                                                                                                     processos que uma organização executa para criar valor. Estes macroprocessos abrangem as 
+                                                                                                                                     etapas críticas desde a aquisição de insumos até a entrega final ao cliente, bem como as 
+                                                                                                                                     atividades de suporte necessárias para garantir eficiência e qualidade em todas as fases. | 
+|Limpar            |Botão           |-            |                        |                          |                             |Desfazer preenchimento de campos.                                                         |                                                                                              
+|Cancelar          |Botão           |-            |                        |                          |                             |Permite ao usuário do sistema retornar a uma tela anterior.                               |                                                                                              
+|Salvar            |Botão           |-            |                        |                          |                             |Permite ao usuário do sistema gravar o registro em um banco de dados.                     |       
+
+h2. +Campos do Filtrar+   
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD               |_.Coluna BD                  |_.Comentário                                                                              |
+|Nome do Processo  |Alfanumérico    |Não          |-                       |-                         |-                            |Refere-se ao nome do feriado.                                                             
+                                                                                                                                     No contexto da cadeia de valor Definir o processo de um macroprocesso para a cadeia de 
+                                                                                                                                     valor envolve detalhar as principais etapas e subprocessos que compõem cada macroprocesso. 
+                                                                                                                                     Este detalhamento é crucial para entender como cada parte do macroprocesso contribui para 
+                                                                                                                                     o valor final entregue ao cliente.                                                        |
+|Macroprocesso     |Alfanumérico    |Sim          |-                       |-                         |-                            |Refere-se a lista de macroprocesso.                                                          
+                                                                                                                                     No contexto da cadeia de valor, é uma visão de alto nível das principais atividades e 
+                                                                                                                                     processos que uma organização executa para criar valor. Estes macroprocessos abrangem as 
+                                                                                                                                     etapas críticas desde a aquisição de insumos até a entrega final ao cliente, bem como as 
+                                                                                                                                     atividades de suporte necessárias para garantir eficiência e qualidade em todas as fases. | 
+|Limpar            |Botão           |-            |                        |                          |                             |Desfazer preenchimento de campos.                                                         |                                                                                              
+|Filtrar           |Botão           |-            |                        |                          |                             |Permite ao usuário do sistema retornar a uma tela anterior.                               |                                                                                              
+
+
+h2. +Campos do Resultado do Listar+   
+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD               |_.Coluna BD                  |_.Comentário                                                                              |
+|Nome do Processo  |Alfanumérico    |Sim          |-                       |-                         |-                            |Refere-se ao nome do feriado.                                                             
+                                                                                                                                     No contexto da cadeia de valor Definir o processo de um macroprocesso para a cadeia de 
+                                                                                                                                     valor envolve detalhar as principais etapas e subprocessos que compõem cada macroprocesso. 
+                                                                                                                                     Este detalhamento é crucial para entender como cada parte do macroprocesso contribui para 
+                                                                                                                                     o valor final entregue ao cliente.                                                        |
+|Macroprocesso     |Alfanumérico    |Sim          |-                       |-                         |-                            |Refere-se a lista de macroprocesso.                                                          
+                                                                                                                                     No contexto da cadeia de valor, é uma visão de alto nível das principais atividades e 
+                                                                                                                                     processos que uma organização executa para criar valor. Estes macroprocessos abrangem as 
+                                                                                                                                     etapas críticas desde a aquisição de insumos até a entrega final ao cliente, bem como as 
+                                                                                                                                     atividades de suporte necessárias para garantir eficiência e qualidade em todas as fases. | 
+|Visualizar        |Botão           |-            |                        |                          |                             |Permite ao usuário explorar detalhes de um item sem comprometer a experiência geral do 
+                                                                                                                                     usuário.                                                                                  |                                                                                              
+|Editar            |Botão           |-            |                        |                          |                             |Permite ao usuário modificar ou ajustar informações existentes.                           |                                                                                              
+|Excluir           |Botão           |-            |                        |                          |                             |Permite ao usuário remover permanentemente um item, dado ou conteúdo da interface.        |      
+
+
+

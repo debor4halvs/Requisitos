@@ -1,0 +1,45 @@
+h1. US006 Definir Campos Macroprocesso
+
+h2. +Campos do Cadastro+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD               |_.Coluna BD                  |_.Comentário                                                                              |
+|Nome              |Alfanumérico    |Sim          |-                       |-                         |-                            |Refere-se ao nome do macrprocesso.                                                          
+                                                                                                                                     No contexto da cadeia de valor, é uma visão de alto nível das principais atividades e 
+                                                                                                                                     processos que uma organização executa para criar valor. Estes macroprocessos abrangem as 
+                                                                                                                                     etapas críticas desde a aquisição de insumos até a entrega final ao cliente, bem como as 
+                                                                                                                                     atividades de suporte necessárias para garantir eficiência e qualidade em todas as fases. | 
+|Tipo              |Lista           |Sim          |-                       |-                         |-                            |Refere-se ao nome da tipologia para o macroproceso.                                       |                                                                                                                                                            
+|Descrição         |Alfanumérico    |Não          |-                       |-                         |-                            |Refere-se a descrição do macroprocesso, um relato que busca transmitir informações 
+                                                                                                                                     detalhadas sobre o macroprocesso.                                                         |
+|Limpar            |Botão           |-            |                        |                          |                             |Permite ao usuário apagar as informações inseridas.                                       |                                                                                              
+|Cancelar          |Botão           |-            |                        |                          |                             |Permite ao usuário do sistema retornar a uma tela anterior.                               |                                                                                              
+|Salvar            |Botão           |-            |                        |                          |                             |Permite ao usuário do sistema gravar o registro em um banco de dados.                     |
+
+h2. +Campos do Filtrar+   
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD               |_.Coluna BD                  |_.Comentário                                                                              |
+|Tipo              |Lista           |Não          |-                       |-                         |-                            |Refere-se ao nome da tipologia para o macroproceso.                                       |   
+|Nome              |Alfanumérico    |Não          |-                       |-                         |-                            |Refere-se ao nome do macrprocesso.                                                          
+                                                                                                                                     No contexto da cadeia de valor, é uma visão de alto nível das principais atividades e 
+                                                                                                                                     processos que uma organização executa para criar valor. Estes macroprocessos abrangem as 
+                                                                                                                                     etapas críticas desde a aquisição de insumos até a entrega final ao cliente, bem como as 
+                                                                                                                                     atividades de suporte necessárias para garantir eficiência e qualidade em todas as fases. |                                                                                                                                                          
+|Limpar            |Botão           |-            |                        |                          |                             |Permite ao usuário apagar as informações inseridas.                                       |                                                                                              
+|Filtrar           |Botão           |-            |                        |                          |                             |Permite ao usuário selecionar critérios específicos para restringir ou limitar os 
+                                                                                                                                     dados apresentados.                                                                       |                                                                                              
+
+
+h2. +Campos do Resultado do Listar+ 
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD               |_.Coluna BD                  |_.Comentário                                                                              |
+|Nome              |Alfanumérico    |Sim          |-                       |-                         |-                            |Refere-se ao nome do macrprocesso.                                                          
+                                                                                                                                     No contexto da cadeia de valor, é uma visão de alto nível das principais atividades e 
+                                                                                                                                     processos que uma organização executa para criar valor. Estes macroprocessos abrangem as 
+                                                                                                                                     etapas críticas desde a aquisição de insumos até a entrega final ao cliente, bem como as 
+                                                                                                                                     atividades de suporte necessárias para garantir eficiência e qualidade em todas as fases. | 
+|Tipo              |Alfanumérico    |Sim          |-                       |-                         |-                            |Refere-se ao nome da tipologia para o macroproceso.                                       |
+|Visualizar        |Botão           |-            |                        |                          |                             |Permite ao usuário explorar detalhes de um item sem comprometer a experiência geral do 
+                                                                                                                                     usuário.                                                                                  |                                                                                              
+|Editar            |Botão           |-            |                        |                          |                             |Permite ao usuário modificar ou ajustar informações existentes.                           |                                                                                              
+|Excluir           |Botão           |-            |                        |                          |                             |Permite ao usuário remover permanentemente um item, dado ou conteúdo da interface.        |           
+

@@ -1,0 +1,114 @@
+h1. US002 Listar Macroprocesso
+
+
+*Como* usuário SIG que possui permissão no módulo "Cadeia de Valor" 
+*Quero* listar Macroprocesso
+*Para* visualizar todos os macroprocessos cadastrados.
+
+----
+ 
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Menu>Nome da funcionalidade_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ *Cenário 2:"Filtrar por Tipo"*   
+
+*Dado* que sistema apresenta filtros 
+*Quando* usuário escolhe uma sigla na lista, vide [[US006_Definir_Campos_Macroprocesso]] 
+*E* clica em filtrar
+*Então* sistema recupera e exibe somente os registros para a sigla informada.
+
+----
+
+ *Cenário 3:"Filtrar por Descrição"*   
+
+*Dado* que sistema apresenta filtros
+*Quando* usuário escolhe um nome na lista recuperada, vide [[US006_Definir_Campos_Macroprocesso]] 
+*E* clica em filtrar
+*Então* sistema recupera e exibe somente os registros para o nome informado.
+
+----
+
+
+ *Cenário 4:"Limpar Filtros"*   
+
+*Dado* que usuário preencheu ao menos um filtro exibido
+*Quando* usuário clica em "Limpar"
+*Então* sistema desfaz todas as seleções existentes.
+
+----
+
+ *Cenário 5:"Apresentar Opção Adicionar Macroprocesso"*   
+
+*Dado* que sistema apresenta botão "Adicionar"
+*Quando* usuário clica na opção Adicionar
+*Então* sistema direciona usuário para interface [[US001_Incluir_Macroprocesso]] 
+
+---
+
+ *Cenário 6:"Apresentar Opção Visualizar Macroprocesso"*   
+
+*Dado* que usuário cadastrou ao menos um Macroprocesso
+*Quando* usuário clica na opção visualizar
+*Então* sistema direciona usuário para interface [[US005_Visualizar_Macroprocesso]] 
+
+----
+
+ *Cenário 7:"Apresentar Opção Editar Macroprocesso"*   
+
+*Dado* que usuário cadastrou ao menos um macroprocesso
+*Quando* usuário clica na opção editar
+*Então* sistema direciona usuário para interface [[US003_Editar_Macroprocesso]] 
+
+----
+
+ *Cenário 8:"Apresentar Opção Excluir Macroprocesso"*   
+
+*Dado* que usuário cadastrou ao menos macroprocesso
+*Quando* usuário clica na opção excluir 
+*Então* sistema direciona usuário para interface [[US004_Excluir_Macroprocesso]] 
+
+----
+
+
+ *Cenário 9:"Listar 10 Primeiros Registros por Padrão"*   
+
+*Dado* que sistema apresenta lista de Macroprocesso
+*Quando* usuário entra na interface
+*Então* sistema apresenta por padrão os 10 primeiros registros cadastrados e pagina os demais.
+
+
+----
+
+ *Cenário 10:"Ordenar Alfabeticamente Resultado da Lista"*   
+
+*Dado* que o usuário cadastrou uma ou mais macroprocessoo(s)
+*Quando* a lista for apresentada
+*Então* o sistema ordena a lista alfabeticamente pelo macroprocesso.
+
+----
+
+ *Cenário 11:"Resultado da Listagem"*   
+
+*Dado* que usuário cadastrou ao menos um macroprocesso
+*Quando* o usuário entra na lista
+*Então* o sistema exibe as informações, vide [[US006_Definir_Campos_Macroprocesso]] 
+
+----
+
+ *Cenário 12:"Apresentar Cabeçalho da Tabela por Padrão"*   
+
+*Dado* que usuário ainda não cadastrou um macroprocesso
+*Quando* o usuário entra no Listar
+*Então* o sistema exibe as informações de cabeçalho por padrão.
+
+----
+ 
+h2. Protótipos
+
+!clipboard-202407311059-tu3ja.png!
+
