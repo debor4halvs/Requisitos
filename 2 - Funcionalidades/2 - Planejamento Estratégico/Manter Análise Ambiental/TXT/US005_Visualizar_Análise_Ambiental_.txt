@@ -1,0 +1,40 @@
+h1. US005 Visualizar Análise Ambiental 
+
+*Como* usuário SIG que possui permissão no módulo "Planejamento Estratégico" 
+*Quero* visualizar análise ambiental
+*Para* manter lista de análise ambiental atualizada.
+
+----
+ 
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Menu>Nome da funcionalidade_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ *Cenário 2:"Visualizar Análise Ambiental"*   
+
+*Dado* que usuário entra no Listar 
+*E* informa um plano estratégico
+*Quando* usuário clica na opção visualizar 
+*Então* sistema apresenta formulário de cadastro preenchido 
+*E* não permite edição de nenhum dos campos apresentados. 
+
+----
+
+ *Cenário 3:"Opção Cancelar"*   
+
+*Dado* que o usuário visualizou análise ambiental
+*Quando* usuário clica na opção cancelar
+*Então* sistema retorna a interface anterior.
+
+----
+
+h2. Protótipos
+
+
+!clipboard-202408051710-wpf0t.png!
+
+!clipboard-202408051710-molgm.png!

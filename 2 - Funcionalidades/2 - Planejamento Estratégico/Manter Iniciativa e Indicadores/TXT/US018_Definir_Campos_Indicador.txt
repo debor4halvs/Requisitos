@@ -1,0 +1,15 @@
+h1. US018 Definir Campos Indicador
+
+
+h2. +Campos do Cadastrar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação                                    |_.Tabela BD                    |_.Coluna BD                 |_.Comentário                                                       |   
+|Nome              |Alfanumérico    |Sim          |                                                |-                              |-                           |No contexto de um plano estratégico, um indicador é uma métrica usada 
+                                                                                                                                                                 para medir o progresso em direção aos objetivos estratégicos da organização. 
+                                                                                                                                                                 Ele fornece dados quantificáveis para avaliar o desempenho e orientar a 
+                                                                                                                                                                 tomada de decisões.
+                                                                                                                                                                 Ex: Satisfação do Cliente - Pontuação média em pesquisas de satisfação.|                          
+|Adicionar         |Botão           |-            |                                                |-                              |-                           |Permite ao usuário do sistema gravar o registro do indicador.          |                                                             
+
+
+----

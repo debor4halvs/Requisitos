@@ -1,0 +1,98 @@
+h1. US001 Listar Iniciativas e Indicadores
+
+*Como* usuário SIG que possui permissão no módulo "Planejamento Estratégico" 
+*Quero* listar iniciativas e indicadores vinculados a cada objetivo, do plano estratégico escolhido
+*Para* consultar o desempenho das unidades gerenciais em suas atividades.
+
+----
+ 
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Menu>Nome da funcionalidade_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ *Cenário 2:"Selecionar Plano Estratégico"*   
+
+*Dado* que sistema apresenta campo plano estratégico, vide [[US016_Definir_Campos_Iniciativas_e_Indicadores]] 
+*Quando* usuário seleciona um plano estratégico
+*Então* sistema inclui Iniciativas e Indicadores, somente no(s) objetivo(s) para o plano estratégico informado.
+
+----
+ 
+ *Cenário 3:"Listar Iniciativas e Indicadores"*   
+
+*Quando* usuário seleciona um plano estratégico na lista
+*Então* sistema apresenta lista de perspectiva(s) vinculada(s) ao plano estratégico escolhido
+*E* dentro da(s) perspectiva(s) lista o(s) objetivo(s) vinculado(s) ao plano estratégico escolhido
+*E* dentro do(s) Objetivo(s) lista as iniciativas cadastradas (se houver), bem como opção para incluir iniciativa, vide [[US002_Incluir_Iniciativa]] 
+*E* dentro do(s) Objetivo(s) lista os indicadores cadastrados (se houver), bem como opção para incluir indicador, vide [[US011_Incluir_Indicador]] 
+
+----
+
+ *Cenário 4:"Ordenar Alfabeticamente Resultado da Lista"*   
+
+*Dado* que o sistema apresenta o painel de iniciativa(s) e indicadore(s)
+*Quando* a lista for apresentada
+*Então* o sistema ordena alfabeticamente pelo Nome da Perspectiva.
+
+----
+
+ *Cenário 5:"Expandir lista"*   
+
+*Quando* usuário clica em expandir, representado pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/745/T044-icone-expandir-lista.png!
+*Então* o sistema exibe os itens filhos vinculados ao item pai.
+
+----
+
+ *Cenário 6:"Recolher lista"*   
+
+*Quando* usuário clica em recolher, representado pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/746/T045-icone-recolher-lista.png!
+*Então* o sistema esconde os itens filhos vinculados ao item pai.
+
+----
+
+ *Cenário 7:"Efeito de Rolagem Infinita na Estrutura de Perspectivas"*   
+
+*Dado* que existam mais de 30 perspectivas a serem listadas
+*Quando* usuário entra na lista
+*Então* o sistema exibe todos os registros existentes com rolagem infinita na página.
+
+----
+
+ *Cenário 8:"Listar 30 (trinta) Registros Por Padrão"*   
+
+*Quando* usuário entra na lista
+*Então* o sistema exibe até no máximo trinta registros dentro de cada hierarquia
+*E* apresenta opção "Mostrar Mais" quando a quantidade é maior que 30.
+
+----
+
+
+ *Cenário 9:"Apresentar Opção Exibir Mais"*   
+
+*Dado* que usuário entra na lista com mais de 30 registros
+*Quando* usuário clica na opção "Exibir mais..."
+*Então* o sistema expande a listagem exibindo os próximos 30 (trinta) registros
+*E* mostra a opção "Exibir mais", caso ainda existam registros a serem exibidos.
+
+----
+
+ *Cenário 10:"Apresentar Estrutura Da Primeira Perspectiva e Objetivo Aberta Por Padrão"*   
+
+*Dado* que usuário entra no Listar Iniciativas e Indicadores
+*Quando* usuário entra na interface
+*Então* o sistema exibe a primeira Perspectiva com o seu primeiro Objetivo com as iniciativas e indicadores expandidos.
+
+
+----
+
+ 
+h2. Protótipos
+
+
+!clipboard-202408051211-prfbw.png!
+
+

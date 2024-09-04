@@ -1,0 +1,36 @@
+h1. US009 Detalhar Projeto da Iniciativa
+
+
+*Como* usuário SIG que possui permissão no módulo "Planejamento Estratégico" 
+*Quero* detalhar projeto da iniciativa
+*Para* manter detalhes do projeto atualizado
+
+----
+ 
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Menu>Nome da funcionalidade_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ *Cenário 2:"Detalhar Projeto da Iniciativa"*   
+
+*Dado* que usuário escolheu detalhar o projeto de uma iniciativa
+*E* o sistema apresenta formulário, vide [[US010_Definir_Campos_Projeto_da_Iniciativa]] 
+*Quando* usuário clica na opção Salvar
+*Então* o sistema grava o detalhamento do projeto em um banco de dados.
+
+----
+ 
+ *Cenário 3:"Guardar Ação do Usuário em Histórico"*   
+
+*Quando* usuário conclui ação cadastrar
+*Então* sistema registra as informações em um banco de dados conforme RN006, vide [[13_-_Regras_de_Negócio]]. 
+
+----
+
+h2. Protótipos
+
+!clipboard-202408081553-ttc9u.png!

@@ -1,0 +1,93 @@
+h1. US006 Definir Campos Plano Estratégico 
+
+h2. +Campos do Cadastro+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD               |_.Coluna BD              |_.Comentário                                                                                 |
+|Código            |Alfanumérico    |Não          |Somente letras e números|sig_tb_pe_plano           |cd_plano VARCHAR (9)     |Refere-se ao código do plano  estratégico.                                                   |                                 
+|Sigla             |Alfanumérico    |Não          |Somente letras e números|sig_tb_pe_plano           |sg_plano VARCHAR (9)     |Refere-se a forma abreviada e conveniente de se referir a algo mais
+                                                                                                                                 longo. Neste contexto é a sigla do plano estratégico.                                        |                                
+|Situação          |Caixa de Seleção|Sim          |Domínio fixo em banco
+                                                     ::Selecione::         
+                                                     Elaboração
+                                                     Execução
+                                                     Concluído
+                                                     Cancelado              |sig_tb_tipo_situacao_plano|id_situacao_plano BIGINT|Refere-se a situação do plano estratégico. Por exemplo: elaboração, execução,
+                                                                                                                                 Concluído, Cancelado;                                                                        |                                                      
+|Nome              |Alfanumérico    |Sim          |Somente letras e números |sig_tb_pe_plano           |ds_nome VARCHAR (255)   |Refere-se ao nome do plano estratégico. No contexto de planejamento estratégico,  o plano 
+                                                                                                                                 estratégico é um documento formal que estabelece os objetivos de longo prazo de uma organização 
+                                                                                                                                 e as estratégias que ela utilizará para alcançá-los. Ele serve como um guia abrangente para as 
+                                                                                                                                 atividades futuras e fornece uma estrutura para a tomada de decisões.                        |  
+|Tipo              |Alfanumérico    |Não          |Somente letras e números |sig_tb_pe_plano           |tp_plano                |Verificar com a área de negócio pois possui comportamento semelhante ao nível.               |                                   
+|Data Inicial      |Data            |Não          |DD/MM/AAAA               |sig_tb_pe_plano           |dt_inicial DATETIME     |Refere-se a data inicial da vigência do plano estratégico.                                   |
+|Data Final        |Data            |Sim          |DD/MM/AAAA               |sig_tb_pe_plano           |dt_final DATETIME       |Refere-se a data final da vigência do plano estratégico.                                     | 
+|Descrição         |Alfanumérico    |Sim          |Somente letras e números |sig_tb_pe_plano           |ds_plano                |Refere-se a descrição do plano estratégico, um relato que busca transmitir informações detalhadas 
+                                                                                                                                 sobre o plano estratégico.                                                                   |                                                                           
+|Unidade de Gestão |Caixa de Seleção|Não          |Seleção única            |tb_sig_unidade_siorg      |id_unidade BIGINT       |Refere-se ao nome da unidade de gestão                                                       |            
+|Nível do Plano    |Caixa de Seleção|Não          |Seleção única            |sig_tb_pe_nivel_plano     |id_nivel_plano INT      |Refere-se ao nível do plano estratégico. No contexto de planejamento estratégico apresenta à 
+                                                                                                                                 hierarquia de planos que uma organização utiliza para direcionar suas estratégias e objetivos 
+                                                                                                                                 em diferentes níveis da organização. Exemplos: Corporativo; Funcional; Departamental; Equipe; 
+                                                                                                                                 Projeto etc.                                                                                 |                                                           
+|Abrangência       |Caixa de Seleção|Não          |Seleção única            |sig_tb_pe_abrangencia     |id_abrangencia INT      |Refere-se a abrangência do plano estratégico. No contexto do planejamento estratégico apresenta
+                                                                                                                                 alcance e à extensão das áreas e elementos que o plano aborda. Exemplos: Organizacional; 
+                                                                                                                                 Horizonte de Tempo etc;                                                                      |                                                                             
+|Missão            |Alfanumérico    |Sim          |Somente letras e números |sig_tb_pe_plano           |ds_missao VARCHAR (3000)|Refere-se a missão do plano estratégico. No contexto do planejamento estratégico apresenta o 
+                                                                                                                                 propósito fundamental ou a razão de ser da organização. Ela responde à pergunta "Por que a 
+                                                                                                                                 organização existe?"                                                                         |
+|Visão             |Alfanumérico    |Sim          |Somente letras e números |sig_tb_pe_plano           |ds_visao VARCHAR (3000) |Refere-se a visão do plano estratégico. No contexto do planejamento estratégico apresenta o 
+                                                                                                                                 que a organização aspira a ser no futuro, geralmente a longo prazo. Ela retrata uma imagem do 
+                                                                                                                                 estado desejado e representa a direção estratégica em que a organização deseja se mover.     |                                                                   
+|Valores           |Alfanumérico    |Não          |Somente letras e números |sig_tb_pe_plano_valores   |ds_nome VARCHAR (255)   |Refere-se ao valor no contexto de uma planeamento estratégico. Apresenta os princípios 
+                                                                                                                                 fundamentais e crenças que orientam o comportamento e as decisões de uma organização. Exemplos: 
+                                                                                                                                 Transparência; Ética; Excelência etc.                                                        |     
+|Salvar            |Botão           | -           | -                       | -                        | -                      |Permite ao usuário do sistema gravar o registro do plano estratégico.                        |                                                                        
+|Cancelar          |Botão           | -           | -                       | -                        | -                      |Permite ao usuário do sistema retornar a uma tela anterior.                                  |                                                                                          
+|Limpar            |Botão           | -           |                         | -                        | -                      |Permite ao usuário apagar as informações inseridas.                                          |                                                                                
+|Adicionar Valor   |Botão           | -           | -                       | -                        | -                      |Permite ao usuário do sistema gravar o registro do valor                                     |                                                                       
+
+
+----
+
+
+h2. +Campos Filtro do Listar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação             |_.Tabela BD               |_.Coluna BD              |_.Comentário                                                                                |
+|Sigla             |Alfanumérico    |Não          |Somente letras e números |sig_tb_pe_plano           |sg_plano VARCHAR (9)     |Refere-se a forma abreviada e conveniente de se referir a algo mais
+                                                                                                                                 longo. Neste contexto é a sigla do plano estratégico.                                        |                                
+|Situação          |Caixa de Seleção|Sim          |Domínio fixo em banco
+                                                     ::Selecione::         
+                                                     Elaboração
+                                                     Execução
+                                                     Concluído
+                                                     Cancelado              |sig_tb_tipo_situacao_plano|id_situacao_plano BIGINT|Refere-se a situação do plano estratégico. Por exemplo: elaboração, execução,
+                                                                                                                                 Concluído, Cancelado;                                                                        |  
+|Tipo              |Alfanumérico    |Não          |Somente letras e números |sig_tb_pe_plano           |tp_plano                |Verificar com a área de negócio pois possui comportamento semelhante ao nível                |                                  
+|Data Inicial      |Data            |Não          |DD/MM/AAAA               |sig_tb_pe_plano           |dt_inicial DATETIME     |Refere-se a data inicial da vigência do plano estratégico.                                   |
+|Data Final        |Data            |Sim          |DD/MM/AAAA               |sig_tb_pe_plano           |dt_final DATETIME       |Refere-se a data final da vigência do plano estratégico.                                     | 
+|Filtrar           |Botão           | -           | -                       | -                        | -                      |Permite ao usuário selecionar critérios específicos para restringir ou limitar os dados 
+                                                                                                                                 apresentados.                                                                                |     
+|Limpar            |Botão           | -           |                         | -                        | -                      |Permite ao usuário apagar as informações inseridas.                                          |            
+ 
+
+----
+
+h2. +Campos do Resultado do Listar+
+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação             |_.Tabela BD               |_.Coluna BD              |_.Comentário                                                                                |
+|Código            |Alfanumérico    |Não          |Somente letras e números |sig_tb_pe_plano           |cd_plano VARCHAR (9)     |Refere-se ao código do plano  estratégico.                                                  |     
+|Situação          |Caixa de Seleção|Sim          |Domínio fixo em banco
+                                                     ::Selecione::         
+                                                     Elaboração
+                                                     Execução
+                                                     Concluído
+                                                     Cancelado              |sig_tb_tipo_situacao_plano|id_situacao_plano BIGINT|Refere-se a situação do plano estratégico. Por exemplo: elaboração, execução,
+                                                                                                                                 Concluído, Cancelado;                                                                        |                                                      
+|Nome              |Alfanumérico    |Sim          |Somente letras e números |sig_tb_pe_plano           |ds_nome VARCHAR (255)   |Refere-se ao nome do plano estratégico. No contexto de planejamento estratégico,  o plano 
+                                                                                                                                 estratégico é um documento formal que estabelece os objetivos de longo prazo de uma organização 
+                                                                                                                                 e as estratégias que ela utilizará para alcançá-los. Ele serve como um guia abrangente para as 
+                                                                                                                                 atividades futuras e fornece uma estrutura para a tomada de decisões.                        |  
+|Visualizar        |Botão           | -           | -                       | -                        | -                      |Permite ao usuário explorar detalhes de um item sem comprometer a experiência geral do 
+                                                                                                                                 usuário.                                                                                     |
+|Editar            |Botão           | -           | -                       | -                        | -                      |Permite ao usuário modificar ou ajustar informações existentes.                              |                                                             
+|Excluir           |Botão           | -           | -                       | -                        | -                      |Permite ao usuário remover permanentemente um item, dado ou conteúdo da interface.           |                                                                                               
+ 

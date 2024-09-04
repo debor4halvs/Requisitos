@@ -1,0 +1,114 @@
+h1. US002 Listar Unidade de Medida
+
+*Como* usuário SIG que possui permissão no módulo "Planejamento Estratégico" 
+*Quero* listar as unidades de medidas
+*Para* visualizar todas as unidades de medidas cadastradas.
+
+----
+ 
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Menu>Nome da funcionalidade_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ *Cenário 2:"Filtrar por Sigla"*   
+
+*Dado* que sistema apresenta filtros 
+*Quando* usuário escolhe uma sigla na lista, vide [[US006_Definir_Campos_Unidade_de_Medida]] 
+*E* clica em filtrar
+*Então* sistema recupera e exibe somente os registros para a sigla informada.
+
+----
+
+ *Cenário 3:"Filtrar por Nome"*   
+
+*Dado* que sistema apresenta filtros
+*Quando* usuário escolhe um nome na lista recuperada, vide [[US006_Definir_Campos_Unidade_de_Medida]] 
+*E* clica em filtrar
+*Então* sistema recupera e exibe somente os registros para o nome informado.
+
+----
+
+
+ *Cenário 4:"Limpar Filtros"*   
+
+*Dado* que usuário preencheu ao menos um filtro exibido
+*Quando* usuário clica em "Limpar"
+*Então* sistema desfaz todas as seleções existentes.
+
+----
+
+ *Cenário 5:"Apresentar Opção Adicionar Unidade de Medida"*   
+
+*Dado* que sistema apresenta botão "Adicionar"
+*Quando* usuário clica na opção Adicionar
+*Então* sistema direciona usuário para interface [[US001_Incluir_Unidade_de_Medida]] 
+
+---
+
+ *Cenário 6:"Apresentar Opção Visualizar Unidade de Medida"*   
+
+*Dado* que usuário cadastrou ao menos uma unidade de medida
+*Quando* usuário clica na opção visualizar representada pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/472/T028-icone-visualizar-list.png!
+*Então* sistema direciona usuário para interface [[US005_Visualizar_Unidade_de_Medida]] 
+
+----
+
+ *Cenário 7:"Apresentar Opção Editar Unidade de Medida"*   
+
+*Dado* que usuário cadastrou ao menos uma unidade de medida
+*Quando* usuário clica na opção editar representada pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/471/T029-icone-editar-list.png!
+*Então* sistema direciona usuário para interface [[US003_Editar_Unidade_de_Medida]] 
+
+----
+
+ *Cenário 8:"Apresentar Opção Excluir Unidade de Medida"*   
+
+*Dado* que usuário cadastrou ao menos uma unidade de medida
+*Quando* usuário clica na opção excluir representada pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/473/T030-icone-lixeira-list.png!
+*Então* sistema direciona usuário para interface [[US004_Excluir_Unidade_de_Medida]].
+
+----
+
+
+ *Cenário 9:"Listar 10 Primeiros Registros por Padrão"*   
+
+*Dado* que sistema apresenta lista de unidades de medidas
+*Quando* usuário entra na interface
+*Então* sistema apresenta por padrão os 10 primeiros registros cadastrados e pagina os demais.
+
+
+----
+
+ *Cenário 10:"Ordenar Alfabeticamente Resultado da Lista"*   
+
+*Dado* que o usuário cadastrou uma ou mais registros
+*Quando* a lista for apresentada
+*Então* o sistema ordena a lista alfabeticamente pelo Nome da Unidade de Medida.
+
+----
+
+ *Cenário 11:"Resultado da Listagem"*   
+
+*Dado* que usuário cadastrou ao menos uma unidade de medida
+*Quando* o usuário entra na lista
+*Então* o sistema exibe as informações, vide [[US006_Definir_Campos_Unidade_de_Medida]].
+
+----
+
+ *Cenário 12:"Apresentar Cabeçalho da Tabela por Padrão"*   
+
+*Dado* que usuário ainda não cadastrou uma unidade de medida
+*Quando* o usuário entra no Listar
+*Então* o sistema exibe as informações de cabeçalho por padrão.
+
+----
+ 
+h2. Protótipos
+
+!clipboard-202408011641-b031e.png!
+
+

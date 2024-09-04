@@ -1,0 +1,122 @@
+h1. US002 Listar Análise Ambiental 
+
+
+*Como* usuário SIG que possui permissão no módulo "Planejamento Estratégico" 
+*Quero* listar análise ambiental
+*Para* visualizar todas as análises ambientais
+
+----
+ 
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Menu>Nome da funcionalidade_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ *Cenário 2:"Selecionar Plano Estratégico"*   
+
+*Dado* que sistema apresenta campo plano estratégico, vide [[US006_Definir_Campos_Análise_Ambiental_]] 
+*Quando* usuário seleciona um plano estratégico
+*Então* sistema lista somente as informações do plano estratégico informado.
+
+----
+
+ *Cenário 3:"Filtrar por Descrição"*   
+
+*Dado* que sistema apresenta filtros
+*Quando* usuário digita no campo, vide [[US006_Definir_Campos_Análise_Ambiental_]] 
+*E* clica em filtrar
+*Então* sistema recupera e exibe somente os registros para a descrição informada.
+
+----
+
+
+ *Cenário 4:"Filtrar por Data"*   
+
+*Dado* que sistema apresenta filtros
+*Quando* usuário escolhe uma data no calendário, vide [[US006_Definir_Campos_Análise_Ambiental_]]
+*E* clica em filtrar
+*Então* sistema recupera e exibe somente os registros para a data informada.
+
+----
+
+ *Cenário 5:"Limpar Filtros"*   
+
+*Dado* que usuário preencheu ao menos um filtro exibido
+*Quando* usuário clica em "Limpar"
+*Então* sistema desfaz todas as seleções existentes.
+
+----
+
+ *Cenário 6:"Apresentar Opção Adicionar Objetivo"*   
+
+*Dado* que sistema apresenta botão "Adicionar"
+*Quando* usuário clica na opção Adicionar
+*Então* sistema direciona usuário para interface [[US001_Incluir_Análise_Ambiental_]] 
+
+---
+
+ *Cenário 7:"Apresentar Opção Visualizar Análise Ambiental"*   
+
+*Dado* que usuário cadastrou ao menos uma análise ambiental
+*Quando* usuário clica na opção visualizar representada pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/472/T028-icone-visualizar-list.png!
+*Então* sistema direciona usuário para interface [[US005_Visualizar_Análise_Ambiental_]] 
+
+----
+
+ *Cenário 8:"Apresentar Opção Editar Análise Ambiental"*   
+
+*Dado* que usuário cadastrou ao menos uma Análise Ambiental
+*Quando* usuário clica na opção editar representada pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/471/T029-icone-editar-list.png!
+*Então* sistema direciona usuário para interface [[US003_Editar_Análise_Ambiental_]] 
+
+----
+
+ *Cenário 9:"Apresentar Opção Excluir Análise Ambiental"*   
+
+*Dado* que usuário cadastrou ao menos uma Análise Ambiental
+*Quando* usuário clica na opção excluir representada pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/473/T030-icone-lixeira-list.png!
+*Então* sistema direciona usuário para interface [[US004_Excluir_Análise_Ambiental_]] 
+
+----
+
+
+ *Cenário 10:"Listar 5 Primeiros Registros por Padrão"*   
+
+*Dado* que sistema apresenta lista de Análise Ambiental
+*Quando* usuário entra na interface
+*Então* sistema apresenta por padrão os 5 primeiros registros cadastrados e pagina os demais.
+
+
+----
+
+ *Cenário 11:"Ordenar Alfabeticamente Resultado da Lista"*   
+
+*Dado* que o usuário cadastrou uma ou mais Análise(s) Ambiental(is)
+*Quando* a lista for apresentada
+*Então* o sistema ordena a lista alfabeticamente pela Descrição.
+
+----
+
+ *Cenário 12:"Resultado da Listagem"*   
+
+*Dado* que usuário cadastrou ao menos uma análise ambiental
+*Quando* o usuário entra na lista
+*Então* o sistema exibe as informações, vide [[US006_Definir_Campos_Análise_Ambiental_]]
+
+----
+
+ *Cenário 13:"Apresentar Cabeçalho da Tabela por Padrão"*   
+
+*Dado* que usuário ainda não cadastrou uma Análise Ambiental
+*Quando* o usuário entra no Listar
+*Então* o sistema exibe as informações de cabeçalho por padrão.
+
+----
+
+h2. Protótipos
+
+
+!clipboard-202408051653-iouxt.png!

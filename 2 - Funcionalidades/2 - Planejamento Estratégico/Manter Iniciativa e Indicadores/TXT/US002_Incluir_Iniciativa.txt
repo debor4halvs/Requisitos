@@ -1,0 +1,84 @@
+h1. US002 Incluir Iniciativa
+
+*Como* usuário SIG que possui permissão no módulo "Planejamento Estratégico" 
+*Quero* incluir iniciativa
+*Para* manter lista de iniciativas atualizada
+
+----
+ 
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Menu>Nome da funcionalidade_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ *Cenário 2:"Selecionar Plano Estratégico"*   
+
+*Dado* que sistema apresenta campo plano estratégico, vide [[US016_Definir_Campos_Iniciativas_e_Indicadores]] 
+*Quando* usuário seleciona um plano estratégico
+*Então* sistema inclui Iniciativas e Indicadores, somente no(s) objetivo(s) para o plano estratégico informado.
+
+---- 
+
+ *Cenário 3:"Habilitar Botão Adicionar Iniciativa"*   
+
+*Dado* que usuário entra no painel de iniciativas e indicadores 
+*E* seleciona uma perspectiva
+*E* dentro da perspectiva seleciona um objetivo
+*E* dentro do objetivo entra na opção iniciativas
+*Quando* usuário informa um nome para iniciativa
+*Então* o sistema habilita o botão Adicionar da iniciativa
+
+----
+
+ *Cenário 4:"Adicionar Iniciativa"*   
+
+*Dado* que usuário entra no painel de iniciativas e indicadores 
+*E* seleciona uma perspectiva
+*E* dentro da perspectiva seleciona um objetivo
+*E* dentro do objetivo entra na opção iniciativas
+*E* digita um nome para a iniciativa
+*Quando* usuário clica em "Adicionar"
+*Então* o sistema guarda o registro da iniciativa em um banco de dados
+*E* apresenta mensagem MSG001, vide [[15_-_Mensagens]].
+
+----
+
+ *Cenário 4:"Expandir lista"*   
+
+*Dado* que usuário incluiu iniciativa
+*Quando* usuário clica em expandir, representado pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/745/T044-icone-expandir-lista.png!
+*Então* o sistema exibe os itens filhos vinculados ao item pai.
+
+----
+
+ *Cenário 5:"Recolher lista"*   
+
+*Dado* que usuário incluiu iniciativa
+*Quando* usuário clica em recolher, representado pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/746/T045-icone-recolher-lista.png!
+*Então* o sistema esconde os itens filhos vinculados ao item pai.
+
+----
+
+ *Cenário 6:"Opção Incluir Projeto"*   
+
+*Dado* que usuário incluiu iniciativa
+*Quando* usuário clica na opção incluir projeto, representado pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/736/T031-icone-projeto.png!
+*Então* o sistema direciona usuário para interface [[US006_Incluir_Projeto_da_Iniciativa]] 
+
+----
+ 
+ *Cenário 7:"Guardar Ação do Usuário em Histórico"*   
+
+*Quando* usuário conclui ação cadastrar
+*Então* sistema registra as informações em um banco de dados conforme RN006, vide [[13_-_Regras_de_Negócio]].
+
+----
+
+Protótipos
+
+
+!clipboard-202408051507-rxfgl.png!
+

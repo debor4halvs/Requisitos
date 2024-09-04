@@ -1,0 +1,67 @@
+h1. US006 Definir Campos Solicitação de Cancelamento
+
+h2. +Campos do filtro listar+
+
+
+|_.Nome do Campo      |_.Tipo do Campo |_.Obrigatório|_.Observação                                   |_.Tabela BD     |_.Coluna BD          |_.Comentário                                                          | 
+|Perspectiva          |Alfanumérico    |Sim          |Lista pré definida, conforme escolha 
+                                                      do planejamento estratégico                    |-               |-                    |Refere-se ao nome da perspectiva. No contexto de um planejamento 
+                                                                                                                                             estratégico as perspectivas são diferentes dimensões ou áreas-chave 
+                                                                                                                                             que são consideradas ao desenvolver e implementar estratégias 
+                                                                                                                                             organizacionais. Ela ajuda a organizar e estruturar os objetivos 
+                                                                                                                                             estratégicos em categorias que refletem diferentes aspectos da operação 
+                                                                                                                                             ou do ambiente de uma organização. Exemplos: Financeira, Cliente, 
+                                                                                                                                             Aprendizado etc.                                                      |
+|Objetivo 
+Estratégico           |Alfanumérico    |Sim          |Lista pré definida, conforme escolha 
+                                                      do planejamento estratégico                    |-               |-                    |Refere-se ao nome do objetivo estratégico. No contexto de um 
+                                                                                                                                             planejamento estratégico , refere-se à uma declaração clara e específica 
+                                                                                                                                             que uma organização estabelece para direcionar suas ações e esforços em 
+                                                                                                                                             direção a metas de longo prazo. Esses objetivos são fundamentais para o 
+                                                                                                                                             processo de planejamento estratégico e ajudam a orientar a organização em 
+                                                                                                                                             direção à sua visão e missão. Exemplos: Crescimento de Receitas; Eficiência
+                                                                                                                                             Operacional, Inovação; Responsabilidade Social e Ambiental; Desenvolvimento                                                                                                                                              
+                                                                                                                                             de Talentos etc.                                                      |                                               
+|Status da 
+Solicitação           |Alfanumérico    |Sim          |Lista pré definida: 
+                                                      Aguardando aprovação;
+                                                      Aprovado;
+                                                      Reprovado;                                     |                |                     |Refere-se a situação de análise da solicitação para cancelamento do 
+                                                                                                                                             indicador aberta.                                                     |                                                                      
+|Limpar               |Botão           |-            |-                                              |-               |-                    |Permite ao usuário apagar as informações inseridas/preenchidas.       |                                      
+|Filtrar              |Botão           |-            |-                                              |-               |-                    |Permite ao usuário selecionar critérios específicos para restringir ou 
+                                                                                                                                             limitar os dados apresentados.                                        |
+
+h2. +Campos do resultado do listar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação                                      |_.Tabela BD                           |_.Coluna BD                 |_.Comentário                             | 
+|UG                |Alfanumérico    |Sim          |Recuperado automaticamente, conforme escolha 
+                                                   do indicador na interface lançamento de resultados|-               |-                    |Refere-se a unidade gerencial do responsável pela solicitação. 
+                                                                                                                                             Todo usuário do sistema está vinculado à uma unidade através da atribuição 
+                                                                                                                                             de permissão.                                                         |
+|Objetivo 
+Estratégico        |Alfanumérico    |Sim          |-                                                 |-               |-                    |Refere-se ao nome do objetivo estratégico. No contexto de um 
+                                                                                                                                             planejamento estratégico , refere-se à uma declaração clara e específica 
+                                                                                                                                             que uma organização estabelece para direcionar suas ações e esforços em 
+                                                                                                                                             direção a metas de longo prazo. Esses objetivos são fundamentais para o 
+                                                                                                                                             processo de planejamento estratégico e ajudam a orientar a organização em 
+                                                                                                                                             direção à sua visão e missão. Exemplos: Crescimento de Receitas; Eficiência
+                                                                                                                                             Operacional, Inovação; Responsabilidade Social e Ambiental; Desenvolvimento                                                                                                                                              
+                                                                                                                                             de Talentos etc.                                                      |                    
+|Indicador         |Alfanumérico    |Sim          |-                                                 |-               |-                    |Um indicador estratégico é uma métrica específica usada para medir o 
+                                                                                                                                             desempenho em relação aos objetivos estratégicos de uma organização. 
+                                                                                                                                             Essencial para monitorar o progresso, avaliar o sucesso e orientar decisões 
+                                                                                                                                             estratégicas, ele traduz a visão e missão da organização em metas 
+                                                                                                                                             quantificáveis, facilitando a gestão dos resultados esperados.        |
+|Data              |Alfanumérico    |Sim          |-                                                 |-               |-                    |Data em que foi aberta a solicitação pelo requerente, via 
+                                                                                                                                             Lançamento de Resultados.                                             |
+|Solicitante       |Alfanumérico    |Sim          |-                                                 |-               |-                    |Nome do requerente responsável pela abertura da solicitação.          |
+|Justificativa     |Alfanumérico    |Sim          |-                                                 |-               |-                    |Relato que fundamenta a abertura da solicitação.                      |
+|Status da 
+solicitação        |Alfanumérico    |Sim          |-                                                 |-               |-                    |Refere-se a situação de análise da solicitação.                       |
+|Justificativa da
+Resposta           |Alfanumérico    |Não          |-                                                 |-               |-                    |Relato que fundamenta o resultado da análise da solicitação.          |
+|Nota              |Botão           |-            |-                                                 |-               |-                    |Permite ao responsável pela análise incluir notas à solicitação.      |
+|Aprovar           |Botão           |-            |-                                                 |-               |-                    |Permite ao responsável pela análise aprovar a solicitação.            |
+|Reprovar          |Botão           |-            |-                                                 |-               |-                    |Permite ao responsável pela análise reprovar a solicitação.           |
+|Excluir           |Botão           |-            |-                                                 |-               |-                    |Permite ao responsável pela análise excluir a solicitação.            |

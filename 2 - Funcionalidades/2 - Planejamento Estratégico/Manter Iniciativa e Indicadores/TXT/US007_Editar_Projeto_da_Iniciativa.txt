@@ -1,0 +1,42 @@
+h1. US007 Editar Projeto da Iniciativa
+
+
+*Como* usuário SIG que possui permissão no módulo "Planejamento Estratégico" 
+*Quero* editar projeto da iniciativa
+*Para* manter lista de projetos da iniciativa atualizada.
+
+----
+ 
+ *Cenário 1:"Editar Iniciativa Botão Salvar"*   
+
+*Dado* que usuário escolhe iniciativa
+*E* clica na opção editar, representado pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/471/T029-icone-editar-list.png!
+*E* que sistema apresenta interface de edição
+*E* realiza modificação do nome apresentado
+*Quando* usuário clica no botão Salvar
+*Então* sistema atualiza o registro na base de dados
+*E* sistema apresenta ao usuário mensagem MSG001, vide [[15_-_Mensagens]] 
+
+----
+
+ *Cenário 2:"Editar Iniciativa Botão Cancelar"*   
+
+*Dado* que usuário escolhe iniciativa
+*E* clica na opção editar, representado pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/471/T029-icone-editar-list.png!
+*E* que o sistema apresenta interface de edição
+*Quando* usuário clica no botão cancelar
+*Então* sistema fecha interface de edição
+*E* retorna ao passo anterior.
+
+----
+
+ *Cenário 3:"Guardar Ação do Usuário em Histórico"*   
+
+*Quando* usuário conclui ação editar
+*Então* sistema registra as informações em um banco de dados conforme RN006, vide [[13_-_Regras_de_Negócio]].
+
+----
+
+h2. Protótipos
+
+!clipboard-202408081600-3i78y.png!

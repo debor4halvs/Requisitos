@@ -1,0 +1,67 @@
+h1. US006 Definir Campos Objetivo
+
+h2. +Campos do Cadastrar+
+
+|_.Nome do Campo     |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD             |_.Coluna BD                    |_.Comentário                                                                                |
+|Plano Estratégico   |Lista           |Sim          |RN002                   |sig_tb_pe_objetivo      |id_plano BIGINT                |Refere-se ao identificador único do registro do plano estratégico. Neste contexto, o usuário
+                                                                                                                                      informa via interface em qual plano estratégico será cadastrado / vinculado o objetivo.      |
+|Código              |Alfanumérico    |Não          |Não visível ao usuário. |sig_tb_pe_objetivo      |cd_objetivo VARCHAR (9)        |Refere-se ao código de identificação do objetivo.                                           |            
+|Sigla               |Alfanumérico    |Não          |Preenchido automaticamente conforme 
+                                                     plano estratégico escolhido. 
+                                                     Se não houver sigla informada 
+                                                     no cadastro do plano, campo 
+                                                     não deve ser exibido.   |sig_tb_pe_objetivo      |sg_objetivo VARCHAR (9)        |Refere-se a forma abreviada e conveniente de se referir a algo mais longo. Neste contexto 
+                                                                                                                                       é a sigla do objetivo.                                                                      |
+|Nome                |Alfanumérico    |Sim          |Somente letras e números|sig_tb_pe_objetivo      |ds_nome_objetivo VARCHAR (255) |Refere-se ao nome do objetivo.
+                                                                                                                                       No contexto de planejamento estratégico, refere-se à uma declaração clara e específica que uma
+                                                                                                                                       organização estabelece para direcionar suas ações e esforços em direção a metas de longo prazo.
+                                                                                                                                       Esses objetivos são fundamentais para o processo de planejamento estratégico e ajudam a orientar
+                                                                                                                                       a organização em direção à sua visão e missão. Exemplos: Crescimento de Receitas; Eficiência
+                                                                                                                                       Operacional, Inovação; Responsabilidade Social e Ambiental; Desenvolvimento de Talentos etc.|                        
+|Descrição           |Alfanumérico    |Não          |Somente letras e números|sig_tb_pe_objetivo      |cd_nivel_plano VARCHAR (9)     |Refere-se a descrição do objetivo, um relato que busca transmitir informações detalhadas.   |  
+|Nome da Perspectiva |Lista           |Não          |Regra                   |sig_tb_pe_objetivo      |id_perspectiva BIGINT          |Refere-se ao identificador único do registro da perspectiva. Neste contexto, o usuário
+                                                                                                                                      informa via interface em qual perspectiva será cadastrada / vinculada o objetivo.            |
+|Salvar              |Botão           | -           | -                      | -                      | -                             |Permite ao usuário do sistema gravar o registro do objetivo.                                |
+|Cancelar            |Botão           | -           | -                      | -                      | -                             |Permite ao usuário do sistema retornar a uma tela anterior.                                 |                                                              
+
+----
+
+h2. +Campos do Filtro Listar+
+
+|_.Nome do Campo     |_.Tipo do Campo |_.Obrigatório|_.Observação             |_.Tabela BD             |_.Coluna BD                   |_.Comentário                                                                                |
+|Sigla do Objetivo   |Alfanumérico    |Não          |Somente letras e números |sig_tb_pe_objetivo      |sg_objetivo VARCHAR (9)       |Refere-se a forma abreviada e conveniente de se referir a algo mais longo. Neste contexto
+                                                                                                                                       é a sigla do objetivo.                                                                      |
+|Nome do Objetivo    |Alfanumérico    |Não          |Somente letras e números |sig_tb_pe_objetivo      |ds_nome VARCHAR (255)         |Refere-se ao nome do objetivo.
+                                                                                                                                       No contexto de planejamento estratégico, refere-se à uma declaração clara e específica que uma
+                                                                                                                                       organização estabelece para direcionar suas ações e esforços em direção a metas de longo prazo.
+                                                                                                                                       Esses objetivos são fundamentais para o processo de planejamento estratégico e ajudam a orientar
+                                                                                                                                       a organização em direção à sua visão e missão. Exemplos: Crescimento de Receitas; Eficiência
+                                                                                                                                       Operacional, Inovação; Responsabilidade Social e Ambiental; Desenvolvimento de Talentos etc.|
+|Sigla da Perspectiva|Alfanumérico    |Não          |Somente letras e números |sig_tb_pe_perspectiva   |sg_perspectiva VARCHAR (255)  |Refere-se a forma abreviada e conveniente de se referir a algo mais longo. Neste contexto
+                                                                                                                                       é a sigla da perspectiva.                                                                   |            
+|Nome da Perspectiva |Alfanumérico    |Não          |Somente letras e números |sig_tb_pe_perspectiva   |ds_nome VARCHAR (255)         |Refere-se a forma abreviada e conveniente de se referir a algo mais longo. Neste contexto 
+                                                                                                                                       é a sigla da perspectiva.                                                                   |
+|Filtrar             |Botão           | -           | -                       | -                      | -                            |Permite ao usuário do sistema gravar o registro do objetivo.                                |
+|Cancelar            |Botão           | -           | -                       | -                      | -                            |Permite ao usuário do sistema retornar a uma tela anterior.                                 |                                                              
+ 
+----
+
+h2. +Campos do Resultado do Listar+
+
+|_.Nome do Campo     |_.Tipo do Campo |_.Obrigatório|_.Observação             |_.Tabela BD             |_.Coluna BD                   |_.Comentário                                                                                |
+|Sigla do Objetivo   |Alfanumérico    |Não          |Somente letras e números |sig_tb_pe_objetivo      |sg_objetivo VARCHAR (9)       |Refere-se a forma abreviada e conveniente de se referir a algo mais longo. Neste contexto
+                                                                                                                                       é a sigla do objetivo.                                                                      |
+|Nome do Objetivo    |Alfanumérico    |Não          |Somente letras e números |sig_tb_pe_objetivo      |ds_nome VARCHAR (255)         |Refere-se ao nome do objetivo.
+                                                                                                                                       No contexto de planejamento estratégico, refere-se à uma declaração clara e específica que uma
+                                                                                                                                       organização estabelece para direcionar suas ações e esforços em direção a metas de longo prazo.
+                                                                                                                                       Esses objetivos são fundamentais para o processo de planejamento estratégico e ajudam a orientar
+                                                                                                                                       a organização em direção à sua visão e missão. Exemplos: Crescimento de Receitas; Eficiência
+                                                                                                                                       Operacional, Inovação; Responsabilidade Social e Ambiental; Desenvolvimento de Talentos etc.|
+|Sigla da Perspectiva|Alfanumérico    |Não          |Somente letras e números |sig_tb_pe_perspectiva   |sg_perspectiva VARCHAR (255)  |Refere-se a forma abreviada e conveniente de se referir a algo mais longo. Neste contexto
+                                                                                                                                       é a sigla da perspectiva.                                                                   |            
+|Nome da Perspectiva |Alfanumérico    |Não          |Somente letras e números |sig_tb_pe_perspectiva   |ds_nome VARCHAR (255)         |Refere-se a forma abreviada e conveniente de se referir a algo mais longo. Neste contexto 
+                                                                                                                                       é a sigla da perspectiva.                                                                   |
+|Visualizar          |Botão           | -           | -                       | -                      | -                            |Permite ao usuário explorar detalhes de um item sem comprometer a experiência geral
+                                                                                                                                       do usuário.                                                                                 |
+|Editar              |Botão           | -           | -                       | -                      | -                            |Permite ao usuário modificar ou ajustar informações existentes.                             |                                                              
+|Excluir             |Botão           | -           | -                       | -                      | -                            |Permite ao usuário remover permanentemente um item, dado ou conteúdo da interface.          |

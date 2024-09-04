@@ -1,0 +1,60 @@
+h1. US006 Definir Campos Unidade de Medida
+
+h2. +Campos do Cadastro+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD                        |_.Coluna BD                      |_.Comentário                                                                              |
+|Sigla             |Alfanumérico    |Sim          |Somente letras e números|sig_tb_pe_unidade_medida           |sg_unidade_medida VARCHAR (3000) |Refere-se a forma abreviada e conveniente de se referir a algo mais longo. Neste contexto 
+                                                                                                                                                  é a sigla da unidade de medida.                                                           | 
+|Nome              |Alfanumérico    |Sim          |Somente letras e números|sig_tb_pe_unidade_medida           |ds_nome VARCHAR (255)            |Refere-se ao nome da unidade de medida. 
+                                                                                                                                                  No contexto do indicador de um plano estratégico, refere-se à escala ou métrica específica 
+                                                                                                                                                  usada para quantificar e avaliar o fenômeno ou o desempenho que está sendo monitorado. 
+                                                                                                                                                  A escolha da unidade de medida é crucial para garantir que o indicador seja compreendido 
+                                                                                                                                                  corretamente e que os dados coletados sejam interpretáveis. Exemplos: hora, porcentagem, 
+                                                                                                                                                  taxa de aprovação etc.                                                                    |                        
+|Descrição         |Alfanumérico    |Sim          |Somente letras e números|sig_tb_pe_unidade_medida           |ds_unidade_medida VARCHAR (3000)  |Refere-se a descrição da unidade  de medida, um relato que busca transmitir informações 
+                                                                                                                                                   detalhadas. É fundamental definir claramente a unidade de medida ao criar um 
+                                                                                                                                                   indicador, pois isso determina como os dados serão coletados, interpretados e comunicados. 
+                                                                                                                                                   Além disso, a escolha da unidade de medida deve ser relevante para os objetivos e contexto 
+                                                                                                                                                   específicos do indicador.                                                                |                    
+|Cancelar          |Botão           | -           | -                      | -                                 | -                               |Permite ao usuário do sistema retornar a uma tela anterior.                               |                                                              
+|Salvar            |Botão           | -           | -                      | -                                 | -                               |Permite ao usuário do sistema gravar o registro da unidade de medida.                     |                                                                      
+
+----
+
+h2. +Campos do filtrar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD                        |_.Coluna BD                      |_.Comentário                                                                              | 
+|Sigla             |Alfanumérico    |Sim          |Somente letras e números|sig_tb_pe_unidade_medida           |sg_unidade_medida VARCHAR (3000) |Refere-se a forma abreviada e conveniente de se referir a algo mais longo. Neste contexto 
+                                                                                                                                                  é a sigla da unidade de medida.                                                           | 
+|Nome              |Alfanumérico    |Sim          |Somente letras e números|sig_tb_pe_unidade_medida           |ds_nome VARCHAR (255)            |Refere-se ao nome da unidade de medida. 
+                                                                                                                                                  No contexto do indicador de um plano estratégico, refere-se à escala ou métrica específica 
+                                                                                                                                                  usada para quantificar e avaliar o fenômeno ou o desempenho que está sendo monitorado. 
+                                                                                                                                                  A escolha da unidade de medida é crucial para garantir que o indicador seja compreendido 
+                                                                                                                                                  corretamente e que os dados coletados sejam interpretáveis. Exemplos: hora, porcentagem, 
+                                                                                                                                                  taxa de aprovação etc.                                                                    | 
+|Filtrar           |Botão           | -           | -                      | -                                 | -                               |Permite ao usuário selecionar critérios específicos para restringir ou limitar os dados
+                                                                                                                                                  apresentados na interface.                                                                |     
+|Limpar            |Botão           | -           | -                      | -                                 | -                               |Permite ao usuário apagar as informações inseridas na interface.                          |                                                              
+
+----
+
+h2. +Campos do Resultado do Listar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD               |_.Coluna BD                      |_.Comentário                                                                              | 
+|Sigla             |Alfanumérico    |Sim          |Somente letras e números|sig_tb_pe_unidade_medida  |sg_unidade_medida VARCHAR (3000) |Refere-se a forma abreviada e conveniente de se referir a algo mais longo. Neste contexto 
+                                                                                                                                         é a sigla da unidade de medida.                                                           | 
+|Nome              |Alfanumérico    |Sim          |Somente letras e números|sig_tb_pe_unidade_medida  |ds_nome VARCHAR (255)            |Refere-se ao nome da unidade de medida. 
+                                                                                                                                         No contexto do indicador de um plano estratégico, refere-se à escala ou métrica específica 
+                                                                                                                                         usada para quantificar e avaliar o fenômeno ou o desempenho que está sendo monitorado. 
+                                                                                                                                         A escolha da unidade de medida é crucial para garantir que o indicador seja compreendido 
+                                                                                                                                         corretamente e que os dados coletados sejam interpretáveis. Exemplos: hora, porcentagem, 
+                                                                                                                                         taxa de aprovação etc.                                                                    |                        
+|Descrição         |Alfanumérico    |Sim          |Somente letras e números|sig_tb_pe_unidade_medida  |ds_unidade_medida VARCHAR (3000)  |Refere-se a descrição da unidade  de medida, um relato que busca transmitir informações 
+                                                                                                                                          detalhadas. É fundamental definir claramente a unidade de medida ao criar um 
+                                                                                                                                          indicador, pois isso determina como os dados serão coletados, interpretados e comunicados. 
+                                                                                                                                          Além disso, a escolha da unidade de medida deve ser relevante para os objetivos e contexto 
+                                                                                                                                          específicos do indicador.                                                                |                                                                              
+|Visualizar        |Botão           | -           | -                      | -                        | -                               |Permite ao usuário explorar detalhes de um item sem comprometer a experiência geral do
+                                                                                                                                         usuário.                                                                                  |     
+|Editar            |Botão           | -           | -                      | -                        | -                               |Permite ao usuário modificar ou ajustar informações existentes.                           |                                                                 
+|Excluir           |Botão           | -           | -                      | -                        | -                               |Permite ao usuário remover permanentemente um item, dado ou conteúdo da interface.        |

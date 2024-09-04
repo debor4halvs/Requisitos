@@ -1,0 +1,37 @@
+h1. US005 Visualizar Abrangência 
+
+*Como* usuário SIG que possui permissão no módulo "Planejamento Estratégico" 
+*Quero* visualizar plano estratégico
+*Para* manter lista de plano estratégico atualizada.
+
+----
+ 
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Nome da funcionalidade_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ *Cenário 2:"Visualizar Abrangência"*   
+
+*Quando* usuário clica na opção visualizar representada pelo ícone "olho"
+*Então* sistema apresenta formulário de cadastro preenchido 
+*E* não permite edição de nenhum dos campos apresentados. 
+
+----
+
+ *Cenário 3:"Opção Cancelar"*   
+
+*Dado* que o usuário visualizou abrangência
+*Quando* usuário clica na opção cancelar
+*Então* sistema retorna a interface anterior.
+
+----
+
+
+h2. Protótipos
+
+!clipboard-202408011634-clbbp.png!
+

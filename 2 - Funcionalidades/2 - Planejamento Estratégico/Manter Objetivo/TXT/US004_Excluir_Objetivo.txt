@@ -1,0 +1,54 @@
+h1. US004 Excluir Objetivo
+
+*Como* usuário SIG que possui permissão no módulo "Planejamento Estratégico" 
+*Quero* excluir objetivo
+*Para* manter lista de objetivo atualizada.
+
+----
+ 
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Menu>Nome da funcionalidade_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ *Cenário 2:"Excluir Objetivo Botão Excluir"*   
+
+*Dado* que usuário entra no Listar Objetivo
+*E* clica na opção excluir
+*E* que sistema apresenta mensagem MSG002, vide [[15_-_Mensagens]] 
+*Quando* usuário clica no botão excluir 
+*Então* sistema apaga o registro na base de dados
+*E* sistema apresenta ao usuário mensagem MSG001, vide [[15_-_Mensagens]] 
+
+
+----
+
+ *Cenário 3:"Excluir Objetivo Botão Cancelar"*   
+
+*Dado* que usuário entra no Listar Objetivo
+*E* clica na opção excluir
+*E* que o sistema apresenta mensagem MSG002, vide [[15_-_Mensagens]] 
+*Quando* usuário clica no botão cancelar
+*Então* sistema fecha caixa de mensagem 
+*E* retorna ao passo anterior.
+
+----
+
+
+ *Cenário 4:"Guardar Ação do Usuário em Histórico"*   
+
+*Dado* que o usuário cadastrou objetivo
+*Quando* usuário conclui ação
+*Então* sistema registra as informações em um banco de dados conforme RN006, vide [[13_-_Regras_de_Negócio]] 
+
+----
+
+h2. Protótipos
+
+!clipboard-202408051159-m0pr7.png!
+
+----
+

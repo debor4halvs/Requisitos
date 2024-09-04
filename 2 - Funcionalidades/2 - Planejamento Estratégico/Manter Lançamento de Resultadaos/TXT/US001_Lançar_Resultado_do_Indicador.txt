@@ -1,0 +1,169 @@
+h1. US001 Lançar Resultado do Indicador
+
+*Como* usuário SIG que possui permissão no módulo "Planejamento Estratégico" 
+*Quero* lançar resultados do indicador
+*Para* dar transparência em relação ao desempenho da organização.
+
+----
+ 
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Menu>Nome da funcionalidade_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ *Cenário 2:"Selecionar Plano Estratégico"*   
+
+*Dado* que sistema apresenta campo plano estratégico conforme RN010, vide [[13_-_Regras_de_Negócio]].
+*Quando* usuário seleciona um plano estratégico
+*Então* sistema permite as ações, somente para o plano estratégico informado.
+
+----
+ 
+ *Cenário 3:"Listar Indicadores Estratégicos"*   
+
+*Quando* usuário seleciona um plano estratégico na lista
+*Então* sistema apresenta lista de perspectiva(s) vinculada(s) ao plano estratégico escolhido
+*E* dentro da(s) perspectiva(s) lista o(s) objetivo(s) vinculado(s) ao plano estratégico escolhido
+*E* dentro do(s) Objetivo(s) lista os indicadores cadastrados (se houver), bem como apresenta as opções:
+Visualizar indicador, vide [[US002_Visualizar_Indicador]]; 
+Cancelar indicador, vide [[US003_Cancelar_Indicador]];
+Repactuar indicador, vide [[US006_Repactuar_Indicador]];
+ 
+----
+
+ *Cenário 4:"Ordenar Alfabeticamente Resultado da Lista"*   
+
+*Dado* que o sistema apresenta lista de perspectiva 
+*E* dentro da(s) perspectiva(s) lista o(s) objetivo(s) vinculado(s) 
+*E* dentro do(s) Objetivo(s) lista os indicadores cadastrados (se houver)
+*Quando* a lista for apresentada
+*Então* o sistema ordena alfabeticamente pelo Nome da Perspectiva.
+
+----
+
+ *Cenário 5:"Expandir lista"*   
+
+*Quando* usuário clica em expandir, representado pelo ícone !https://redmine.cade.gov.br/attachments/download/2652/ICON010%20-%20Expandir-lista.png!
+*Então* o sistema exibe os itens filhos vinculados ao item pai.
+
+----
+
+ *Cenário 6:"Recolher lista"*   
+
+*Quando* usuário clica em recolher, representado pelo ícone !https://redmine.cade.gov.br/attachments/download/2653/ICON011%20-%20Recolher-lista.png!
+*Então* o sistema esconde os itens filhos vinculados ao item pai.
+
+----
+
+ *Cenário 7:"Efeito de Rolagem Infinita na Estrutura de Perspectivas"*   
+
+*Dado* que existam mais de 30 perspectivas a serem listadas
+*Quando* usuário entra na lista
+*Então* o sistema exibe todos os registros existentes com rolagem infinita na página.
+
+----
+
+ *Cenário 8:"Listar 30 (trinta) Registros Por Padrão"*   
+
+*Quando* usuário entra na lista
+*Então* o sistema exibe até no máximo trinta registros dentro de cada hierarquia
+*E* apresenta opção "Mostrar Mais" quando a quantidade é maior que 30.
+
+----
+
+
+ *Cenário 9:"Apresentar Opção Exibir Mais"*   
+
+*Dado* que usuário entra na lista com mais de 30 registros
+*Quando* usuário clica na opção "Exibir mais..."
+*Então* o sistema expande a listagem exibindo os próximos 30 (trinta) registros
+*E* mostra a opção "Exibir mais", caso ainda existam registros a serem exibidos.
+
+----
+
+ *Cenário 10:"Apresentar Estrutura Da Primeira Perspectiva Com Toda Hierarquia Expandida Por Padrão"*   
+
+
+*Dado* que o sistema apresenta lista de perspectiva 
+*E* dentro da(s) perspectiva(s) lista o(s) objetivo(s) vinculado(s) 
+*E* dentro do(s) Objetivo(s) lista os indicadores cadastrados (se houver)
+*Quando* usuário entra na interface
+*Então* o sistema exibe a primeira Perspectiva expandida
+*E* exibe o primeiro objetivo expandida
+*E* exibe o primeiro indicador expandida;
+
+
+----
+
+ *Cenário 11:"Apresentar Opção Visualizar Indicador"*   
+
+*Dado* que houve cadastro de indicador
+*Quando* usuário clica na opção visualizar indicador representada pelo ícone !https://redmine.cade.gov.br/attachments/download/2643/ICON001%20-%20Visualizar.png!
+*Então* sistema direciona usuário para interface Visualizar
+
+----
+
+ *Cenário 12:"Apresentar Opção Cancelar Indicador"*   
+
+*Dado* que usuário cadastrou ao menos um feriado
+*Quando* usuário clica na opção Cancelar representada pelo ícone !https://redmine.cade.gov.br/attachments/download/2644/ICON002%20-%20Cancelar-indicador.png!
+*Então* sistema direciona usuário para interface [[US003_Cancelar_Indicador]].
+
+----
+
+ *Cenário 13:"Apresentar Opção Repactuar Indicador"*   
+
+*Dado* que usuário cadastrou ao menos um feriado
+*Quando* usuário clica na opção Cancelar representada pelo ícone !https://redmine.cade.gov.br/attachments/download/2645/ICON003%20-%20Repactuar-indicador.png!
+*Então* sistema direciona usuário para interface [[US006_Repactuar_Indicador]].
+
+----
+
+ *Cenário 14:"Apresentar Mensagem (Tooltip) ao Passar Mouse no Detalhar Indicador"*   
+
+*Dado* que sistema apresenta ações representadas por ícones
+*Quando* usuário passa o mouse sobre a opção detalhar, representada pelo ícone !!
+*Então* sistema exibe ao usuário MSG, vide [[15_-_Mensagens]] 
+
+----
+
+ *Cenário 15:"Apresentar Mensagem (Tooltip) ao Passar Mouse no Cancelar"*   
+
+*Dado* que sistema apresenta ações representadas por ícones
+*Quando* usuário passa o mouse sobre a opção cancelar, representada pelo ícone !!
+*Então* sistema exibe ao usuário MSG, vide [[15_-_Mensagens]] 
+
+----
+
+ *Cenário 16:"Apresentar Mensagem (Tooltip) ao Passar Mouse no Repactuar"*   
+
+*Dado* que sistema apresenta ações representadas por ícones
+*Quando* usuário passa o mouse sobre a opção repactuar
+*Então* sistema exibe ao usuário MSG, vide [[15_-_Mensagens]] 
+
+----
+
+ *Cenário 17:"Inserir Meta Realizada Para Indicador"*   
+
+*Dado* que sistema exibe as metas dos indicadores
+*E* que o campo Realizado referente a meta que já foi realizada na presente data, é editável
+*Quando* usuário informa um valor 
+*Então* o sistema salva automaticamente valor digitado no respectivo campo.
+
+----
+
+ **Cenário 18:"Exceção Para Nenhuma Meta Cadastrada Para o Indicador"** 
+
+**Dado** que usuário entra na interface Lançamento de Resultados
+*E* lista os indicadores cadastrados
+**Quando** usuário entra em um indicador para qual não houve cadastro de Metas
+**Então** sistema apresenta ao usuário MSG014, vide [[15_-_Mensagens]] 
+
+----
+ 
+h2. Protótipos
+
+!clipboard-202408060929-f2r3q.png!

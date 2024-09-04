@@ -1,0 +1,44 @@
+h1. US006 Definir Campos Nível do Plano Estratégico
+
+h2. +Campos do Cadastro+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD               |_.Coluna BD                 |_.Comentário                                                                              |
+|Código            |Alfanumérico    |Sim          |Somente letras e números|sig_tb_pe_nivel_plano     |cd_nivel_plano VARCHAR (9)  |Refere-se ao código de identificação do nível do plano estratégico                        |    
+|Nome              |Alfanumérico    |Sim          |Somente letras e números|sig_tb_pe_nivel_plano     |ds_nome VARCHAR (255)       |Refere-se ao nome do nível do plano estratégico. Apresenta à 
+                                                                                                                                    hierarquia de planos que uma organização utiliza para direcionar suas  
+                                                                                                                                    estratégias e objetivos em diferentes níveis da  organização. Exemplos Corporativo; 
+                                                                                                                                    Funcional; Departamental; Equipe; Projeto etc.                                            |    
+|Descrição         |Alfanumérico    |Não          |Somente letras e números|sig_tb_pe_nivel_plano     |ds_descricao VARCHAR (3000) |Refere-se ao detalhamento do nível do plano estratégico.                                  |     
+|Cancelar          |Botão           |-            |                        |                          |                            |Permite ao usuário do sistema retornar a uma tela anterior.                               |                                                                                              
+|Salvar            |Botão           |-            |                        |                          |                            |Permite ao usuário do sistema gravar o registro do nível do plano estratégico.            |                                                                                            
+
+----
+
+h2. +Campos do filtrar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD            |_.Coluna BD                |_.Comentário                                                                                  |
+|Código            |Alfanumérico    |Não          |Somente letras e números|sig_tb_pe_nivel_plano  |cd_nivel_plano VARCHAR (9) |Refere-se ao código de identificação do nível do plano estratégico                            | 
+|Nome              |Alfanumérico    |Não          |Somente letras e números|sig_tb_pe_nivel_plano  |ds_nome VARCHAR (255)      |Refere-se ao nome do nível do plano estratégico. Apresenta à 
+                                                                                                                                hierarquia de planos que uma organização utiliza para direcionar suas  
+                                                                                                                                estratégias e objetivos em diferentes níveis da  organização. Exemplos Corporativo; 
+                                                                                                                                Funcional; Departamental; Equipe; Projeto etc.                                                |              
+|Filtrar           |Botão           |-            |                        |                      |                            |Permite ao usuário selecionar critérios específicos para restringir ou limitar os dados 
+                                                                                                                                apresentados.                                                                                 |                                                                                              
+|Limpar            |Botão           |-            |                        |                      |                            |Permite ao usuário apagar as informações inseridas.                                           |                                                                                         
+
+
+----
+
+h2. +Campos do Resultado do Listar+
+
+|_.Nome do Campo    |_.Tipo do Campo |_.Obrigatório|_.Observação               |_.Tabela BD             |_.Coluna BD                   |_.Comentário                                                                      |
+|Código             |Alfanúmerico    |Sim          |Somente letras e números   |sig_tb_pe_nivel_plano   |cd_nivel_plano VARCHAR (9)    |Refere-se ao código de identificação do nível do plano estratégico                |   
+|Nome               |Alfanúmerico    |Sim          |Somente letras e números   |sig_tb_pe_nivel_plano   |ds_nome VARCHAR (255)         |Refere-se ao nome do nível do nível do plano estratégico. Apresenta à 
+                                                                                                                                        hierarquia de planos que uma organização utiliza para direcionar suas  
+                                                                                                                                        estratégias e objetivos em diferentes níveis da  organização. Exemplos Corporativo; 
+                                                                                                                                        Funcional; Departamental; Equipe; Projeto etc.                                     |                        
+|Descrição          |Alfanúmerico    |Não          |Somente letras e números   |sig_tb_pe_nivel_plano   |ds_descricao VARCHAR (3000)   |Refere-se ao detalhamento do nível do plano estratégico.                           |     
+|Visualizar         |Botão           |-            |                           |                        |                              |Permite ao usuário explorar detalhes de um item sem comprometer a experiência geral 
+                                                                                                                                        do usuário.                                                                        |     
+|Editar             |Botão           |-            |                           |                        |                              |Permite ao usuário modificar ou ajustar informações existentes.                    |                                                                                
+|Excluir            |Botão           |-            |                           |                        |                              |Permite ao usuário remover permanentemente um item, dado ou conteúdo da interface. |          

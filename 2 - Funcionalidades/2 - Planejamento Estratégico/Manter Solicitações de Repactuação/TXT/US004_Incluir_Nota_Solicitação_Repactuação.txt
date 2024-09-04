@@ -1,0 +1,32 @@
+h1. US004 Incluir Nota Solicitação Repactuação
+
+*Como* usuário SIG que possui permissão no módulo "Planejamento Estratégico" 
+*Quero* incluir notas na solicitação de repactuação
+*Para* comunicar ao solicitante com comentário ou questionamento.
+
+----
+
+ *Cenário 1:"Incluir Nota de Comentário Para Repactuação"*   
+
+*Dado* que o usuário acionou a opção "Nota"
+*E* sistema apresentou interface para inclusão de comentário
+*Quando* o usuário aciona a opção Salvar
+*Então* o sistema guarda o comentário, seguido do Nome do responsável pela análise e Data do Comentário
+*E* mantém o registro da solicitação
+*E* envia e-mail ao solicitante com a nota. - Verificar fluxo p/ envio de e-mail
+
+------
+
+ *Cenário 2:"Incluir Nota de Comentário Cancelar"*   
+
+*Dado* que o usuário acionou a opção "Nota"
+*E* sistema apresentou interface para inclusão da nota
+*Quando* o usuário aciona a opção Cancelar
+*Então* o sistema retorna para interface de solicitações, vide [[US001_Listar_Solicitação_Repactuação]] 
+
+------
+
+h2. Protótipos
+
+
+!https://redmine.cade.gov.br/attachments/download/2775/T078%20-%20Manter%20Solicita%C3%A7%C3%B5es%20de%20Repactua%C3%A7%C3%A3o%20-%20Nota.png!

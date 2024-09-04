@@ -1,0 +1,45 @@
+h1. US003 Reprovar Solicitação Cancelamento
+
+*Como* usuário SIG que possui permissão no módulo "Planejamento Estratégico" 
+*Quero* reprovar solicitação de cancelamento
+*Para* que solicitações improcedentes não sejam aceitas.
+
+----
+
+ *Cenário 1:"Reprovar Cancelamento Justificativa"*   
+
+*Dado* que o usuário acionou a opção "Reprovar"
+*E* sistema apresentou interface para inclusão da justificativa
+*Quando* o usuário aciona a opção Salvar
+*Então* o sistema mantém o registro da solicitação
+*E* atualiza o campo Status da Solicitação para "Reprovado".
+*E* apresenta mensagem MSG019, vide [[15_-_Mensagens]] 
+
+------
+
+ *Cenário 2:"Reprovar Cancelamento Justificativa Cancelar"*   
+
+*Dado* que o usuário acionou a opção "Reprovar"
+*E* sistema apresentou interface para inclusão da justificativa
+*Quando* o usuário aciona a opção Cancelar
+*Então* o sistema mantém o registro da solicitação
+*E* retorna para interface de solicitações, vide [[US001_Listar_Solicitação_Cancelamento]] 
+
+------
+ 
+ **Cenário 3:"Guardar Ação do Usuário em Histórico"**   
+
+**Quando** usuário conclui ação de salvar
+**Então** sistema registra as informações em um banco de dados conforme RN006, vide regra [[13_-_Regras_de_Negócio]].
+
+
+----
+
+
+h2. Protótipos
+
+Justificativa da solicitação
+
+!https://redmine.cade.gov.br/attachments/download/2723/T068%20-%20Manter%20Solicita%C3%A7%C3%B5es%20de%20Cancelamento%20-%20Justificativa.png!
+
+Iniciativas e indicadores

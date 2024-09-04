@@ -1,0 +1,18 @@
+h1. US005 Definir Campos Cancelar Indicador
+
+
+h2. +Campos do registro da solicitação+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação                                      |_.Tabela BD                           |_.Coluna BD                 |_.Comentário                             | 
+|Indicador         |Alfanumérico    |Sim          |Recuperado automaticamente, conforme escolha 
+                                                   do indicador na interface lançamento de resultados|-               |-                    |Refere-se ao indicador estratégico escolhido no Lançamento de 
+                                                                                                                                             Resultados para que ocorra o cancelamento.                            |                                                                                                                                                                                                                                                                                                                                           
+|Solicitante       |Alfanumérico    |Sim          |Recuperado automaticamente, conforme 
+                                                   usuário autenticado                               |-               |-                    |Refere-se ao nome do responsável pela solicitação de cancelamento do                            
+                                                                                                                                             indicador estratégico. Neste contexto, a aplicação verifica o usuário 
+                                                                                                                                             autenticado no momento da solicitação e salva como Solicitante.       | 
+|Justificativa da 
+Solicitação        |Alfanumérico    |Sim          |Somente letras e números                          |-               |-                    |Refere-se ao motivo para solicitação de cancelamento.                 |
+|Anexo             |arquivo         |Não          |-                                                 |-               |-                    |Um ou mais arquivo(s) anexado(s)                                      | 
+|Cancelar          |-               |Não          |-                                                 |-               |-                    |Permite ao usuário do sistema retornar a uma tela anterior.           |
+|Salvar            |-               |Não          |-                                                 |-               |-                    |Permite ao usuário do sistema gravar o registro.                      | 

@@ -1,0 +1,47 @@
+h1. US006 Definir Campos Abrangência 
+
+h2. +Campos do Cadastro+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD            |_.Coluna BD                    |_.Comentário                                                                                |
+|ID                |Auto increment  |Sim          |Não visível ao usuário. |sig_tb_pe_abrangencia  |id_abrangencia INT             |Refere-se ao identificador único da abrangência                                             |                                                   
+|Código            |Alfanumérico    |Sim          |Somente letras e números|sig_tb_pe_abrangencia  |cd_abrangencia INT (9)         |Refere-se ao código de identificação da abrangência                                         |                                                      
+|Nome              |Alfanumérico    |Sim          |Somente letras e números|sig_tb_pe_abrangencia  |ds_nome VARCHAR (255)          |Refere-se ao nome da abrangência
+                                                                                                                                    A abrangência no contexto de um plano estratégico refere-se ao alcance e à extensão das 
+                                                                                                                                    áreas e elementos que o plano estratégico aborda. Exemplos: Organizacional; Horizonte de 
+                                                                                                                                    tempo e etc...                                                                              |
+|Descrição         |Alfanumérico    |Não          |Somente letras e números|sig_tb_pe_abrangencia  |ds_abrangencia VARCHAR (3000)  |Refere-se a descrição da abrangência, um relato que busca transmitir informações detalhadas
+                                                                                                                                    sobre a abrangência.                                                                        |                                                  
+|Cancelar          |Botão           |-            |                        |                       |                               |Permite ao usuário do sistema retornar a uma tela anterior.                                 |                                                                       
+|Salvar            |Botão           |-            |                        |                       |                               |Permite ao usuário do sistema gravar o registro da abrangência.                             |                                                                                
+
+----
+
+h2. +Campos do filtrar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD            |_.Coluna BD                    |_.Comentário                                                                                |                                                
+|Código            |Alfanumérico    |Não          |Somente letras e números|sig_tb_pe_abrangencia  |cd_abrangencia INT (255)       |Refere-se ao código de identificação da abrangência.                                        |                                                     
+|Nome              |Alfanumérico    |Não          |Somente letras e números|sig_tb_pe_abrangencia  |ds_nome VARCHAR (255)          |Refere-se ao nome da abrangência.
+                                                                                                                                    A abrangência no contexto de um plano estratégico refere-se ao alcance e à extensão das
+                                                                                                                                    áreas e elementos que o plano estratégico aborda. Exemplos: Organizacional; Horizonte de
+                                                                                                                                    tempo e etc...                                                                              |                                                                                                                                  
+|Filtrar           |Botão           |-            |-                       |-                      |-                              |Permite ao usuário selecionar critérios específicos para restringir ou limitar os dados
+                                                                                                                                    apresentados.                                                                               |
+|Limpar            |Botão           |-            |-                       |-                      |-                              |Permite ao usuário apagar as informações inseridas na interface.                            |
+                                                                                                                                                                      
+
+----
+
+h2. +Campos do Resultado do Listar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD            |_.Coluna BD                    |_.Comentário                                                                                |                                              
+|Código            |Alfanumérico    |Sim          |Somente letras e números|sig_tb_pe_abrangencia  |cd_abrangencia INT (9)         |Refere-se ao código de identificação da abrangência.                                        |                                                     
+|Nome              |Alfanumérico    |Sim          |Somente letras e números|sig_tb_pe_abrangencia  |ds_nome VARCHAR (255)          |Refere-se ao nome da abrangência
+                                                                                                                                    A abrangência no contexto de um plano estratégico refere-se ao alcance e à extensão das 
+                                                                                                                                    áreas e elementos que o plano estratégico aborda. Exemplos: Organizacional; Horizonte de 
+                                                                                                                                    tempo e etc...                                                                              |
+|Descrição         |Alfanumérico    |Não          |Somente letras e números|sig_tb_pe_abrangencia  |ds_abrangencia VARCHAR (3000)  |Refere-se a descrição da abrangência, um relato que busca transmitir informações detalhadas
+                                                                                                                                    sobre a abrangência.                                                                        |                                                                                                                                 
+|Visualizar        |Botão           |-            |-                       |-                      |-                              |Permite ao usuário explorar detalhes de um item sem comprometer a experiência geral do
+                                                                                                                                    usuário.                                                                                    |
+|Editar            |Botão           |-            |-                       |-                      |-                              |Permite ao usuário modificar ou ajustar informações existentes na interface.                |                                                                 
+|Visualizar        |Botão           |-            |-                       |-                      |-                              |Permite ao usuário remover permanentemente um item, dado ou conteúdo da interface.          |

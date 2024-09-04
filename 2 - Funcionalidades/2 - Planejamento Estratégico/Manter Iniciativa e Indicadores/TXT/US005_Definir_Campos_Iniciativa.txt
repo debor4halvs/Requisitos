@@ -1,0 +1,16 @@
+h1. US005 Definir Campos Iniciativa
+
+h2. +Campos do Cadastrar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação                                    |_.Tabela BD                    |_.Coluna BD                 |_.Comentário                                                       |   
+|Nome              |Alfanumérico    |Sim          |                                                |-                              |-                           |No contexto de um plano estratégico, uma iniciativa é uma ação ou 
+                                                                                                                                                                 projeto específico que visa alcançar os objetivos estratégicos da 
+                                                                                                                                                                 organização. Ela é um componente tático que traduz as metas de alto 
+                                                                                                                                                                 nível em atividades concretas, com escopo, prazos, recursos designados 
+                                                                                                                                                                 e métricas de sucesso definidos. 
+                                                                                                                                                                 Exemplo: Desenvolvimento de novos produtos: Lançar uma linha de produtos 
+                                                                                                                                                                 inovadores para diversificar a oferta.                             |
+|Adicionar         |Botão           |-            |                                                |-                              |-                           |Permite ao usuário do sistema gravar o registro da iniciativa.     |                                                             
+
+
+----

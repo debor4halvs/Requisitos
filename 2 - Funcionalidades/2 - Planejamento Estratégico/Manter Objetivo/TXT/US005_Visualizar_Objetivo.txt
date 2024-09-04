@@ -1,0 +1,39 @@
+h1. US005 Visualizar Objetivo
+
+*Como* usuário SIG que possui permissão no módulo "Planejamento Estratégico" 
+*Quero* visualizar objetivo
+*Para* manter lista de objetivo atualizada.
+
+----
+ 
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Menu>Nome da funcionalidade_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ *Cenário 2:"Visualizar Objetivo"*   
+
+*Dado* que usuário entra no Listar
+*E* informa um plano estratégico, vide [[US006_Definir_Campos_Objetivo_]] 
+*Quando* usuário clica na opção visualizar 
+*Então* sistema apresenta formulário de cadastro preenchido 
+*E* não permite edição de nenhum dos campos apresentados. 
+
+----
+
+ *Cenário 3:"Opção Cancelar"*   
+
+*Dado* que o usuário visualizou objetivo
+*Quando* usuário clica na opção cancelar
+*Então* sistema retorna a interface anterior.
+
+----
+
+h2. Protótipos
+
+
+!clipboard-202408051201-2cxkb.png!
+

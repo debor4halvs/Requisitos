@@ -1,0 +1,57 @@
+h1. US007 Upload Repactuar Indicador
+
+
+*Como* usuário SIG que possui permissão no módulo "Planejamento Estratégico" 
+*Quero** realizar upload de arquivos
+*Para** armazenar e compartilhar documentos importantes de forma segura.
+
+----
+
+ **Cenário 1:"Realizar Envio de Aquivo(s)"**   
+
+**Dado** que usuário clicou na opção "Selecione o(s) arquivo(s)"
+**E** que usuário escolheu um arquivo a partir da sua máquina pessoal
+**E** que usuário confirmou a escolha de um arquivo
+**E** que sistema exibiu o arquivo na interface
+**Quando** usuário clica em "Salvar"
+**Então** sistema verifica que o arquivo atende RN006, vide [[13_-_Regras_de_Negócio]] 
+**E** guarda o registro do arquivo em um banco de dados.
+
+----
+
+ **Cenário 2:"Exceção Tamanho Incompatível"**   
+
+**Dado** que usuário clicou na opção "Selecione o(s) arquivo(s)"
+**E** que usuário escolheu um arquivo a partir da sua máquina pessoal
+**E** que usuário confirmou a escolha de um arquivo
+**E** que sistema exibiu o arquivo na interface
+**Quando** usuário clica em "Salvar"
+**Então** sistema verifica que o arquivo não atende RN006, vide [[13_-_Regras_de_Negócio]] 
+**E** apresenta mensagem MSG015, vide [[15_-_Mensagens]] 
+
+----
+
+ **Cenário 3:"Exceção Formato Incompatível"**   
+
+**Dado** que usuário clicou na opção "Selecione o(s) arquivo(s)"
+**E** que usuário escolheu um arquivo a partir da sua máquina pessoal
+**E** que usuário confirmou a escolha de um arquivo
+**E** que sistema exibiu o arquivo na interface
+**Quando** usuário clica em "Salvar"
+**Então** sistema verifica que o arquivo não atende RN006, vide [[13_-_Regras_de_Negócio]] 
+**E** apresenta mensagem MSG016, vide [[15_-_Mensagens]] 
+
+----
+
+ **Cenário 4:"Remover Arquivo Da Interface"**   
+
+**Dado** que usuário clicou na opção "Selecione o(s) arquivo(s)"
+**E** que usuário escolheu um arquivo a partir da sua máquina pessoal
+**E** que usuário confirmou a escolha de um arquivo
+**E** que sistema exibiu o arquivo na interface
+**Quando** usuário clica em "Remover", representado pelo ícone !!
+**Então** retira o arquivo escolhido da interface.
+
+------
+
+ 

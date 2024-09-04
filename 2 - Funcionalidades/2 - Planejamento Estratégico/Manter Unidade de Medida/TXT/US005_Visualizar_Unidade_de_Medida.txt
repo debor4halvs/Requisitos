@@ -1,0 +1,35 @@
+h1. US005 Visualizar Unidade de Medida
+
+*Como* usuário SIG que possui permissão no módulo "Planejamento Estratégico" 
+*Quero* visualizar unidade de medida
+*Para* ver todas as informações da Unidade de Medida.
+
+----
+ 
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Menu>Nome da funcionalidade_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ *Cenário 2:"Visualizar Unidade de Medida"*   
+
+*Quando* usuário clica na opção visualizar
+*Então* sistema apresenta formulário de cadastro preenchido 
+*E* não permite edição de nenhum dos campos apresentados. 
+
+----
+
+ *Cenário 3:"Opção Cancelar"*   
+
+*Dado* que o usuário visualizou unidade de medida
+*Quando* usuário clica na opção cancelar
+*Então* sistema retorna a interface anterior.
+
+----
+
+h2. Protótipos
+
+!clipboard-202408011645-yfpxo.png!

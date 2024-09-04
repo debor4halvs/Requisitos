@@ -1,0 +1,107 @@
+h1. US001 Incluir Plano Estratégico 
+
+
+**Como** usuário SIG que possui permissão no módulo "Planejamento Estratégico" 
+**Quero** cadastrar plano estratégico
+**Para** manter lista de planos estratégicos atualizada.
+
+----
+ 
+ **Cenário 1:"Apresentar Breadcrumbs"**   
+
+**Dado** que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo> Menu > Nome da funcionalidade_
+**Quando** usuário clica em link apresentado na estrutura
+**Então** sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ **Cenário 2:"Cadastrar Plano Estratégico"**   
+
+**Dado** que usuário preenche todos o campos obrigatórios, vide [[US006_Definir_Campos_Plano_Estratégico]]
+**Quando** usuário clica em "Salvar"
+**Então** sistema guarda o registro do plano estratégico em um banco de dados
+**E** apresenta ao usuário MSG001, vide [[15_-_Mensagens]] 
+
+----
+
+ *Cenário 3:"Adicionar Valor na Interface"*   
+
+*Dado* que usuário preenche o campo Valor
+*Quando* usuário clica em "Adicionar Valor"
+*Então* o sistema apresenta o registro na tela.
+
+----
+
+ **Cenário 4:"Remover Valor na Interface"**   
+
+**Dado** que usuário adicionou ao menos um Valor na lista
+**Quando** usuário clica na opção para excluir, representado pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/473/T030-icone-lixeira-list.png!
+**Então** o sistema remove o registro da tela.
+
+----
+
+ **Cenário 5:"Limpar Campos"**   
+
+**Dado** que usuário preencheu ao menos um campo
+**Quando** usuário clica em Limpar 
+**Então** sistema desfaz preenchimento do formulário
+**E** mantém usuário na mesma interface.
+
+----
+
+ **Cenário 6:"Cancelar Campos Preenchidos"**   
+
+**Dado** que usuário preencheu ao menos um campo
+**Quando** usuário clica em "Cancelar"
+**Então** sistema limpa os campos 
+**E** direciona usuário ao passo anterior de onde foi chamado.
+
+
+----
+
+ **Cenário 7:"Cancelar Campos Em Branco"**   
+
+**Dado** que usuário não preencheu campo(s)
+**Quando** usuário clica em "Cancelar"
+**Então** sistema direciona usuário ao passo anterior de onde foi chamado.
+
+
+----
+
+ **Cenário 8:"Guardar Ação do Usuário em Histórico"**   
+
+**Quando** usuário conclui ação de incluir
+**Então** sistema registra as informações em um banco de dados conforme RN006, vide [[13_-_Regras_de_Negócio]].
+
+----
+
+ **Cenário 9:"Atribuir Valor Automaticamente no Campo Código"** 
+  
+**Dado** que o usuário cadastrou plano estratégico sem informar um código
+**Quando** usuário conclui ação
+**Então** sistema gera um código único
+**E** preenche o campo, possibilitando edição futura.
+
+----
+
+ **Cenário 10:"Atribuir Valor Automaticamente no Campo Situação"** 
+  
+**Dado** que o usuário cadastrou plano estratégico 
+**Quando** usuário aciona campo "Situação"
+**Então** sistema atribui automaticamente o valor "Elaboração"
+
+----
+
+ **Cenário 11:"Campo(s) Obrigatório(s) Não Informado(s)"** 
+  
+**Dado** que o usuário não preencheu um ou mais campo(s) obrigatório(s)
+**Quando** usuário clica em um campo obrigatório
+**Então** sistema apresenta no campo a mensagem MSG003, vide [[15_-_Mensagens]].
+
+----
+
+h2. Protótipos
+
+!clipboard-202408011450-8g7ya.png!
+
+!clipboard-202408011450-qahlq.png!

@@ -1,0 +1,81 @@
+h1. US003 Cancelar Indicador
+
+
+*Como* usuário SIG que possui permissão no módulo "Planejamento Estratégico" 
+*Quero* cancelar indicador
+*Para* dar transparência em relação ao desempenho da organização.
+
+----
+
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Menu>Nome da funcionalidade_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ *Cenário 2:"Solicitar Cancelamento"*   
+
+*Dado* que o usuário acionou a opção Cancelar Indicador na interface Lançamento de Resultados
+*E* que usuário preenche os campos obrigatórios, vide [[US005_Definir_Campos_Cancelar_Indicador]] 
+*Quando* usuário aciona a opção Salvar
+*Então* sistema registra a solicitação de cancelamento, vide [[US001_Listar_Solicitação_Cancelamento]] 
+*E* retorna para interface de onde foi chamada "Lançamento de Resultados"
+*E* apresenta MSG012, vide [[15_-_Mensagens]] 
+*E* desabilita opção de cancelamento, até resultado da análise da gestão.
+
+----
+
+ **Cenário 3:"Cancelar Campos Preenchidos"**   
+
+**Dado** que o usuário acionou a opção Cancelar Indicador na interface Lançamento de Resultados
+**E** que usuário preenche campos, vide [[US005_Definir_Campos_Cancelar_Indicador]] 
+**Quando** usuário clica em "Cancelar"
+**Então** sistema limpa os campos 
+**E** direciona usuário ao passo anterior de onde foi chamado.
+
+
+----
+
+ **Cenário 4:"Cancelar Campos Em Branco"**   
+
+**Dado** que o usuário acionou a opção Cancelar Indicador na interface Lançamento de Resultados
+**E** que usuário não preencheu campo(s)
+**Quando** usuário clica em "Cancelar"
+**Então** sistema direciona usuário ao passo anterior de onde foi chamado.
+
+
+----
+
+ **Cenário 5:"Limpar Campos"**   
+
+**Dado** que usuário preencheu ao menos um campo
+**Quando** usuário clica em Limpar 
+**Então** sistema desfaz preenchimento do formulário
+**E** mantém usuário na mesma interface.
+
+----
+
+ **Cenário 6:"Mostrar/Ocultar Critérios do Arquivo"**   
+
+**Dado** que usuário está na sessão anexos
+**Quando** usuário clica no ícone informativo, representado pelo ícone: !https://redmine.cade.gov.br/attachments/download/2674/ICON015%20-%20Informativo.png!
+**Então** sistema apresenta mensagem MSG017, vide [[15_-_Mensagens]] 
+
+------
+
+ **Cenário 7:"Guardar Ação do Usuário em Histórico"**   
+
+**Quando** usuário conclui ação de salvar
+**Então** sistema registra as informações em um banco de dados conforme RN006, vide [[13_-_Regras_de_Negócio]].
+
+----
+
+h2. Protótipos
+
+!clipboard-202408060932-yrgzc.png!
+
+Exemplo mensagem
+
+!https://redmine.cade.gov.br/attachments/download/1506/T061%20-%20Cancelar%20indicador%20solicitado.png!

@@ -1,0 +1,52 @@
+h1. US006 Definir Campos Polaridade
+
+h2. +Campos do Cadastro+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD           |_.Coluna BD                   |_.Comentário                                                                                 |
+|Sigla             |Alfanumérico    |Não          |Somente letras e números|sig_tb_pe_polaridade  |sg_polaridade VARCHAR (255)   |Refere-se a forma abreviada e conveniente de se referir a algo mais longo. Neste contexto 
+                                                                                                                                  é a sigla da polaridade.                                                                     |
+|Nome              |Alfanumérico    |Sim          |Somente letras e números|sig_tb_pe_polaridade  |ds_nome VARCHAR (255)         |Refere-se ao nome da polaridade. 
+                                                                                                                                  A polaridade de um indicador no contexto do indicador de um plano estratégico, refere-se à direção 
+                                                                                                                                  desejada do desempenho do indicador em relação aos objetivos estratégicos da organização. 
+                                                                                                                                  Os indicadores de desempenho são utilizados para medir o progresso em direção às metas 
+                                                                                                                                  estabelecidas e para avaliar o sucesso na implementação da estratégia organizacional. 
+                                                                                                                                  Exemplos: positiva, negativa, neutra  etc.                                                   |  
+|Descrição         |Alfanumérico    |Não          |Somente letras e números|sig_tb_pe_polaridade   |ds_polaridade VARCHAR (3000) |Refere-se a descrição da polaridade, um relato que busca transmitir informações detalhadas   |
+|Cancelar          |Botão           | -           | -                      | -                     | -                           |Permite ao usuário do sistema retornar a uma tela anterior.                                  |                                                                                    
+|Salvar            |Botão           | -           | -                      | -                     | -                           |Permite ao usuário do sistema gravar o registro da polaridade.                               |                                                                                          
+
+----
+
+h2. +Campos do filtrar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD            |_.Coluna BD                  |_.Comentário                                                                                  | 
+|Sigla             |Alfanumérico    |Não          |Somente letras e números|sig_tb_pe_polaridade  |sg_polaridade VARCHAR (255)   |Refere-se a forma abreviada e conveniente de se referir a algo mais longo. Neste contexto 
+                                                                                                                                  é a sigla da polaridade.                                                                      |
+|Nome              |Alfanumérico    |Sim          |Somente letras e números|sig_tb_pe_polaridade  |ds_nome VARCHAR (255)         |Refere-se ao nome da polaridade. 
+                                                                                                                                  A polaridade de um indicador no contexto do indicador de um plano estratégico, refere-se à direção 
+                                                                                                                                  desejada do desempenho do indicador em relação aos objetivos estratégicos da organização. 
+                                                                                                                                  Os indicadores de desempenho são utilizados para medir o progresso em direção às metas 
+                                                                                                                                  estabelecidas e para avaliar o sucesso na implementação da estratégia organizacional. 
+                                                                                                                                  Exemplos: positiva, negativa, neutra  etc.                                                     |  
+|Filtrar           |Botão           | -           | -                      | -                        | -                        |Permite ao usuário selecionar critérios específicos para restringir ou limitar os dados
+                                                                                                                                 apresentados.                                                                                   |     
+|Limpar            |Botão           | -           | -                      | -                        | -                        |Permite ao usuário apagar as informações inseridas.                                            |                                                                    
+
+----
+
+h2. +Campos do Resultado do Listar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD               |_.Coluna BD                 |_.Comentário                                                                                 | 
+|Sigla             |Alfanumérico    |Não          |Somente letras e números|sig_tb_pe_polaridade  |sg_polaridade VARCHAR (255)     |Refere-se a forma abreviada e conveniente de se referir a algo mais longo. Neste contexto 
+                                                                                                                                    é a sigla da polaridade.                                                                     |
+|Nome              |Alfanumérico    |Sim          |Somente letras e números|sig_tb_pe_polaridade  |ds_nome VARCHAR (255)           |Refere-se ao nome da polaridade. 
+                                                                                                                                    A polaridade de um indicador no contexto do indicador de um plano estratégico, refere-se à direção 
+                                                                                                                                    desejada do desempenho do indicador em relação aos objetivos estratégicos da organização. 
+                                                                                                                                    Os indicadores de desempenho são utilizados para medir o progresso em direção às metas 
+                                                                                                                                    estabelecidas e para avaliar o sucesso na implementação da estratégia organizacional. 
+                                                                                                                                    Exemplos: positiva, negativa, neutra  etc.                                                   |  
+|Descrição         |Alfanumérico    |Não          |Somente letras e números|sig_tb_pe_polaridade   |ds_polaridade VARCHAR (3000)   |Refere-se a descrição da polaridade, um relato que busca transmitir informações detalhadas   |                                                                           
+|Visualizar        |Botão           | -           | -                      | -                        | -                          |Permite ao usuário explorar detalhes de um item sem comprometer a experiência geral do 
+                                                                                                                                    usuário.                                                                                     |     
+|Editar            |Botão           | -           | -                      | -                        | -                          |Permite ao usuário modificar ou ajustar informações existentes.                              |                                                                
+|Excluir           |Botão           | -           | -                      | -                        | -                          |Permite ao usuário remover permanentemente um item, dado ou conteúdo da interface.           |

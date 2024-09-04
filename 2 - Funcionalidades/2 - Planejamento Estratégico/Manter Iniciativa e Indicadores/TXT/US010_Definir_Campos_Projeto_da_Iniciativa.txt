@@ -1,0 +1,62 @@
+h1. US010 Definir Campos Projeto da Iniciativa
+
+
+h2. +Campos do Cadastrar Projeto da Iniciativa+
+
+|_.Nome do Campo        |_.Tipo do Campo |_.Obrigatório|_.Observação                                    |_.Tabela BD                    |_.Coluna BD                 |_.Comentário                                                       |   
+|Nome                   |Alfanumérico    |Sim          |-                                               |sig_tb_projeto_cadastro        |ds_nome VARCHAR (255)       |Refere-se ao nome do projeto. No contexto do planejamento estratégico, 
+                                                                                                                                                                      um projeto refere-se a uma iniciativa específica e temporária que é 
+                                                                                                                                                                      concebida e executada para alcançar um ou mais objetivos estratégicos 
+                                                                                                                                                                      da organização. O planejamento estratégico é o processo de definição 
+                                                                                                                                                                      dos objetivos a longo prazo de uma organização e na elaboração de 
+                                                                                                                                                                      planos para alcançá-los. Os projetos são uma forma de implementar as 
+                                                                                                                                                                      estratégias delineadas no plano estratégico.                       |
+|Salvar                 |Botão           |-            |-                                               |-                              |-                           |Permite ao usuário do sistema gravar o registro do projeto.        |                                                            
+|Cancelar               |Botão           |-            |-                                               |-                              |-                           |Permite ao usuário do sistema retornar a uma tela anterior.        |                                                               
+
+----
+
+h2. +Campos do Detalhar Projeto da Iniciativa+
+
+|_.Nome do Campo         |_.Tipo do Campo |_.Obrigatório|_.Observação                                   |_.Tabela BD                    |_.Coluna BD                 |_.Comentário                                                       |   
+|Nome                    |Alfanumérico    |Sim          |-                                              |sig_tb_projeto_cadastro        |ds_nome VARCHAR (3000)      |Refere-se ao nome do projeto. No contexto do planejamento estratégico, 
+                                                                                                                                                                      um projeto refere-se a uma iniciativa específica e temporária que é 
+                                                                                                                                                                      concebida e executada para alcançar um ou mais objetivos estratégicos 
+                                                                                                                                                                      da organização. O planejamento estratégico é o processo de definição 
+                                                                                                                                                                      dos objetivos a longo prazo de uma organização e na elaboração de 
+                                                                                                                                                                      planos para alcançá-los. Os projetos são uma forma de implementar as 
+                                                                                                                                                                      estratégias delineadas no plano estratégico.                        |
+|Código                  |Alfanumérico    |Sim          |-                                               |sig_tb_projeto_cadastro        |cd_projeto VARCHAR (9)      |Refere-se ao código do projeto.                                    |                                
+|Tipo de Projeto         |Alfanumérico    |Sim          |-                                               |sig_tb_projeto_cadastro        |ds_tipo VARCHAR (255)       |Refere-se ao tipo de projeto. 
+                                                                                                                                                                       Uma categoria específica ou classificação que agrupa projetos com 
+                                                                                                                                                                       características semelhantes ou objetivos comuns. Essas categorias 
+                                                                                                                                                                       ajudam a organizar e entender diferentes iniciativas, facilitando o 
+                                                                                                                                                                       gerenciamento, a alocação de recursos e a comunicação sobre as 
+                                                                                                                                                                       características essenciais do projeto. Exemplos: Qualidade; 
+                                                                                                                                                                       Infraeestrutura; Inovação; Sustentabilidade;                       |                                       
+|Data Inicial            |Data            |Sim          |DD/MM/AAAA                                      |sig_tb_projeto_cadastro        |                            |Data para iniciar o projeto.                                       |                             
+|Data Final              |Data            |Sim          |DD/MM/AAAA                                      |sig_tb_projeto_cadastro        |                            |Data para finalizar o projeto.                                     |                                
+|Descrição               |Alfanumérico    |Sim          |-                                               |sig_tb_projeto_cadastro        |                            |Refere-se a descrição do projeto.                                  |   
+|Área(s) Responsável(is) |Alfanumérico    |Sim          |-                                               |sig_tb_projeto_cadastro        |                            |A definir pela área de negócio                                     |                              
+|Líder de Projeto        |Alfanumérico    |Sim          |-                                               |sig_tb_projeto_cadastro        |                            |Refere-se ao nome do responsável pelo projeto.
+                                                                                                                                                                       Profissional encarregado de planejar, executar e concluir um projeto, 
+                                                                                                                                                                       garantindo que ele atenda aos objetivos estabelecidos, seja concluído 
+                                                                                                                                                                       dentro do prazo e do orçamento, e alcance os padrões de qualidade 
+                                                                                                                                                                       desejados.                                                         |
+|Líder de Projeto
+ Substituto              |Alfanumérico    |Sim          |-                                               |sig_tb_projeto_cadastro        |                            |Refere-se ao nome do substituto para responsável do projeto.       |                                                                   
+|Patrocinador do
+ Projeto                 |Alfanumérico    |Sim          |-                                               |sig_tb_projeto_cadastro        |                            |Refere-se ao nome do patrocinador do projeto.
+                                                                                                                                                                       O patrocinador é geralmente uma pessoa ou um grupo de pessoas que têm 
+                                                                                                                                                                       autoridade e influência significativas dentro da organização e estão 
+                                                                                                                                                                       envolvidos no projeto desde o início até a conclusão. O papel do 
+                                                                                                                                                                       patrocinador é essencial para garantir o sucesso e o suporte contínuo 
+                                                                                                                                                                       ao projeto.                                                        |
+|Orçamento               |Alfanumérico    |Sim          |-                                               |sig_tb_projeto_cadastro        |                            |Refere-se ao orçamento do projeto
+                                                                                                                                                                       Uma estimativa detalhada e formal dos custos associados à execução de 
+                                                                                                                                                                       todas as atividades planejadas durante o ciclo de vida do projeto. Ele 
+                                                                                                                                                                       descreve a alocação de recursos financeiros para diversas tarefas, 
+                                                                                                                                                                       fases e componentes do projeto.                                    |
+|Salvar                  |Botão           |-            |                                                |-                              |-                           |Permite ao usuário do sistema gravar o registro do projeto.        |                                                            
+|Cancelar                |Botão           |-            |                                                |-                              |-                           |Permite ao usuário do sistema retornar a uma tela anterior.        |
+|Limpar                  |Botão           |-            |                                                |-                              |-                           |Permite ao usuário apagar as informações inseridas.                |

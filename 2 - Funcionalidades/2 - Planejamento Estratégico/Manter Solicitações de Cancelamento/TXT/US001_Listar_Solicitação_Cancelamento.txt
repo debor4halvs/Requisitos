@@ -1,0 +1,135 @@
+h1. US001 Listar Solicitação Cancelamento
+
+*Como* usuário SIG que possui permissão no módulo "Planejamento Estratégico" 
+*Quero* analisar as solicitações de cancelamento 
+*Para* dar parecer sobre aprovação/reprovação ou exclusão da solicitação.
+
+----
+
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Menu>Nome da funcionalidade_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ *Cenário 2:"Selecionar Plano Estratégico"*   
+
+*Dado* que sistema apresenta campo plano estratégico conforme RN010, vide [[13_-_Regras_de_Negócio]] 
+*Quando* usuário seleciona um plano estratégico
+*Então* sistema permite as ações, somente para o plano estratégico informado.
+
+----
+
+ *Cenário 3:"Filtrar por Perspectiva"*   
+
+*Dado* que sistema apresenta filtros para listar
+*Quando* usuário escolhe uma perspectiva
+*E* clica em filtrar
+*Então* sistema recupera e exibe somente os registros para a perspectiva informada.
+
+----
+
+ *Cenário 4:"Filtrar por Objetivo Estratégico"*   
+
+*Dado* que sistema apresenta filtros para listar
+*Quando* usuário escolhe um objetivo
+*E* clica em filtrar
+*Então* sistema recupera e exibe somente os registros para o objetivo informado.
+
+----
+
+ *Cenário 5:"Filtrar por Status da Solicitação"*   
+
+*Dado* que sistema apresenta filtros para listar
+*Quando* usuário escolhe um status
+*E* clica em filtrar
+*Então* sistema recupera e exibe somente os registros para o status informado.
+
+----
+
+ *Cenário 6:"Apresentar Opção Incluir Nota"*   
+
+*Dado* que houve solicitação de cancelamento para o indicador 
+*Quando* usuário clica na opção incluir nota, representada pelo ícone !https://redmine.cade.gov.br/attachments/download/2677/ICON014%20-%20Incluir%20Nota.png!
+*Então* sistema direciona usuário para interface [[US004_Incluir_Nota_de_Cancelamento]] 
+
+-----
+
+ *Cenário 7:"Apresentar Opção Aprovar Solicitação"*   
+
+*Dado* que houve solicitação de cancelamento para o indicador 
+*Quando* usuário clica na opção aprovar, representada pelo ícone !https://redmine.cade.gov.br/attachments/download/2675/ICON012%20-%20Aprovar.png!
+*Então* sistema direciona usuário para interface [[US002_Aprovar_Solicitação_Cancelamento]] 
+
+------
+
+ *Cenário 8:"Apresentar Opção Reprovar Solicitação"*   
+
+*Dado* que houve solicitação de cancelamento para o indicador 
+*Quando* usuário clica na opção aprovar, representada pelo ícone !https://redmine.cade.gov.br/attachments/download/2676/ICON013%20-%20Reprovar.png!
+*Então* sistema direciona usuário para interface [[US003_Reprovar_Solicitação_Cancelamento]] 
+
+-------
+
+ *Cenário 9:"Apresentar Opção Excluir Solicitação"*   
+
+*Dado* que houve solicitação de cancelamento para o indicador 
+*Quando* usuário clica na opção aprovar, representada pelo ícone !!
+*Então* sistema direciona usuário para interface [[US005_Excluir_Solicitação_de_Cancelamento]] 
+
+-------
+
+ *Cenário 10:"Apresentar Mensagem (Tooltip) ao Passar Mouse na Opção Incluir Nota"*   
+
+*Dado* que sistema apresenta ações representadas por ícones
+*Quando* usuário passa o mouse sobre a opção Inclui Nota, representada pelo ícone 
+*Então* sistema exibe ao usuário MSG022, vide [[15_-_Mensagens]] 
+
+----
+
+ *Cenário 11:"Apresentar Mensagem (Tooltip) ao Passar Mouse na Opção Aprovar"*   
+
+*Dado* que sistema apresenta ações representadas por ícones
+*Quando* usuário passa o mouse sobre a opção Aprovar, representada pelo ícone 
+*Então* sistema exibe ao usuário MSG020, vide [[15_-_Mensagens]] 
+
+----
+
+ *Cenário 12:"Apresentar Mensagem (Tooltip) ao Passar Mouse na Opção Reprovar"*   
+
+*Dado* que sistema apresenta ações representadas por ícones
+*Quando* usuário passa o mouse sobre a opção Reprovar, representada pelo ícone 
+*Então* sistema exibe ao usuário MSG021, vide [[15_-_Mensagens]] 
+
+----
+
+ *Cenário 13:"Apresentar Mensagem (Tooltip) ao Passar Mouse na Opção Excluir"*   
+
+*Dado* que sistema apresenta ações representadas por ícones
+*Quando* usuário passa o mouse sobre a opção Excluir, representada pelo ícone 
+*Então* sistema exibe ao usuário MSG008, vide [[15_-_Mensagens]] 
+
+----
+
+ *Cenário 14:"Listar 10 Primeiros Registros por Padrão"*   
+
+*Dado* que sistema apresenta lista de Solicitações
+*Quando* usuário entra na interface
+*Então* sistema apresenta por padrão os 10 primeiros registros cadastrados e pagina os demais.
+
+----
+
+ *Cenário 15:"Ordenar Lista De Forma Decrescente Pela Data da Solicitação"*   
+
+*Dado* que sistema apresenta lista de Solicitações
+*Quando* a lista for apresentada
+*Então* o sistema ordena a lista das solicitações mais recentes para as mais antigas, ou seja, de forma decrescente.
+
+----
+
+
+h2. Protótipos
+
+!clipboard-202408061108-hjxyc.png!

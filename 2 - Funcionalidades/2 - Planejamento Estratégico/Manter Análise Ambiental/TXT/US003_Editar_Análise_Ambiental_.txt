@@ -1,0 +1,61 @@
+h1. US003 Editar Análise Ambiental 
+
+*Como* usuário SIG que possui permissão no módulo "Planejamento Estratégico" 
+*Quero* editar análise ambiental
+*Para* manter lista de análise ambiental atualizada.
+
+----
+ 
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Menu>Nome da funcionalidade_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ *Cenário 2:"Editar Análise Ambiental"*   
+
+*Dado* que usuário entra na interface Listar
+*E* informa um plano estratégico
+*E* clica na opção editar
+*E* modifica uma ou mais informações
+*Quando* usuário clica em "Salvar"
+*Então* sistema verifica se todos os campos obrigatórios foram preenchidos, vide [[US006_Definir_Campos_Análise_Ambiental_]]
+*E* atualiza o registro da análise ambiental do plano estratégico escolhido, em um banco de dados.
+*E* apresenta mensagem ao usuário MSG001, vide [[15_-_Mensagens]] 
+
+----
+
+ *Cenário 3:"Limpar Campos"*   
+
+*Dado* que usuário preencheu ao menos um campo
+*Quando* usuário clica em "Limpar" 
+*Então* sistema desfaz preenchimento no formulário
+*E* mantém usuário na mesma interface.
+
+----
+
+ *Cenário 4:"Cancelar"*   
+
+*Dado* que usuário preencheu nenhum, um ou mais campos
+*Quando* usuário clica em "Cancelar"
+*Então* sistema direciona usuário ao passo anterior de onde foi chamado.
+
+
+----
+
+ *Cenário 5:"Guardar Ação do Usuário em Histórico"*   
+
+*Dado* que o usuário editou análise ambiental
+*Quando* usuário conclui ação
+*Então* sistema registra as informações em um banco de dados conforme RN006, vide [[13_-_Regras_de_Negócio]] 
+
+----
+
+h2. Protótipos
+
+
+!clipboard-202408051700-ufu2h.png!
+
+!clipboard-202408051700-tlmlo.png!

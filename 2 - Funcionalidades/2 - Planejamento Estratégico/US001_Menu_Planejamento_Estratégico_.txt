@@ -1,0 +1,111 @@
+h1. US001 Menu Planejamento Estratégico 
+
+**Como** usuário SIG que possui permissão no módulo "Planejamento Estratégico" 
+**Quero** visualizar menu personalizado 
+**Para** mostrar somente as funções deste módulo.
+
+----
+ 
+ **Cenário 1:"Exibir Menu Lateral Aberto Por padrão"**   
+
+*Quando* usuário entra no módulo Planejamento Estratégico
+*Então* sistema apresenta menu lateral aberto por padrão, com a seguinte estrutura:
+Configurações Específicas;
+Plano Estratégico;
+Nível do Plano Estratégico;
+Abrangência;
+Unidade de Medida;
+Polaridade;
+
+----
+
+ **Cenário 2:"Retrair Menu Lateral"**   
+
+*Dado* que o usuário entra no módulo Cadeia de Valor
+*Quando* usuário clica na opção retrair menu, representada pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/469/T027-icone-retrair-menu.png!
+*Então* sistema esconde menu lateral.
+
+----
+
+ **Cenário 3:"Reexibir Menu Lateral"**   
+
+*Dado* que o usuário entra no módulo Cadeia de Valor
+*Quando* usuário clica na opção exibir menu, representada pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/468/T026-icone-exibir-menu.png!
+*Então* sistema exibe menu lateral.
+
+----
+
+ *Cenário 4:"Menu Configurações Específicas"*   
+
+*Dado* que o usuário entra no módulo Planejamento Estratégico
+*Quando* usuário clica na opção Configurações Específicas
+*Então* sistema apresenta submenu com as seguintes opções:
+Plano Estratégico;
+Nível do Plano Estratégico;
+Abrangência;
+Unidade de Medida;
+Polaridade;
+
+----
+
+ *Cenário 5:"Menu Planejar"*   
+
+*Dado* que o usuário entra no módulo Planejamento Estratégico
+*Quando* usuário clica na opção Planejar
+*Então* sistema apresenta submenu com as seguintes opções:
+Perspectivas;
+Objetivos;
+Análise Ambiental;
+Iniciativas/Indicadores;
+
+----
+
+ *Cenário 6:"Menu Executar"*   
+
+*Dado* que o usuário entra no módulo Planejamento Estratégico
+*Quando* usuário clica na opção Executar
+*Então* sistema apresenta submenu com as seguintes opções:
+Lançamento de Resultados;
+Solicitações de Cancelamento;
+Solicitações de Repactuação;
+
+----
+
+ *Cenário 7:"Active Quando Clicado"*   
+
+*Dado* que o usuário entra no módulo Cadeia de Valor
+*Quando* usuário clica na opção que deseja no submenu
+*Então* sistema apresenta a opção clicada em destaque.
+
+----
+
+ *Cenário 8:"Alternar Descrição do Cabeçalho Conforme Módulo"*   
+
+*Dado* que o usuário entra no Sistema Integrado de Gestão
+*Quando* usuário clica na opção Cadeia de Valor
+*Então* sistema troca a descrição onde se lê: Versão: 1.0.1 deve se ler: Planejamento Estratégico - Versão 1.0.1
+
+----
+
+ *Cenário 9:"Expandir lista"*   
+
+*Dado* que o usuário abriu o menu
+*Quando* usuário clica em expandir, representado pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/745/T044-icone-expandir-lista.png!
+*Então* o sistema exibe os itens filhos vinculados ao item pai.
+
+----
+
+ *Cenário 10:"Recolher lista"*   
+
+*Dado* que o usuário abriu o menu
+*Quando* usuário clica em recolher, representado pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/746/T045-icone-recolher-lista.png!
+*Então* o sistema esconde os itens filhos vinculados ao item pai.
+
+----
+
+h2. Protótipos
+
+
+!clipboard-202408011221-f54in.png!
+
+!clipboard-202408011223-baiy3.png!

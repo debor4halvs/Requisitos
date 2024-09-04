@@ -1,0 +1,40 @@
+h1. US002 Visualizar Indicador
+
+*Como* usuário SIG que possui permissão no módulo "Planejamento Estratégico" 
+*Quero* visualizar indicador estratégico
+*Para* obter detalhes do que foi cadastrado
+*Mas* não é permitido modificar nenhuma informação.
+
+----
+
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Menu>Nome da funcionalidade_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ *Cenário 2:"Visualizar Indicador"*   
+
+*Quando* usuário clica na opção visualizar 
+*Então* sistema apresenta os dados do indicador
+*E* não permite edição de nenhum dos campos apresentados. 
+
+----
+
+ *Cenário 3:"Apresentar Opção Cancelar"*   
+
+*Dado* que sistema apresenta a interface de visualização do indicador
+*Quando* usuário aciona a opção Cancelar
+*Então* sistema retorna para interface anterior, Lançamento de Resultados.
+
+----
+
+h2. Protótipos
+
+!clipboard-202408060925-nyush.png!
+
+!clipboard-202408061601-wb1v8.png!
+
+

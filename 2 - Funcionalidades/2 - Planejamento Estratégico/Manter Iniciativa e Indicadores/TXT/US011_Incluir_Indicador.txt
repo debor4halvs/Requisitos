@@ -1,0 +1,74 @@
+h1. US011 Incluir Indicador
+
+*Como* usuário SIG que possui permissão no módulo "Planejamento Estratégico" 
+*Quero* incluir indicador
+*Para* manter lista de indicadores atualizada
+
+----
+ 
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Menu>Nome da funcionalidade_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ *Cenário 2:"Selecionar Plano Estratégico"*   
+
+*Dado* que sistema apresenta campo plano estratégico, vide [[US007_Definir_Campos_Painel_Iniciativas_e_indicadores]] 
+*Quando* usuário seleciona um plano estratégico
+*Então* sistema inclui Iniciativas e Indicadores, somente no(s) objetivo(s) para o plano estratégico informado.
+
+---- 
+
+ *Cenário 3:"Habilitar Botão Adicionar Indicador"*   
+
+*Dado* que usuário entra no listar iniciativas e indicadores, vide [[US002_Listar_Iniciativas_e_Indicadores]] 
+*E* seleciona uma perspectiva
+*E* dentro da perspectiva seleciona um objetivo
+*E* dentro do objetivo entra na opção indicadores
+*Quando* usuário informa um nome para o indicador
+*Então* o sistema habilita o botão Adicionar do indicador
+
+----
+
+ *Cenário 4:"Adicionar Indicador"*   
+
+*Dado* que usuário entra no listar iniciativas e indicadores, vide [[US002_Listar_Iniciativas_e_Indicadores]]
+*E* seleciona uma perspectiva
+*E* dentro da perspectiva seleciona um objetivo
+*E* dentro do objetivo entra na opção indicadores
+*E* digita um nome para o indicador
+*Quando* usuário clica em "Adicionar"
+*Então* o sistema guarda o registro do indicador em um banco de dados.
+
+----
+
+ *Cenário 4:"Expandir lista"*   
+
+*Dado* que usuário incluiu indicador
+*Quando* usuário clica em expandir, representado pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/745/T044-icone-expandir-lista.png!
+*Então* o sistema exibe os itens filhos vinculados ao item pai.
+
+----
+
+ *Cenário 5:"Recolher lista"*   
+
+*Dado* que usuário incluiu indicador
+*Quando* usuário clica em recolher, representado pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/746/T045-icone-recolher-lista.png!
+*Então* o sistema esconde os itens filhos vinculados ao item pai.
+
+----
+ 
+ *Cenário 6:"Guardar Ação do Usuário em Histórico"*   
+
+*Quando* usuário conclui ação cadastrar
+*Então* sistema registra as informações em um banco de dados conforme RN006, vide [[13_-_Regras_de_Negócio]].
+
+----
+
+h2. Protótipos
+
+
+!clipboard-202408051529-soeee.png!
