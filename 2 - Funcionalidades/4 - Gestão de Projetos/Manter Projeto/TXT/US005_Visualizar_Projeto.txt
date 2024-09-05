@@ -1,0 +1,27 @@
+h1. US005 Visualizar Projeto
+
+*Como* usuário SIG que possui permissão no módulo "Gestão de Projetos" 
+*Quero* visualizar projeto
+*Para* manter lista de projetos atualizada.
+
+----
+ 
+  *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Menu>Nome da funcionalidade_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ *Cenário 2:"Visualizar Projeto"*   
+
+*Quando* usuário clica na opção visualizar, representada pelo ícone !https://hom-redmine.cade.gov.br/attachments/download/472/T028-icone-visualizar-list.png!
+*Então* sistema apresenta formulário de cadastro preenchido 
+*E* não permite edição de nenhum dos campos apresentados. 
+
+-----
+
+h2. Protótipos
+
+!clipboard-202408061431-aq1hp.png!

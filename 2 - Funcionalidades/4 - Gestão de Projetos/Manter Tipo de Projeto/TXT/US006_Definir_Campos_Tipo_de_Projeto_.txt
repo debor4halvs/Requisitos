@@ -1,0 +1,52 @@
+h1. US006 Definir Campos Tipo de Projeto 
+
+
+h2. +Campos do Cadastro+
+
+|_.Nome do Campo         |_.Tipo do Campo |_.Obrigatório|_.Observação                                   |_.Tabela BD                    |_.Coluna BD                 |_.Comentário                                                       |   
+|ID                      |Auto increment  |Sim          |Não visível ao usuário                         |sig_tb_projeto_cadastro        |projeto_id BIGINT           |Refere-se ao identificador único do projeto da iniciativa.         |                                                             
+|Código                  |Alfanumérico    |Sim          |-                                              |sig_tb_projeto_cadastro        |cd_projeto VARCHAR (9)      |Refere-se ao código do projeto.                                    |                                
+|Nome do Tipo            |Alfanumérico    |Sim          |-                                              |sig_tb_projeto_cadastro        |ds_tipo VARCHAR (255)       |Refere-se ao nome do tipo de projeto. 
+                                                                                                                                                                      Uma categoria específica ou classificação que agrupa projetos com 
+                                                                                                                                                                      características semelhantes ou objetivos comuns. Essas categorias 
+                                                                                                                                                                      ajudam a organizar e entender diferentes iniciativas, facilitando o 
+                                                                                                                                                                      gerenciamento, a alocação de recursos e a comunicação sobre as 
+                                                                                                                                                                      características essenciais do projeto. Exemplos: Qualidade; 
+                                                                                                                                                                      Infraeestrutura; Inovação; Sustentabilidade;                       |                                       
+|Descrição               |Alfanumérico    |Sim          |-                                               |sig_tb_projeto_cadastro        |                            |Refere-se a descrição do tipo de projeto.                         |                  
+|Salvar                  |Botão           |-            |                                                |-                              |-                           |Permite ao usuário do sistema gravar o registro do projeto.       |                                                            
+|Cancelar                |Botão           |-            |                                                |-                              |-                           |Permite ao usuário do sistema retornar a uma tela anterior.       |
+|Limpar                  |Botão           |-            |                                                |-                              |-                           |Permite ao usuário apagar as informações inseridas.               |
+
+h2. +Campos do Filtro+
+
+
+|_.Nome do Campo         |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD              |_.Coluna BD                 |_.Comentário                                                                            |                                              
+|Código                  |Alfanumérico    |Sim          |-                       |sig_tb_projeto_cadastro  |cd_projeto VARCHAR (9)      |Refere-se ao código do projeto.                                                         |                                
+|Nome do Tipo            |Alfanumérico    |Sim          |-                       |sig_tb_projeto_cadastro  |ds_tipo VARCHAR (255)       |Refere-se ao nome do tipo de projeto. 
+                                                                                                                                         Uma categoria específica ou classificação que agrupa projetos com 
+                                                                                                                                         características semelhantes ou objetivos comuns. Essas categorias 
+                                                                                                                                         ajudam a organizar e entender diferentes iniciativas, facilitando o 
+                                                                                                                                         gerenciamento, a alocação de recursos e a comunicação sobre as 
+                                                                                                                                         características essenciais do projeto. Exemplos: Qualidade; 
+                                                                                                                                         Infraeestrutura; Inovação; Sustentabilidade;                                            |                                       
+|Filtrar           |Botão           |-            |-                       |-                      |-                                   |Permite ao usuário selecionar critérios específicos para restringir ou limitar os dados
+                                                                                                                                         apresentados.                                                                           |
+|Limpar            |Botão           |-            |-                       |-                      |-                                   |Permite ao usuário apagar as informações inseridas na interface.                        |
+
+h2. +Campos do Listar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação            |_.Tabela BD            |_.Coluna BD                 |_.Comentário                                                                                 |                                              
+|Código            |Alfanumérico    |Sim          |-                       |sig_tb_projeto_cadastro|cd_projeto VARCHAR (9)      |Refere-se ao código do projeto.                                                              |                                
+|Nome do Tipo      |Alfanumérico    |Sim          |-                       |sig_tb_projeto_cadastro|ds_tipo VARCHAR (255)       |Refere-se ao nome do tipo de projeto. 
+                                                                                                                                 Uma categoria específica ou classificação que agrupa projetos com 
+                                                                                                                                 características semelhantes ou objetivos comuns. Essas categorias 
+                                                                                                                                 ajudam a organizar e entender diferentes iniciativas, facilitando o 
+                                                                                                                                 gerenciamento, a alocação de recursos e a comunicação sobre as 
+                                                                                                                                 características essenciais do projeto. Exemplos: Qualidade; 
+                                                                                                                                 Infraeestrutura; Inovação; Sustentabilidade;                                                  |                                       
+|Descrição         |Alfanumérico    |Sim          |-                       |sig_tb_projeto_cadastro|                            |Refere-se a descrição do tipo de projeto.                                                     | 
+|Visualizar        |Botão           |-            |Possui tooltip MSG      |-                      |-                           |Permite ao usuário explorar detalhes de um item sem comprometer a experiência geral do
+                                                                                                                                 usuário.                                                                                      |
+|Editar            |Botão           |-            |Possui tooltip MSG      |-                      |-                           |Permite ao usuário modificar ou ajustar informações existentes na interface.                  |                                                                 
+|Visualizar        |Botão           |-            |Possui tooltip MSG      |-                      |-                           |Permite ao usuário remover permanentemente um item, dado ou conteúdo da interface.            |
