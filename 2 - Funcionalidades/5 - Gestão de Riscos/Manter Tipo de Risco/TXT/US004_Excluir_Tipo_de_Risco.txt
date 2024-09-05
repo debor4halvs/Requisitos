@@ -1,0 +1,49 @@
+h1. US004 Excluir Tipo de Risco
+
+*Como* usuário SIG que possui permissão no módulo "Gestão de Riscos" 
+*Quero* excluir tipo de risco
+*Para* manter lista de tipos de risco atualizada.
+
+----
+ 
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Menu>Nome da funcionalidade_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ *Cenário 2:"Excluir Tipo de Risco Botão Excluir"*   
+
+*Dado* que usuário entra no Listar Tipos de Riscos
+*E* clica na opção excluir
+*E* que sistema apresenta mensagem MSG002, vide [[15_-_Mensagens]] 
+*Quando* usuário aciona a opção "Excluir"
+*Então* sistema apaga o registro na base de dados
+*E* sistema apresenta ao usuário mensagem MSG001, vide [[15_-_Mensagens]] 
+
+----
+
+ *Cenário 3:"Excluir Tipos de Riscos Botão Cancelar"*   
+
+*Dado* que usuário entra no Listar Tipos de Riscos
+*E* aciona a opção "Excluir"
+*E* que o sistema apresenta mensagem MSG002, vide [[15_-_Mensagens]] 
+*Quando* usuário clica no botão cancelar
+*Então* sistema fecha caixa de mensagem 
+*E* retorna ao passo anterior.
+
+----
+
+ *Cenário 4:"Guardar Ação do Usuário em Histórico"*   
+
+*Quando* usuário conclui ação de exclusão
+*Então* sistema registra as informações em um banco de dados, vide regra [[RN006_-_Registrar_Histórico_(log)]] 
+
+----
+
+h2. Protótipos
+
+
+!https://redmine.cade.gov.br/attachments/download/3353/04%20-%20Gest%C3%A3o%20de%20Riscos%20-%20T010%20Manter%20Tipo%20de%20Risco%20-%20Excluir.png!

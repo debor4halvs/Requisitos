@@ -1,0 +1,53 @@
+h1. US006 Definir Campos Item Inventário
+
+h2. +Campos do Cadastro+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação             |_.Tabela BD               |_.Coluna BD                  |_.Comentário                                                                                 |
+|Código            |Alfanumérico    |Sim          |Gerado automaticamente 
+                                                   pelo sistema. Vide RN016 |sig_tb_gein_ge_inventario |cd_inventario VARCHAR (255)  |Refere-se ao código único gerado pelo sistema automaticamente para identificar o item 
+                                                                                                                                      de inventário.                                                                               |
+|Tipo              |Alfanumérico    |Sim          |-                        |sig_tb_getr_ge_tipo_risco |nm_tipo_risco VARCHAR (255)  |Refere-se a tipografia do item de risco, lista apresentada conforme opções parametrizadas 
+                                                                                                                                      no Tipo de Risco.                                                                            |                   
+|Nome              |Alfanumérico    |Sim          |-                        |sig_tb_gein_ge_inventario |nm_inventario VARCHAR (255)  |Refere-se ao nome do item do inventário. Um inventário de riscos é uma lista organizada e 
+                                                                                                                                      detalhada de todos os riscos potenciais que uma organização ou projeto pode enfrentar. 
+                                                                                                                                      Ele inclui a identificação dos riscos, a descrição de cada risco                             |                                                 
+|Descrição         |Alfanumérico    |Sim          |-                        |sig_tb_gein_ge_inventario |ds_inventario VARCHAR (3000) |Refere-se a descrição do item do inventário.                                                 |
+|Limpar            |Botão           | -           |-                        | -                        | -                           |Permite ao usuário apagar as informações inseridas.                                          | 
+|Cancelar          |Botão           | -           |                         | -                        | -                           |Permite ao usuário do sistema retornar a uma tela anterior.                                  |            
+|Salvar            |Botão           | -           |                         | -                        | -                           |Permite ao usuário do sistema gravar o registro do item de inventário.                       |            
+
+
+h2. +Campos do Filtro do Listar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação             |_.Tabela BD               |_.Coluna BD                 |_.Comentário                                                                                  |
+|Código            |Lista           |Sim          |Gerado automaticamente 
+                                                   pelo sistema. Vide RN016 |sig_tb_gein_ge_inventario |cd_inventario VARCHAR (255) |Refere-se ao código único gerado pelo sistema automaticamente para identificar o item 
+                                                                                                                                      de inventário.                                                                               |
+|Tipo              |Lista           |Sim          |-                        |sig_tb_getr_ge_tipo_risco |nm_tipo_risco VARCHAR (255) |Refere-se a tipografia do item de risco, lista apresentada conforme opções parametrizadas 
+                                                                                                                                      no Tipo de Risco.                                                                            |                   
+|Nome              |Lista           |Sim          |-                        |sig_tb_gein_ge_inventario |nm_inventario VARCHAR (255) |Refere-se ao nome do item do inventário. Um inventário de riscos é uma lista organizada e 
+                                                                                                                                     detalhada de todos os riscos potenciais que uma organização ou projeto pode enfrentar. 
+                                                                                                                                     Ele inclui a identificação dos riscos, a descrição de cada risco                              |    
+|Filtrar           |Botão           | -           |                         | -                        | -                          |Permite ao usuário selecionar critérios específicos para restringir ou limitar os dados
+                                                                                                                                     apresentados.                                                                                 |
+|Limpar            |Botão           | -           |-                        | -                        | -                          |Permite ao usuário apagar as informações inseridas.                                           | 
+
+
+h2. +Campos do Resultado do Listar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação             |_.Tabela BD               |_.Coluna BD                 |_.Comentário                                                                                 |
+|Código            |Alfanumérico    |Sim          |Gerado automaticamente 
+                                                   pelo sistema. Vide RN016 |sig_tb_gein_ge_inventario |cd_inventario VARCHAR (255) |Refere-se ao código único gerado pelo sistema automaticamente para identificar o item 
+                                                                                                                                     de inventário.                                                                               |
+|Tipo              |Alfanumérico    |Sim          |-                        |sig_tb_getr_ge_tipo_risco |nm_tipo_risco VARCHAR (255) |Refere-se a tipografia do item de risco, lista apresentada conforme opções parametrizadas 
+                                                                                                                                     no Tipo de Risco.                                                                            |                   
+|Nome              |Alfanumérico    |Sim          |-                        |sig_tb_gein_ge_inventario |nm_inventario VARCHAR (255) |Refere-se ao nome do item do inventário. Um inventário de riscos é uma lista organizada e 
+                                                                                                                                     detalhada de todos os riscos potenciais que uma organização ou projeto pode enfrentar. 
+                                                                                                                                     Ele inclui a identificação dos riscos, a descrição de cada risco                             |                                                
+|Descrição         |Alfanumérico    |Sim          |-                        |-                         |-                           |Refere-se a descrição do item do inventário.                                                 |
+|Visualizar        |Botão           | -           | -                       | -                        | -                          |Permite ao usuário explorar detalhes de um item sem comprometer a experiência geral do 
+                                                                                                                                     usuário.                                                                                     |
+|Editar            |Botão           | -           | -                       | -                        | -                          |Permite ao usuário modificar ou ajustar informações existentes.                              |                                                             
+|Excluir           |Botão           | -           | -                       | -                        | -                          |Permite ao usuário remover permanentemente um item, dado ou conteúdo da interface.           |       
+
+----

@@ -1,0 +1,71 @@
+h1. US001 Incluir Tipo de Risco
+
+**Como** usuário com permissão no módulo Gestão de Riscos
+**Quero** incluir tipo de riscos
+**Para** definir os tipos de riscos para consulta futura.
+
+----
+
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo> Menu > Nome da funcionalidade
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ **Cenário 2:"Cadastrar Tipo de Risco"**  
+
+**Dado** que usuário preenche todos o campos obrigatórios, vide [[US006_Definir_Campos_Tipo_de_Risco]] 
+**Quando** usuário clica em "Salvar"
+**Então** sistema guarda o registro do tipo de risco em um banco de dados
+**E** apresenta ao usuário MSG001, vide [[15_-_Mensagens]] 
+
+----
+
+ **Cenário 3:"Campo(s) Obrigatório(s) Não Informado(s)"** 
+  
+**Dado** que o usuário não preencheu um ou mais campo(s) obrigatório(s)
+**Quando** usuário clica em um campo obrigatório
+**Então** sistema apresenta no campo a mensagem MSG003, vide [[15_-_Mensagens]].
+
+----
+
+  **Cenário 4:"Limpar Campos"**   
+
+**Dado** que usuário preencheu ao menos um campo
+**Quando** usuário clica em Limpar 
+**Então** sistema desfaz preenchimento no formulário
+**E** mantém usuário na mesma interface.
+
+----
+
+ **Cenário 5:"Cancelar Campos Preenchidos"**   
+
+**Dado** que usuário preencheu ao menos um campo
+**Quando** usuário clica em "Cancelar"
+**Então** sistema limpa os campos 
+**E** direciona usuário ao passo anterior de onde foi chamado.
+
+----
+
+ **Cenário 6:"Cancelar Campos Em Branco"**   
+
+**Dado** que usuário não preencheu campo(s)
+**Quando** usuário clica em "Cancelar"
+**Então** sistema direciona usuário ao passo anterior de onde foi chamado.
+
+----
+
+ **Cenário 7:"Guardar Ação do Usuário em Histórico"**   
+
+**Dado** que o usuário cadastrou tipo de risco
+**Quando** usuário conclui ação
+**Então** sistema registra as informações em um banco de dados conforme RN006, vide regra [[13_-_Regras_de_Negócio]].
+
+----
+
+
+h2. Protótipos
+
+!clipboard-202408131021-ohsph.png!

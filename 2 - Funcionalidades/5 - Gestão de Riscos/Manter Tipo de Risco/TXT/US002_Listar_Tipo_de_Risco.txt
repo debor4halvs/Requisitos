@@ -1,0 +1,120 @@
+h1. US002 Listar Tipo de Risco
+
+*Como* usuário SIG que possui permissão no módulo "Gestão de Riscos" 
+*Quero* listar os tipos de riscos 
+*Para* visualizar todos os tipos de riscos cadastrados.
+
+----
+ 
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Nome da funcionalidade_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ *Cenário 2:"Filtrar por Código"*   
+
+*Dado* que sistema apresenta filtros 
+*Quando* usuário escolhe uma sigla na lista, vide regra [[US006_Definir_Campos_Tipo_de_Risco]] 
+*E* clica em filtrar
+*Então* sistema recupera e exibe somente os registros para o código informado.
+
+----
+
+ *Cenário 3:"Filtrar por Nome"*   
+
+*Dado* que sistema apresenta filtros
+*Quando* usuário escolhe um nome na lista recuperada, vide [[US006_Definir_Campos_Tipo_de_Risco]] 
+*E* clica em filtrar
+*Então* sistema recupera e exibe somente os registros para o nome informado.
+
+----
+
+ *Cenário 4:"Limpar Filtros"*   
+
+*Dado* que usuário preencheu ao menos um filtro exibido
+*Quando* usuário clica em "Limpar"
+*Então* sistema desfaz todas as seleções existentes.
+
+----
+
+ *Cenário 5:"Apresentar Opção Adicionar Tipo de Risco"*   
+
+*Dado* que sistema apresenta botão "Adicionar"
+*Quando* usuário clica na opção Adicionar
+*Então* sistema direciona usuário para interface [[US001_Incluir_Tipo_de_Risco]] 
+
+----
+
+ *Cenário 6:"Apresentar Opção Visualizar Tipo de Riso"*   
+
+*Dado* que usuário cadastrou ao menos um item para tipo de risco
+*Quando* usuário clica na opção visualizar 
+*Então* sistema direciona usuário para interface [[US005_Visualizar_Tipo_de_Risco]], com todos os campos desabilitados para edição.
+
+----
+
+ *Cenário 7:"Apresentar Opção Editar Tipo de Risco"*   
+
+*Dado* que usuário cadastrou ao menos um tipo de risco
+*Quando* usuário clica na opção editar 
+*Então* sistema direciona usuário para interface [[US003_Editar_Tipo_de_Risco]].
+
+----
+
+ *Cenário 8:"Apresentar Opção Excluir Tipo de Risco"*   
+
+*Dado* que usuário cadastrou ao menos um tipo de risco
+*Quando* usuário clica na opção excluir 
+*Então* sistema direciona usuário para interface [[US004_Excluir_Tipo_de_Risco]].
+
+----
+
+ *Cenário 9:"Apresentar Opção Cancelar"*  
+
+*Dado* que usuário clicou na opção excluir representado pelo ícone "lixeira"
+*E* que o sistema apresentou mensagem com as opções "Cancelar" e "Excluir"
+*Quando* usuário clica no botão "Cancelar"
+*Então* sistema fecha caixa de mensagem e retorna ao passo anterior.
+
+----
+
+ *Cenário 10:"Listar 5 Primeiros Registros por Padrão"*   
+
+*Dado* que sistema apresenta lista de tipos de riscos
+*Quando* usuário entra na interface
+*Então* sistema apresenta por padrão os 5 primeiros registros cadastrados e pagina os demais.
+
+
+----
+
+ *Cenário 11:"Ordenar Alfabeticamente Resultado da Lista"*   
+
+*Dado* que o usuário cadastrou dois ou mais tipos de riscos
+*Quando* a lista for apresentada
+*Então* o sistema ordena a lista alfabeticamente pelo Nome do Tipo de Risco.
+
+----
+
+ *Cenário 12:"Resultado da Listagem"*   
+
+*Dado* que usuário cadastrou ao menos um tipo de risco
+*Quando* o usuário entra na lista
+*Então* o sistema exibe as informações, vide [[US006_Definir_Campos_Tipo_de_Risco]].
+
+----
+
+ *Cenário 13:"Apresentar Cabeçalho da Tabela por Padrão"*   
+
+*Dado* que usuário ainda não cadastrou um tipo de risco
+*Quando* o usuário entra no Listar
+*Então* o sistema exibe as informações de cabeçalho da tabela por padrão
+*E* a mensagem MSG016, vide [[15_-_Mensagens]].
+
+----
+ 
+h2. Protótipos
+
+!https://redmine.cade.gov.br/attachments/download/3348/04%20-%20Gest%C3%A3o%20de%20Riscos%20-%20T006%20Manter%20Tipo%20de%20Risco%20-%20Listar.png!

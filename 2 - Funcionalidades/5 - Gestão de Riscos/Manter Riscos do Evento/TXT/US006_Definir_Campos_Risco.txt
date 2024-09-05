@@ -1,0 +1,77 @@
+h1. US006 Definir Campos Risco
+
+h2. +Campos do Cadastro+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação             |_.Tabela BD               |_.Coluna BD              |_.Comentário                                                                                 |
+|Código            |Alfanumérico    |Sim          |Gerado automaticamente 
+                                                   pelo sistema.            |-                         |-                        |Refere-se ao código único gerado pelo sistema automaticamente para identificar o risco 
+                                                                                                                                  identificado.                                                                                |
+|Evento            |Alfanumérico    |Sim          | Não pode ser modificado
+                                                    pelo usuário.           |-                         |-                        |Refere-se ao nome do evento escolhido pelo usuário para incluir os riscos.                   |                                                                                                                 
+|Nome do Risco     |Lista           |Sim          | -                       |-                         |-                        |Refere-se ao nome do risco.  
+                                                                                                                                  A gestão de riscos envolve a identificação, avaliação e priorização de riscos, seguida pela 
+                                                                                                                                  aplicação de recursos para minimizar, monitorar e controlar a probabilidade ou impacto de eventos 
+                                                                                                                                  adversos.                                                                                    |                                             
+|Descrição         |Exibido conforme 
+                    nome do risco   |Sim          | -                       |-                         |-                        |Refere-se a um breve relato sobre o risco identificado para o evento.
+                                                                                                                                  Para o risco do tipo financeiro: É um tipo de risco relacionado à gestão 
+                                                                                                                                  financeira e às condições econômicas que podem afetar a saúde financeira da organização.     |                                                                                                                                                                                  
+|Tipo de Risco     |Exibido conforme 
+                    nome do risco   |Sim          |-                        | -                        | -                       |Refere-se ao nome do tipo de risco.  
+                                                                                                                                  A gestão de riscos envolve a identificação, avaliação e priorização de riscos, seguida pela 
+                                                                                                                                  aplicação de recursos para minimizar, monitorar e controlar a probabilidade ou impacto de eventos 
+                                                                                                                                  adversos. Existem vários tipos de riscos que podem ser gerenciados. Por Exemplo: Estratégicos;
+                                                                                                                                  Operacionais; Financeiros; Segurança da Informação etc...                                    |   
+|Gestor Responsável|Lista           |Sim          |-                        | -                        | -                       |Refere-se ao nome do usuário responsável pela identificação do risco.                        | 
+|Gestor Substituto |Lista           |Sim          |-                        | -                        | -                       |Refere-se ao nome do usuário substituto responsável pela identificação do risco.             |                  
+|Causa             |Alfanumérico    |Sim          |-                        | -                        | -                       |A causa de um risco é o fator ou condição que origina ou contribui para a possibilidade de 
+                                                                                                                                  ocorrência de um evento adverso, podendo afetar negativamente um objetivo ou resultado 
+                                                                                                                                  esperado. Em resumo, é o motivo pelo qual o risco existe.                                    |
+|Consequência      |Alfanumérico    |Sim          |-                        | -                        | -                       |A consequência de um risco é o impacto ou efeito resultante caso o risco se materialize, 
+                                                                                                                                  podendo afetar negativamente os objetivos, recursos ou resultados de uma organização ou 
+                                                                                                                                  projeto. Em resumo, é o resultado do risco se concretizar.                                   | 
+|Data Inicial      |Data            |Não          |DD/MM/AAAA               | -                        | -                       |Permite ao usuário apagar as informações inseridas.                                          | 
+|Data Final        |Data            |Não          |DD/MM/AAAA               | -                        | -                       |Permite ao usuário apagar as informações inseridas.                                          | 
+|Limpar            |Botão           | -           |-                        | -                        | -                       |Permite ao usuário apagar as informações inseridas.                                          | 
+|Cancelar          |Botão           | -           |                         | -                        | -                       |Permite ao usuário do sistema retornar a uma tela anterior.                                  |            
+|Salvar            |Botão           | -           |                         | -                        | -                       |Permite ao usuário do sistema gravar o registro do item de inventário.                       |            
+
+
+h2. +Campos do Filtro do Listar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação             |_.Tabela BD               |_.Coluna BD              |_.Comentário                                                                                 |
+|Tipo de Risco     |Botão           |Não          |-                        | -                        | -                       |Refere-se ao nome do tipo de risco.  
+                                                                                                                                  A gestão de riscos envolve a identificação, avaliação e priorização de riscos, seguida pela 
+                                                                                                                                  aplicação de recursos para minimizar, monitorar e controlar a probabilidade ou impacto de eventos 
+                                                                                                                                  adversos. Existem vários tipos de riscos que podem ser gerenciados. Por Exemplo: Estratégicos;
+                                                                                                                                  Operacionais; Financeiros; Segurança da Informação etc...                                    |             
+|Nome do Risco     |Alfanumérico    |Não          |-                        |-                         |-                        |Refere-se ao nome do risco.  
+                                                                                                                                  A gestão de riscos envolve a identificação, avaliação e priorização de riscos, seguida pela 
+                                                                                                                                  aplicação de recursos para minimizar, monitorar e controlar a probabilidade ou impacto de eventos 
+                                                                                                                                  adversos.                                                                                    |         
+|Filtrar           |Botão           | -           |                         | -                        | -                       |Permite ao usuário selecionar critérios específicos para restringir ou limitar os dados
+                                                                                                                                  apresentados.                                                                                |
+|Limpar            |Botão           | -           |-                        | -                        | -                       |Permite ao usuário apagar as informações inseridas.                                          | 
+
+
+h2. +Campos do Resultado do Listar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação             |_.Tabela BD               |_.Coluna BD              |_.Comentário                                                                                 |
+|Código            |Alfanumérico    |Sim          |-                        |-                         |-                        |Refere-se ao código único gerado pelo sistema automaticamente para identificar o risco.      |                
+|Nome              |Alfanumérico    |Sim          |-                        |-                         |-                        |Refere-se ao nome do tipo de risco.  
+                                                                                                                                  A gestão de riscos envolve a identificação, avaliação e priorização de riscos, seguida pela 
+                                                                                                                                  aplicação de recursos para minimizar, monitorar e controlar a probabilidade ou impacto de eventos 
+                                                                                                                                  adversos. Existem vários tipos de riscos que podem ser gerenciados. Por Exemplo: Estratégicos;
+                                                                                                                                  Operacionais; Financeiros; Segurança da Informação etc...                                    |                                              
+|Descrição         |Alfanumérico    |Sim          |-                        |-                         |-                        |Refere-se a um breve relato sobre a finalidade do tipo de risco.
+                                                                                                                                  Para o risco do tipo financeiro: É um tipo de risco relacionado à gestão 
+                                                                                                                                  financeira e às condições econômicas que podem afetar a saúde financeira da organização.     | 
+|Tipo de Risco     |Alfanumérico    |Sim          |-                        | -                        | -                       |Refere-se ao nome do tipo de risco.  
+                                                                                                                                  A gestão de riscos envolve a identificação, avaliação e priorização de riscos, seguida pela 
+                                                                                                                                  aplicação de recursos para minimizar, monitorar e controlar a probabilidade ou impacto de eventos 
+                                                                                                                                  adversos. Existem vários tipos de riscos que podem ser gerenciados. Por Exemplo: Estratégicos;
+                                                                                                                                  Operacionais; Financeiros; Segurança da Informação etc...                                    |           
+|Visualizar        |Botão           | -           | -                      | -                        | -                        |Permite ao usuário explorar detalhes de um item sem comprometer a experiência geral do 
+                                                                                                                                  usuário.                                                                                     |
+|Editar            |Botão           | -           | -                      | -                        | -                        |Permite ao usuário modificar ou ajustar informações existentes.                              |                                                             
+|Excluir           |Botão           | -           | -                      | -                        | -                        |Permite ao usuário remover permanentemente um item, dado ou conteúdo da interface.           |       

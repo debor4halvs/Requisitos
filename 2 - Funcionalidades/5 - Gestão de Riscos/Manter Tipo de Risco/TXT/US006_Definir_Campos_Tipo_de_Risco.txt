@@ -1,0 +1,55 @@
+h2. US006 Definir Campos Tipo de Risco
+
+h2. +Campos do Cadastro+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação             |_.Tabela BD               |_.Coluna BD                  |_.Comentário                                                                                  |
+|Código            |Alfanumérico    |Sim          |RN016                    |sig_tb_getr_ge_tipo_risco |cd_tipo_risco VARCHAR (255)  |Refere-se ao código único gerado pelo sistema automaticamente para identificar o tipo
+                                                                                                                                      de risco criado. Não pode ser editado pelo usuário.                                           |                                                                             
+|Nome              |Alfanumérico    |Sim          |-                        |sig_tb_getr_ge_tipo_risco |nm_tipo_risco VARCHAR (255)  |Refere-se ao nome do tipo de risco.  
+                                                                                                                                      A gestão de riscos envolve a identificação, avaliação e priorização de riscos, seguida pela 
+                                                                                                                                      aplicação de recursos para minimizar, monitorar e controlar a probabilidade ou impacto de eventos 
+                                                                                                                                      adversos. Existem vários tipos de riscos que podem ser gerenciados. Por Exemplo: Estratégicos;
+                                                                                                                                      Operacionais; Financeiros; Segurança da Informação etc...                                    |                                              
+|Descrição         |Alfanumérico    |Sim          |-                        |sig_tb_getr_ge_tipo_risco |ds_tipo_risco VARCHAR (3000) |Refere-se a um breve relato sobre a finalidade do tipo de risco.
+                                                                                                                                      Para o risco do tipo financeiro: É um tipo de risco relacionado à gestão 
+                                                                                                                                      financeira e às condições econômicas que podem afetar a saúde financeira da organização.     |                                                                                                                                                                                  
+|Limpar            |Botão           | -           |-                        | -                        | -                           |Permite ao usuário apagar as informações inseridas.                                          | 
+|Cancelar          |Botão           | -           |                         | -                        | -                           |Permite ao usuário do sistema retornar a uma tela anterior.                                  |            
+|Salvar            |Botão           | -           |                         | -                        | -                           |Permite ao usuário do sistema gravar o registro do item de inventário.                       |            
+
+
+h2. +Campos do Filtro do Listar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação             |_.Tabela BD               |_.Coluna BD                |_.Comentário                                                                                 |
+|Código            |Lista           |Não          |RN016                    |sig_tb_getr_ge_tipo_risco |cd_tipo_risco VARCHAR (255 |Refere-se ao código único gerado pelo sistema automaticamente para identificar o item 
+                                                                                                                                    de inventário.                                                                               |                
+|Nome              |Lista           |Sim          |-                        |sig_tb_getr_ge_tipo_risco |nm_tipo_risco VARCHAR (255) |Refere-se ao nome do tipo de risco.  
+                                                                                                                                    A gestão de riscos envolve a identificação, avaliação e priorização de riscos, seguida pela 
+                                                                                                                                    aplicação de recursos para minimizar, monitorar e controlar a probabilidade ou impacto de eventos 
+                                                                                                                                    adversos. Existem vários tipos de riscos que podem ser gerenciados. Por Exemplo: Estratégicos;
+                                                                                                                                    Operacionais; Financeiros; Segurança da Informação etc...                                    |     
+|Filtrar           |Botão           | -           |                         | -                        | -                         |Permite ao usuário selecionar critérios específicos para restringir ou limitar os dados
+                                                                                                                                    apresentados.                                                                                |
+|Limpar            |Botão           | -           |-                        | -                        | -                         |Permite ao usuário apagar as informações inseridas.                                          | 
+
+
+h2. +Campos do Resultado do Listar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação             |_.Tabela BD               |_.Coluna BD                 |_.Comentário                                                                                 |
+|Código            |Alfanumérico    |Sim          |RN016                    |sig_tb_getr_ge_tipo_risco |cd_tipo_risco VARCHAR (255) |Refere-se ao código único gerado pelo sistema automaticamente para identificar o item 
+                                                                                                                                     de inventário.                                                                               |                
+|Nome              |Alfanumérico    |Sim          |-                        |sig_tb_getr_ge_tipo_risco |nm_tipo_risco VARCHAR (255) |Refere-se ao nome do tipo de risco.  
+                                                                                                                                     A gestão de riscos envolve a identificação, avaliação e priorização de riscos, seguida pela 
+                                                                                                                                     aplicação de recursos para minimizar, monitorar e controlar a probabilidade ou impacto de eventos 
+                                                                                                                                     adversos. Existem vários tipos de riscos que podem ser gerenciados. Por Exemplo: Estratégicos;
+                                                                                                                                     Operacionais; Financeiros; Segurança da Informação etc...                                    |                                              
+|Descrição         |Alfanumérico    |Sim          |-                       |sig_tb_getr_ge_tipo_risco |ds_tipo_risco VARCHAR (3000) |Refere-se a um breve relato sobre a finalidade do tipo de risco.
+                                                                                                                                     Para o risco do tipo financeiro: É um tipo de risco relacionado à gestão 
+                                                                                                                                     financeira e às condições econômicas que podem afetar a saúde financeira da organização.     |    
+|Visualizar        |Botão           | -           | -                      | -                        | -                           |Permite ao usuário explorar detalhes de um item sem comprometer a experiência geral do 
+                                                                                                                                     usuário.                                                                                     |
+|Editar            |Botão           | -           | -                      | -                        | -                           |Permite ao usuário modificar ou ajustar informações existentes.                              |                                                             
+|Excluir           |Botão           | -           | -                      | -                        | -                           |Permite ao usuário remover permanentemente um item, dado ou conteúdo da interface.           |       
+
+
+   

@@ -1,0 +1,36 @@
+h2. US006 Definir Campos Tipo de Evento
+
+h2. +Campos do Cadastro+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação             |_.Tabela BD               |_.Coluna BD              |_.Comentário                                                                                 |
+|Código            |Alfanumérico    |Sim          |RN016                    |-                         |-                        |Refere-se ao código único gerado pelo sistema automaticamente para identificar o tipo
+                                                                                                                                  de evento criado. Não pode ser editado pelo usuário.                                          |                                                                             
+|Nome              |Alfanumérico    |Sim          |-                        |-                         |-                        |Refere-se ao nome do tipo de evento. Os tipos de eventos catalogados atualmente são: Processo, Projeto/Plano e Política/Programa. Servem como insumo para o correto preenchimento do formulário de Cadastro de Risco.                                   |                                              
+|Descrição         |Alfanumérico    |Sim          |-                        |-                         |-                        |Refere-se a um breve relato sobre a finalidade do tipo de evento.|                                                                                                                                                                                  
+|Limpar            |Botão           | -           |-                        | -                        | -                       |Permite ao usuário apagar as informações inseridas.                  | 
+|Cancelar          |Botão           | -           |                         | -                        | -                       |Permite ao usuário do sistema retornar a uma tela anterior.          |            
+|Salvar            |Botão           | -           |                         | -                        | -                       |Permite ao usuário do sistema gravar o registro do tipo de evento.   |            
+
+
+h2. +Campos do Filtro do Listar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação             |_.Tabela BD               |_.Coluna BD              |_.Comentário                                                                                 |
+|Código            |Lista           |Não          |RN016                    |-                         |-                        |Refere-se ao código único gerado pelo sistema automaticamente para identificar o tipo de evento.                                                                               |                
+|Nome              |Lista           |Sim          |-                        |-                         |-                        |Refere-se ao nome do tipo de evento.                                      |     
+|Filtrar           |Botão           | -           |                         | -                        | -                       |Permite ao usuário selecionar critérios específicos para restringir ou limitar os dados
+                                                                                                                                  apresentados.                                                                                |
+|Limpar            |Botão           | -           |-                        | -                        | -                       |Permite ao usuário apagar as informações inseridas.                                          | 
+
+
+h2. +Campos do Resultado do Listar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação             |_.Tabela BD               |_.Coluna BD              |_.Comentário                                                                                 |
+|Código            |Alfanumérico    |Sim          |RN016                    |-                         |-                        |Refere-se ao código único gerado pelo sistema automaticamente para identificar o tipo de evento.                                                                              |                
+|Nome              |Alfanumérico    |Sim          |-                        |-                         |-                        |Refere-se ao nome do tipo de evento.       |    
+|Visualizar        |Botão           | -           | -                       | -                        | -                        |Permite ao usuário explorar detalhes de um item sem comprometer a experiência geral do 
+                                                                                                                                  usuário.                                                                                     |
+|Editar            |Botão           | -           | -                       | -                        | -                        |Permite ao usuário modificar ou ajustar informações existentes.                              |                                                             
+|Excluir           |Botão           | -           | -                       | -                        | -                        |Permite ao usuário remover permanentemente um item, dado ou conteúdo da interface.           |       
+
+
+   

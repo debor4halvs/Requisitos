@@ -1,0 +1,55 @@
+h1. Menu do Módulo Gestão De Riscos
+
+**Como** usuário SIG que possui permissão no módulo "Gestão de Riscos" 
+**Quero** visualizar menu personalizado 
+**Para** mostrar somente as funções deste módulo.
+
+----
+ 
+ **Cenário 1:"Apresentar Menu Lateral"**   
+
+*Dado* que o usuário entra no módulo Gestão de Riscos
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ *Cenário 2:"Menu Configurações Específicas"*   
+
+*Dado* que o usuário entra no módulo Gestão de Riscos
+*Quando* usuário clica na opção Configurações Específicas
+*Então* sistema apresenta submenu com as seguintes opções:
+Inventário, vide [[US002_Listar_Item_Inventário]] 
+Tipo de Eventos [[US002_Listar_Tipo_de_Evento]] 
+Tipo de Risco, vide [[US002_Listar_Tipo_de_Risco]] 
+
+----
+
+ *Cenário 3:"Menu Identificar"*   
+
+*Dado* que o usuário entra no módulo Gestão de Riscos
+*Quando* usuário clica na opção Identificar
+*Então* sistema apresenta submenu com as seguintes opções:
+Eventos, vide [[US002_Listar_Evento]]; 
+
+----
+
+ *Cenário 4:"Active quando clicado"*   
+
+*Dado* que o usuário entra no módulo Gestão de Riscos
+*Quando* usuário clica na opção 
+*Então* sistema apresenta a opção clicada em destaque.
+
+----
+
+
+h2. Protótipos
+
+
+Módulo 
+
+!clipboard-202408011204-jz1u1.png!
+
+Menu
+
+!clipboard-202408011205-596qo.png!

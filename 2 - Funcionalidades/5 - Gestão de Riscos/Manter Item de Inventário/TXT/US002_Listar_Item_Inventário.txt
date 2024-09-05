@@ -1,0 +1,154 @@
+h1. US002 Listar Item Inventário
+
+*Como* usuário SIG que possui permissão no módulo "Gestão de Riscos" 
+*Quero* listar os itens de inventário 
+*Para* visualizar todos os itens de inventário cadastrados.
+
+----
+ 
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Nome da funcionalidade_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ *Cenário 2:"Filtrar por Código"*   
+
+*Dado* que sistema apresenta filtros 
+*Quando* usuário escolhe um código na lista, vide regra [[US006_Definir_Campos_Item_Inventário]] 
+*E* clica em filtrar
+*Então* sistema recupera e exibe somente os registros para o código informado.
+
+----
+
+ *Cenário 3:"Filtrar por Nome"*   
+
+*Dado* que sistema apresenta filtros
+*Quando* usuário escolhe um nome na lista recuperada, vide [[US006_Definir_Campos_Item_Inventário]]
+*E* clica em filtrar
+*Então* sistema recupera e exibe somente os registros para o nome informado.
+
+----
+
+ *Cenário 4:"Filtrar por Tipo"*   
+
+*Dado* que sistema apresenta filtros
+*Quando* usuário escolhe um tipo na lista recuperada, vide [[US006_Definir_Campos_Item_Inventário]] 
+*E* clica em filtrar
+*Então* sistema recupera e exibe somente os registros para o nome informado.
+
+----
+
+ *Cenário 5:"Limpar Filtros"*   
+
+*Dado* que usuário preencheu ao menos um filtro exibido
+*Quando* usuário clica em "Limpar"
+*Então* sistema desfaz todas as seleções existentes.
+
+----
+
+ *Cenário 6:"Apresentar Opção Adicionar Item de Inventário"*   
+
+*Dado* que sistema apresenta botão "Adicionar"
+*Quando* usuário clica na opção Adicionar
+*Então* sistema direciona usuário para interface [[US001_Incluir_Item_Inventário]] 
+
+----
+
+ *Cenário 7:"Apresentar Opção Visualizar Item de Inventário"*   
+
+*Dado* que usuário cadastrou ao menos um item para o inventário de riscos
+*Quando* usuário clica na opção visualizar representada pelo ícone "olho"
+*Então* sistema direciona usuário para interface [[US005_Visualizar_Item_Inventário]], com todos os campos desabilitados para edição.
+
+----
+
+ *Cenário 8:"Apresentar Opção Editar Item de Inventário"*   
+
+*Dado* que usuário cadastrou ao menos um item de inventário
+*Quando* usuário clica na opção editar representada pelo ícone "lápis"
+*Então* sistema direciona usuário para interface [[US003_Editar_Item_Inventário]].
+
+----
+
+ *Cenário 9:"Apresentar Opção Excluir Item de Inventário"*   
+
+*Dado* que usuário cadastrou ao menos um item de inventário
+*Quando* usuário clica na opção excluir 
+*Então* sistema direciona usuário para interface [[US004_Excluir_Item_Inventário]].
+
+----
+
+ *Cenário 10:"Apresentar Opção Cancelar"* 
+
+*Dado* que usuário clicou na opção excluir representado pelo ícone "lixeira"
+*E* que o sistema apresentou mensagem com as opções "Cancelar" e "Excluir"
+*Quando* usuário clica no botão cancelar
+*Então* sistema fecha caixa de mensagem e retorna ao passo anterior.
+
+----
+
+ *Cenário 11:"Listar 10 Primeiros Registros por Padrão"*   
+
+*Dado* que sistema apresenta lista de itens de inventário
+*Quando* usuário entra na interface
+*Então* sistema apresenta por padrão os 5 primeiros registros cadastrados e pagina os demais.
+
+
+----
+
+ *Cenário 12:"Ordenar Alfabeticamente Resultado da Lista"*   
+
+*Dado* que o usuário cadastrou dois ou mais itens de inventário
+*Quando* a lista for apresentada
+*Então* o sistema ordena a lista alfabeticamente pelo Nome do Item de Inventário.
+
+----
+
+
+ *Cenário 13:"Resultado da Listagem"*   
+
+*Dado* que usuário cadastrou ao menos um item de inventário
+*Quando* o usuário entra na lista
+*Então* o sistema exibe as informações, vide [[US006_Definir_Campos_Item_Inventário]] 
+
+----
+
+ *Cenário 14:"Apresentar Cabeçalho da Tabela por Padrão"*   
+
+*Dado* que usuário ainda não cadastrou um item de inventário
+*Quando* o usuário entra no Listar
+*Então* o sistema exibe as informações de cabeçalho por padrão
+*E* apresenta mensagem MSG016, vide [[15_-_Mensagens]] 
+
+----
+
+ *Cenário 15:"Apresentar Mensagem (Tooltip) ao Passar Mouse no Visualizar"*   
+
+*Dado* que sistema apresenta ações representadas por ícones
+*Quando* usuário passa o mouse sobre a opção visualizar
+*Então* sistema exibe ao usuário MSG010, vide [[15_-_Mensagens]] 
+
+----
+
+ *Cenário 16:"Apresentar Mensagem (Tooltip) ao Passar Mouse no Editar"*   
+
+*Dado* que sistema apresenta ações representadas por ícones
+*Quando* usuário passa o mouse sobre a opção editar
+*Então* sistema exibe ao usuário MSG011, vide [[15_-_Mensagens]] 
+
+----
+
+ *Cenário 17:"Apresentar Mensagem (Tooltip) ao Passar Mouse no Excluir"*   
+
+*Dado* que sistema apresenta ações representadas por ícones
+*Quando* usuário passa o mouse sobre a opção excluir
+*Então* sistema exibe ao usuário MSG012, vide [[15_-_Mensagens]] 
+
+----
+ 
+h2. Protótipos
+
+!https://redmine.cade.gov.br/attachments/download/3332/04%20-%20Gest%C3%A3o%20de%20Riscos%20-%20T001%20Manter%20Item%20Invent%C3%A1rio%20-%20Listar.png!
