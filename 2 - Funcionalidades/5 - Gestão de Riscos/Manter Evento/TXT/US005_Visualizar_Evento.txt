@@ -1,0 +1,46 @@
+h1. US005 Visualizar Evento
+
+*Como* usuário SIG que possui permissão no módulo "Gestão de Riscos" 
+*Quero* visualizar Evento
+*Para* ver todas as informações de Evento cadastrados.
+
+----
+ 
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Menu>Nome da funcionalidade>Nome da Ação_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ *Cenário 2:"Visualizar Evento"*   
+
+*Quando* usuário clica na opção visualizar representada pelo ícone “olho”
+*Então* sistema apresenta formulário de cadastro preenchido 
+*E* não permite edição de nenhum dos campos apresentados. 
+
+----
+
+ **Cenário 3:"Cancelar Campos"**   
+
+**Dado** que usuário solicita visualizar
+**Quando** usuário clica em "Cancelar"
+**Então** sistema direciona usuário ao passo anterior de onde foi chamado.
+
+----
+
+h2. Protótipos
+
+h4. Visualizar Evento tipo Processo
+
+!clipboard-202408091454-l5ykn.png!
+
+h4. Visualizar Evento tipo Projeto/Plano
+
+!clipboard-202408091454-mmcw2.png!
+
+h4. Visualizar Evento tipo Política/Programa
+
+!clipboard-202408091454-3bipf.png!
+

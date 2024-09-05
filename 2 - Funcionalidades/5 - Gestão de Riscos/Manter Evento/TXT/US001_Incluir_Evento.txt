@@ -1,0 +1,138 @@
+h1. US001 Incluir Evento
+
+**Como** usuário com permissão no módulo "Gestão de Riscos" 
+**Quero** incluir um evento 
+**Para** definir os eventos para consulta futura.
+
+----
+ 
+ **Cenário 1:"Apresentar Breadcrumbs"**   
+
+**Dado** que o sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo> Menu > Nome da funcionalidade_
+**Quando** o usuário clica em link apresentado na estrutura
+**Então** o sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ **Cenário 2:"Adicionar Evento"**   
+
+**Dado** que o usuário necessita adicionar um evento 
+**Quando** usuário clica em "Adicionar"
+**Então** o sistema apresenta modal com os tipos de Eventos cadastrados
+**E** conforme escolha do usuário, o sistema apresenta formulário com campos para preenchimento, vide [[US006_Definir_Campos_Evento]] 
+
+----
+
+ **Cenário 3:"Salvar Evento"** 
+
+**Dado** que usuário preencheu os campos obrigatórios do formulário de Cadastro, conforme seu tipo
+**Quando** usuário clica em "Salvar"
+**Então** o sistema guarda o registro em um banco de dados
+**E** o sistema apresenta a mensagem MSG001 [[15_-_Mensagens]] 
+**E** o usuário clica no botão de confirmação da mensagem
+**E** o sistema direciona o usuário à tela "Listar Evento" com a listagem atualizada
+
+----
+
+ **Cenário 4:"Limpar Campos"**   
+
+**Dado** que o usuário preencheu ao menos um campo
+**Quando** usuário clica em Limpar 
+**Então** o sistema desfaz preenchimento do formulário
+**E** mantém usuário na mesma interface.
+
+----
+
+ **Cenário 5:"Cancelar Campos Preenchidos"**   
+
+**Dado** que o usuário preencheu ao menos um campo
+**Quando** o usuário clica em "Cancelar"
+**Então** o sistema limpa os campos 
+**E** direciona o usuário ao passo anterior de onde foi chamado.
+
+----
+
+ **Cenário 6:"Cancelar Campos Em Branco"**   
+
+**Dado** que o usuário não preencheu nenhum campo
+**Quando** usuário clica em "Cancelar"
+**Então** o sistema direciona usuário ao passo anterior de onde foi chamado.
+
+----
+
+ **Cenário 7:"Anexar Arquivo"**   
+
+**Dado** que usuário deseja incluir um ou mais arquivo(s) no cadastro de processo
+**E** que usuário clicou na opção Upload 
+**E** que usuário escolheu um arquivo a partir da sua máquina pessoal
+**E** que usuário confirmou a escolha de um arquivo
+**E** que sistema exibiu o arquivo na interface
+**Quando** usuário clica em "Salvar"
+**Então** sistema verifica que o arquivo atende RN009, vide [[13_-_Regras_de_Negócio]]
+**E** guarda o registro do arquivo em um banco de dados.
+
+----
+
+ **Cenário 8:"Anexar Arquivo - Exceção Tamanho Incompatível"**   
+
+**Dado** que usuário clicou na opção Upload 
+**E** que usuário escolheu um arquivo a partir da sua máquina pessoal
+**E** que usuário confirmou a escolha de um arquivo
+**E** que sistema exibiu o arquivo na interface
+**Quando** usuário clica em "Salvar"
+**Então** sistema verifica que o arquivo não atende RN009, vide [[13_-_Regras_de_Negócio]]
+**E** apresenta mensagem MSG025, vide [[15_-_Mensagens]]. 
+
+----
+
+ **Cenário 9:"Anexar Arquivo - Exceção Formato Incompatível"**   
+
+**Dado** que usuário clicou na opção Upload 
+**E** que usuário escolheu um arquivo a partir da sua máquina pessoal
+**E** que usuário confirmou a escolha de um arquivo
+**E** que sistema exibiu o arquivo na interface
+**Quando** usuário clica em "Salvar"
+**Então** sistema verifica que o arquivo não atende RN009, vide [[13_-_Regras_de_Negócio]]
+**E** apresenta mensagem MSG026, vide [[15_-_Mensagens]].
+
+----
+
+ **Cenário 10:"Remover Anexo"**   
+
+**Dado** que usuário realizou o upload de um ou mais arquivo(s)
+**Quando** usuário clica em excluir
+**Então** sistema remove o arquivo da interface.
+
+----
+
+ **Cenário 11:"Guardar Ação do Usuário em Histórico"**   
+
+**Dado** que o usuário cadastrou um evento
+**Quando** usuário conclui ação
+**Então** sistema registra as informações em um banco de dados vide RN006, vide [[13_-_Regras_de_Negócio]].
+
+----
+
+h2. Protótipos
+
+h4. Incluir Evento - Modal tipo de evento
+
+!clipboard-202408051522-epey7.png!
+
+h4. Incluir Evento tipo Processo
+
+!clipboard-202408051525-ryupl.png!
+
+h4. Incluir Evento tipo Projeto/Plano
+
+!clipboard-202408051525-wqh4p.png!
+
+h4. Incluir Evento tipo Política/Programa
+
+!clipboard-202408051525-crpnv.png!
+
+
+
+
+
+

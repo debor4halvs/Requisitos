@@ -1,0 +1,170 @@
+h1. US002 Listar Evento
+
+*Como* usuário SIG que possui permissão no módulo "Gestão de Riscos" 
+*Quero* listar os Eventos 
+*Para* visualizar todos os tipos de eventos cadastrados.
+*E* para entender mais sobre eventos, vide G004 [[16_-_Glossário]] 
+
+----
+ 
+ *Cenário 1:"Apresentar Breadcrumbs"*   
+
+*Dado* que sistema apresenta uma navegação estruturada: _Página inicial>Nome do Módulo>Menu>Nome da funcionalidade_
+*Quando* usuário clica em link apresentado na estrutura
+*Então* sistema retorna aos passos anteriores, conforme escolha do usuário.
+
+----
+
+ *Cenário 2:"Apresentar Unidades com Permissão Gestor"*   
+
+
+*Dado* que sistema apresenta a unidade que o usuário tem permissão
+*Então* sistema apresenta lista com todas as unidades para usuário com permissão gestor.
+*E* vide [[13 - Regras de Negócio]]
+
+----
+
+ *Cenário 3:"Apresentar Unidade com permissão Usuário Comum"*   
+
+
+*Dado* que sistema apresenta a unidade que o usuário tem permissão
+*Então* sistema apresenta os dados somente de sua unidade.
+*E* vide RN002 e RN003 [[13 - Regras de Negócio]]
+
+----
+
+ *Cenário 4:"Filtrar por Código"*   
+
+
+*Dado* que sistema apresenta filtros 
+*Quando* usuário escolhe código na lista recuperada, vide Campos do Filtro do Listar [[US006_Definir_Campos_Evento]]
+*E* clica em "filtrar"
+*Então* sistema recupera e exibe somente os registros para o elemento informado.
+
+----
+
+ *Cenário 5:"Filtrar por Nome"*   
+
+*Dado* que sistema apresenta filtros 
+*Quando* usuário escolhe um nome na lista recuperada, vide Campos do Filtro do Listar [[US006_Definir_Campos_Evento]]  
+*E* clica em "filtrar"
+*Então* sistema recupera e exibe somente os registros para o elemento informado.
+
+----
+
+ *Cenário 6:"Filtrar por Tipo"*   
+
+*Dado* que sistema apresenta filtros 
+*Quando* usuário escolhe um tipo na lista recuperada, vide Campos do Filtro do Listar [[US006_Definir_Campos_Evento]]  
+*E* clica em "filtrar"
+*Então* sistema recupera e exibe somente os registros para o elemento informado.
+
+----
+
+ *Cenário 7:"Limpar Filtros"*   
+
+*Dado* que usuário preencheu ao menos um filtro exibido
+*Quando* usuário clica em "Limpar"
+*Então* sistema desfaz todas as seleções existentes.
+
+----
+
+ *Cenário 8:"Apresentar Opção Adicionar Evento"*   
+
+*Dado* que sistema apresenta botão para adicionar evento
+*Quando* usuário clica na opção "Adicionar"
+*Então* sistema direciona usuário para interface [[US001_Incluir_Evento]]
+
+----
+
+ *Cenário 9:"Apresentar Opção Visualizar Evento"*   
+
+*Dado* que usuário cadastrou ao menos um evento
+*Quando* usuário clica na opção visualizar representada pelo ícone "olho"
+*Então* sistema direciona usuário para interface [[US005 Visualizar Evento]], com todos os campos desabilitados para edição.
+
+----
+
+ *Cenário 10:"Apresentar Opção Editar Evento"*   
+
+*Dado* que usuário cadastrou ao menos um evento
+*Quando* usuário clica na opção editar representada pelo ícone "lápis"
+*Então* sistema direciona usuário para interface [[US003_Editar_Evento]]
+
+---
+
+ *Cenário 11:"Apresentar Opção Inventário de Riscos"*   
+
+*Dado* que usuário cadastrou ao menos um item de inventário
+*Quando* usuário clica na opção inventário representada pelo ícone "triângulo"
+*Então* sistema direciona usuário para interface [[US002_Listar_Item_Inventário]]
+
+----
+
+ *Cenário 12:"Apresentar Opção Excluir"*  
+
+*Dado* que usuário clica na opção excluir representado pelo ícone "lixeira"
+*E* que o sistema apresentou mensagem MSG002, vide [[15_-_Mensagens]]  
+*Quando* usuário clica no botão excluir 
+*Então* sistema apaga o registro na base de dados
+*E* sistema apresenta ao usuário mensagem MSG001, vide [[15_-_Mensagens]] 
+
+----
+
+ *Cenário 13:"Apresentar Opção Cancelar (da pop-up)"*  
+
+*Dado* que usuário clicou na opção excluir representado pelo ícone "lixeira"
+*E* que o sistema apresentou mensagem com as opções "Cancelar" e "Excluir"
+*Quando* usuário clica no botão "Cancelar"
+*Então* sistema fecha caixa de mensagem e retorna ao passo anterior.
+
+----
+
+ *Cenário 14:"Listar 10 Primeiros Registros por Padrão"*   
+
+*Dado* que sistema apresenta lista de eventos
+*Quando* usuário entra na interface
+*Então* sistema apresenta por padrão os 10 primeiros registros cadastrados e pagina os demais.
+
+----
+
+ *Cenário 15:"Componente de paginação"*   
+
+*Dado* que sistema apresenta lista de eventos
+*E* o usuário necessitar ajustar o número de registros apresentados em tela
+*Quando* usuário estiver na interface
+*Então* o componente de paginação dá as opções: 5, 10, 15, 20, 25 e 30 registros por página. 
+*E* faz parte do componente, a exibição do número da página que está sendo apresentada
+*E* o usuário pode ajustar paginação quantas vezes quiser, vide RNXXX [[13_-_Regras_de_Negócio]].
+
+----
+
+ *Cenário 16:"Ordenar Resultado da Lista pelo código"*   
+
+*Dado* que o usuário cadastrou dois ou mais eventos
+*Quando* a lista for apresentada
+*Então* o sistema ordena a lista pelo Código do Evento.
+
+----
+
+ *Cenário 17:"Resultado da Listagem"*   
+
+*Dado* que usuário cadastrou ao menos um evento
+*Quando* o usuário entra na lista
+*Então* o sistema exibe as informações, vide [[US006_Definir_Campos_Tipo_de_Evento]]   
+
+----
+
+ *Cenário 18:"Apresentar Cabeçalho da Tabela por Padrão"*   
+
+*Dado* que usuário ainda não cadastrou um evento
+*Quando* o usuário entra no Listar
+*Então* o sistema exibe as informações de cabeçalho por padrão
+*E* a mensagem MSG016, vide [[15_-_Mensagens]].  
+
+----
+    
+h2. Protótipos
+
+!clipboard-202408081110-suxjb.png!
+

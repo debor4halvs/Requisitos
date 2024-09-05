@@ -1,0 +1,38 @@
+h2. US006 Definir Campos Evento
+
+h2. +Campos do Cadastro+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação             |_.Tabela BD               |_.Coluna BD               |_.Comentário       |
+|Código            |Alfanumérico    |Sim          |Presente em todas as telas de cadastro |-                         |-                        |Refere-se ao código único gerado pelo sistema automaticamente para identificar o tipo de evento criado. Não pode ser editado pelo usuário. Gerado automaticamente pelo sistema.                                           |                                                                             
+|Nome              |Alfanumérico    |Sim          |Presente em todas as telas de cadastro|-                         |-                        |Refere-se ao nome do evento.                                   |                                              
+|Descrição         |Alfanumérico    |Sim          | Presente em todas as telas de cadastro|-                         |-                        |Refere-se a um breve relato sobre a finalidade do evento.|   
+|Objetivo do Evento        |Alfanumérico    |Sim          | Presente na tela “Cadastrar Processo”, “Cadastrar Projeto/Plano” e “Cadastrar Política/Programa” |-                         |-                        |Refere-se a um breve relato sobre o objetivo do evento.|  
+|Objetivo PE Cade         |Lista    |Sim          | Presente na tela “Cadastrar Processo”, “Cadastrar Projeto/Plano” e “Cadastrar Política/Programa” |-                         |-                        |Refere-se a um breve relato sobre o objetivo do Plano Estratégico do Cade.| 
+|Tipo de macroprocesso    |Radio button |Sim          | Presente na tela “Cadastrar Processo” E “Cadastrar Projeto/Plano” |-                         |-                        |Refere-se ao tipo de macroprocesso pautado na Cadeia de Valor. |       
+|Lista de Macroprocessos  |Lista    |Sim          | Presente na tela “Cadastrar Processo” E “Cadastrar Projeto/Plano” |-                         |-                        |Refere-se às opções de macroprocesso de acordo com seu tipo. |       
+|Envio de Arquivos   |-    |Não        | Presente na tela “Cadastrar Processo” |-                         |-                        |Mecanismo para upload de arquivo no cadastro de evento tipo processo.|                                                                                                                                                                                  
+|Limpar            |Botão           | -           | Presente em todas as telas de cadastro| -                        | -                       |Permite ao usuário apagar as informações inseridas.                  | 
+|Cancelar          |Botão           | -           | Presente em todas as telas de cadastro| -                        | -                       |Permite ao usuário do sistema retornar a uma tela anterior.          |            
+|Salvar            |Botão           | -             | Presente em todas as telas de cadastro | -                        | -                       |Permite ao usuário do sistema gravar o registro do tipo de evento.   |      
+
+h2. +Campos do Filtro do Listar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação             |_.Tabela BD               |_.Coluna BD              |_.Comentário                                                                                 |
+|Código            |Lista           |Não          |-                        |-                         |-                        |Refere-se ao código único gerado pelo sistema automaticamente para identificar o evento.                                                                               |                
+|Nome              |Lista           |Não          |-                        |-                         |-                        |Refere-se ao nome do tipo de evento.                                      | 
+|Tipo              |Lista           |Não          |-                     |-                         |-                        |Refere-se ao tipo de evento anteriormente cadastrado.                                      |    
+|Filtrar           |Botão           | -           |                         | -                        | -                       |Permite ao usuário selecionar critérios específicos para restringir ou limitar os dados                                                                                                                                  apresentados.                                                                                |
+|Limpar            |Botão           | -           |-                        | -                        | -                       |Permite ao usuário apagar as informações inseridas.                                          | 
+      
+h2. +Campos do Resultado do Listar+
+
+|_.Nome do Campo   |_.Tipo do Campo |_.Obrigatório|_.Observação             |_.Tabela BD               |_.Coluna BD              |_.Comentário                                                                                 |
+|Código            |Alfanumérico    |Sim          |-                        |-                         |-                        |Refere-se ao código único gerado pelo sistema automaticamente para identificar o evento.                                                                              |                
+|Nome              |Alfanumérico    |Sim          |-                        |-                         |-                        |Refere-se ao nome do evento.       |    
+|Tipo              |Lista           |Sim          |-                     |-                         |-                        |Refere-se ao tipo de evento anteriormente cadastrado.                                      |   
+|Visualizar        |Botão           | -           | -                      | -                        | -                        |Permite ao usuário explorar detalhes de um item sem comprometer a experiência geral do 
+                                                                                                                                  usuário.                                                                                     |
+|Editar            |Botão           | -           | -                      | -                        | -                        |Permite ao usuário modificar ou ajustar informações existentes.                              |        
+|Inventário de Riscos            |Botão           | -           | -                      | -                        | -                        |Permite ao usuário verificar informações existentes sobre o inventário de riscos.       |                                               
+|Excluir           |Botão           | -           | -                      | -                        | -                        |Permite ao usuário remover permanentemente um item, dado ou conteúdo da interface.           |    
+
